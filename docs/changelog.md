@@ -3,6 +3,19 @@
 
 All notable changes to this repository. Versions follow semantic versioning; commits follow conventional commits scoped to `stagehand`.
 
+## 1.2.0 · 2026-11-11
+
+The reel page now wears the BHIL frame (Brand Guidelines v1.0) around the theme stages, as ADR-005 intended.
+
+- **Brand strips** top and bottom, with the reference line and the copyright: © 2026 · Barry Hurd Intelligence Lab · barryhurd.com.
+- **Site header** with the BHIL terminal badge (inline SVG, drawn from the guidelines' anatomy) and links to the reel, About, the docs, GitHub and barryhurd.com.
+- **Masthead** in Newsreader over the dot constellation, the page's one motif, with an italic dek and the dial key.
+- **About section**: four big numbers, what the reel is, how to use it, how it is built, the rules it keeps, the controls, the licenses and About BHIL.
+- **Colophon footer** with version, release date, links, license and the tagline. Version, date, repository and site come from `canon/stagehand.json` at build time.
+- Ink, Terminal Navy and one blue replace the amber shell; square corners and hairlines throughout. Body text measures 14.7:1 on the plates.
+- On phones the family filters scroll in one row, so the sticky control strip stays short.
+- `build_reel.py` inlines italic faces, hashes `canon/stagehand.json` as a reel input, and drops two unused condensed weights.
+
 ## 1.1.0 · 2026-11-10
 
 Visual navigation: the README and the docs now show every theme instead of listing it.

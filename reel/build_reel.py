@@ -16,15 +16,30 @@ SRC = REEL / 'src'
 FONTDIR = Path(os.environ.get('STC_FONTS', REEL / 'node_modules' / '@fontsource'))
 OUT = REEL / 'dist' / 'stagehand-theme-reel.html'
 ORDER = ('data.js', 'helpers.js', 'dataviz.js', 'scenes-a.js', 'scenes-b.js', 'scenes-c.js', 'scenes-d.js', 'fx.js', 'cine.js', 'engine.js')
-INPUTS = [SRC / f for f in ORDER] + [SRC / 'shell.html', ROOT / 'canon' / 'themes.json', ROOT / 'canon' / 'families.json', REEL / 'build_reel.py']
+INPUTS = [SRC / f for f in ORDER] + [SRC / 'shell.html', ROOT / 'canon' / 'themes.json', ROOT / 'canon' / 'families.json', ROOT / 'canon' / 'stagehand.json', REEL / 'build_reel.py']
 
 THEMES = json.loads((ROOT / 'canon' / 'themes.json').read_text(encoding='utf-8'))['themes']
 FAMS = {f['id']: f for f in json.loads((ROOT / 'canon' / 'families.json').read_text(encoding='utf-8'))['families']}
 DIAL = json.loads((ROOT / 'canon' / 'dial.json').read_text(encoding='utf-8'))['b2b_fit']
+META = json.loads((ROOT / 'canon' / 'stagehand.json').read_text(encoding='utf-8'))
 
-GLYPHS = ''.join(chr(c) for c in range(0x20, 0x7F)) + '·‘’“”…×°▶é'
-UI = {('IBM Plex Sans Condensed', 400), ('IBM Plex Sans Condensed', 500), ('IBM Plex Sans Condensed', 600), ('IBM Plex Mono', 400), ('IBM Plex Mono', 500),
+GLYPHS = ''.join(chr(c) for c in range(0x20, 0x7F)) + '·‘’“”…×°▶é©'
+# Page shell (BHIL Brand Guidelines v1.0): Newsreader, IBM Plex Sans, IBM Plex Mono. Scene fonts follow.
+UI = {('Newsreader', 300), ('Newsreader', 300, 'italic'), ('IBM Plex Sans', 400), ('IBM Plex Sans', 600),
+      ('IBM Plex Mono', 400), ('IBM Plex Mono', 500), ('IBM Plex Mono', 600),
       ('Mr Dafoe', 400), ('IM Fell English', 400), ('Inter', 600), ('Inter', 700)}
+
+# The BHIL terminal badge, drawn from the guidelines' anatomy: window dots, prompt chevron, BHIL monogram,
+# dot-matrix cursor over a live input line, on its navy field. Replace with the master artwork if it changes.
+BADGE = ('<svg viewBox="0 0 132 80" role="img" aria-hidden="true" focusable="false">'
+         '<rect width="132" height="80" fill="#0D1B2E"/>'
+         '<circle cx="12" cy="12" r="3.2" fill="#6CC0E8"/><circle cx="22" cy="12" r="3.2" fill="#4FA3D1"/><circle cx="32" cy="12" r="3.2" fill="#2E80B0"/>'
+         '<rect x="0" y="22" width="132" height="1" fill="#1E3A5F"/>'
+         '<path d="M12 39l8 6-8 6z" fill="#4FA3D1"/>'
+         '<text x="27" y="52" fill="#FFFFFF" font-family="IBM Plex Mono, ui-monospace, monospace" font-weight="600" font-size="21" letter-spacing="2">BHIL</text>'
+         '<g class="cursor" fill="#6CC0E8">' + ''.join(f'<rect x="{92 + c * 3.4:.1f}" y="{37 + r * 3.4:.1f}" width="2.4" height="2.4"/>' for r in range(5) for c in range(3)) + '</g>'
+         '<rect x="12" y="62" width="108" height="1" fill="#4FA3D1"/>'
+         '</svg>')
 
 
 def subset_font(path):
@@ -35,14 +50,14 @@ def subset_font(path):
 
 
 def faces():
-    need = set(UI) | {tuple(t['fonts'][r]) for t in THEMES for r in ('display', 'body', 'mono')}
+    need = {(f[0], f[1], f[2] if len(f) > 2 else 'normal') for f in UI} | {(*t['fonts'][r], 'normal') for t in THEMES for r in ('display', 'body', 'mono')}
     out, missing = [], []
-    for fam, w in sorted(need):
-        pkg = fam.lower().replace(' ', '-'); p = FONTDIR / pkg / 'files' / f'{pkg}-latin-{w}-normal.woff2'
+    for fam, w, style in sorted(need):
+        pkg = fam.lower().replace(' ', '-'); p = FONTDIR / pkg / 'files' / f'{pkg}-latin-{w}-{style}.woff2'
         if not p.exists():
             missing.append(str(p)); continue
         b64 = base64.b64encode(subset_font(p)).decode()
-        out.append(f'@font-face{{font-family:"{fam}";font-weight:{w};font-style:normal;font-display:swap;src:url(data:font/woff2;base64,{b64}) format("woff2");}}')
+        out.append(f'@font-face{{font-family:"{fam}";font-weight:{w};font-style:{style};font-display:swap;src:url(data:font/woff2;base64,{b64}) format("woff2");}}')
     if missing:
         sys.exit('missing font files (run npm ci in reel/):\n  ' + '\n  '.join(missing))
     return out
@@ -108,13 +123,15 @@ def build():
         ps = ''.join(plate(t) for t in THEMES if t['family'] == fk)
         blocks.append(f'''
   <section data-fam-block="{fk}" aria-labelledby="fam-{fk}">
-    <div class="fam-head"><p class="slate">Family {fk}</p><h2 id="fam-{fk}">{E(FAMS[fk]['name'])}</h2><p>{E(FAMS[fk]['blurb'])}</p></div>
+    <div class="fam-head"><p class="slate chev">Family {fk}</p><h2 id="fam-{fk}">{E(FAMS[fk]['name'])}</h2><p>{E(FAMS[fk]['blurb'])}</p></div>
     <div class="plates">{ps}
     </div>
   </section>''')
     scripts = '\n'.join((SRC / f).read_text(encoding='utf-8') for f in ORDER)
     page = (SRC / 'shell.html').read_text(encoding='utf-8')
     page = page.replace('{{FONTS}}', '\n'.join(faces())).replace('{{INDEX}}', index).replace('{{PLATES}}', ''.join(blocks)).replace('{{SCRIPTS}}', scripts)
+    for k, v in (('BADGE', BADGE), ('VERSION', META['version']), ('RELEASED', META['released']), ('REPO', META['repo']), ('SITE', META['site'])):
+        page = page.replace('{{' + k + '}}', v)
     OUT.parent.mkdir(exist_ok=True); OUT.write_text(page, encoding='utf-8')
     (OUT.parent / 'SOURCES.sha256').write_text(''.join(f'{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.relative_to(ROOT).as_posix()}\n' for p in INPUTS))
     print(f'wrote {OUT.relative_to(ROOT)} {len(page.encode()) / 1024:.0f} KB')

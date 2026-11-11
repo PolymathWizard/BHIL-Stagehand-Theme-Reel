@@ -3,140 +3,260 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stagehand Theme Reel</title>
-<meta name="description" content="Twenty live motion themes from the Stagehand Theme Codex (STC v1.0), with intensity dial, tokens and prompt seeds.">
+<title>Stagehand Theme Reel · Barry Hurd Intelligence Lab</title>
+<meta name="description" content="Twenty live motion themes from the Stagehand Theme Codex (STC v1.0), each at three intensity levels, with tokens and prompt seeds for page, reel and deck agents.">
+<meta name="author" content="Barry Hurd · Barry Hurd Intelligence Lab">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D1B2E'/%3E%3Ccircle cx='7' cy='7' r='2' fill='%236CC0E8'/%3E%3Ccircle cx='13' cy='7' r='2' fill='%234FA3D1'/%3E%3Ccircle cx='19' cy='7' r='2' fill='%231E3A5F'/%3E%3Cpath d='M9 13l9 6-9 6z' fill='%234FA3D1'/%3E%3C/svg%3E">
 <style>
 {{FONTS}}
 :root {
-  /* layout: a screening room. Masthead, a sticky control strip, then one plate per theme: live stage left, spec sheet right. */
-  --booth: #141417;
-  --panel: #1C1C21;
-  --rule: #2F2F37;
-  --text: #ECEAE4;
-  --muted: #A6A4AD;
-  --leader: #E7B24A;
-  --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
-  --body: "IBM Plex Sans Condensed", system-ui, sans-serif;
+  /* BHIL Brand Guidelines v1.0: ink and navy anchor, one blue does the work, hairlines not boxes, square corners. */
+  --ink: #0A0A0A;
+  --navy: #0D1B2E;
+  --deep: #0B1626;
+  --rule: #1E3A5F;
+  --rule-soft: #16273D;
+  --text: #E9EDF2;
+  --muted: #AEBDCC;
+  --faint: #8FA3B8;
+  --blue: #4FA3D1;
+  --bright: #6CC0E8;
+  --sage: #4A8A6E;
+  --stone: #6B6258;
+  --copper: #D97757;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --pad: 80px;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 html, body { margin: 0; }
-body { background: var(--booth); color: var(--text); font: 400 16px/1.5 var(--body); -webkit-font-smoothing: antialiased; }
-a { color: var(--leader); }
-:focus-visible { outline: 2px solid var(--leader); outline-offset: 2px; }
-.wrap { max-width: 1380px; margin: 0 auto; padding: 0 24px; }
-.slate { font: 500 11px/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--leader); margin: 0; }
+body { background: var(--ink); color: var(--text); font: 400 16px/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: var(--bright); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #fff; }
+:focus-visible { outline: 2px solid var(--bright); outline-offset: 2px; }
+.wrap { max-width: 1440px; margin: 0 auto; padding: 0 var(--pad); }
+.skip { position: absolute; left: -9999px; top: 0; z-index: 50; background: var(--navy); color: #fff; padding: 10px 14px; font: 500 12px var(--mono); }
+.skip:focus { left: 12px; top: 12px; }
 
-.mast { padding: 44px 0 24px; display: grid; gap: 14px; }
-.mast h1 { font: 600 clamp(38px, 6vw, 66px)/1 var(--display); letter-spacing: -.01em; margin: 0; text-wrap: balance; }
-.mast .lead { margin: 0; max-width: 66ch; font-size: 19px; line-height: 1.45; }
-.mast .note { margin: 0; max-width: 78ch; color: var(--muted); font-size: 15px; }
-.dial-key { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 6px 0 0; padding: 0; list-style: none; max-width: 980px; }
-.dial-key li { border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; font-size: 14px; line-height: 1.4; color: var(--muted); }
-.dial-key b { display: block; font: 500 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--text); margin-bottom: 2px; }
+/* type stack: eyebrow, title, dek */
+.eyebrow, .slate { font: 500 11px/1.6 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--blue); margin: 0; }
+.chev::before { content: ""; display: inline-block; width: .55em; height: .7em; margin-right: .7em; background: var(--blue); clip-path: polygon(0 0, 100% 50%, 0 100%); vertical-align: -.02em; }
+.dek { font: italic 300 clamp(20px, 2.1vw, 26px)/1.4 var(--serif); color: var(--text); margin: 0; max-width: 46ch; }
 
-.controls { position: sticky; top: 0; z-index: 20; background: rgba(20, 20, 23, .94); border-bottom: 1px solid var(--rule); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-.controls .wrap { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding-top: 10px; padding-bottom: 10px; }
-.group { display: flex; align-items: center; gap: 8px; }
-.group > .lab { font: 500 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 7px; overflow: hidden; }
+/* brand strips, top and bottom */
+.strip { background: var(--ink); border-bottom: 1px solid var(--rule); }
+.strip.bottom { border-bottom: 0; border-top: 1px solid var(--rule); }
+.strip .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding-top: 10px; padding-bottom: 10px; font: 500 10.5px/1.7 var(--mono); letter-spacing: .28em; text-transform: uppercase; color: var(--muted); }
+.strip b { font-weight: 500; color: var(--bright); }
+
+/* site header */
+.site .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; padding-top: 22px; padding-bottom: 22px; }
+.badge { display: block; width: 132px; line-height: 0; }
+.badge svg { width: 100%; height: auto; display: block; }
+.cursor { animation: blink 1.2s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
+body.paused .cursor { animation: none; }
+.nav { display: flex; flex-wrap: wrap; gap: 4px 28px; margin: 0; padding: 0; list-style: none; }
+.nav a { font: 500 11px/1.6 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--text); text-decoration: none; padding: 6px 0; border-bottom: 1px solid transparent; }
+.nav a:hover { color: #fff; border-bottom-color: var(--bright); }
+
+/* masthead with the dot constellation (the one motif on this page) */
+.mast { position: relative; border-top: 1px solid var(--rule-soft); }
+.mast::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(79, 163, 209, .32) 1px, transparent 1.6px); background-size: 24px 24px; -webkit-mask-image: radial-gradient(ellipse 60% 75% at 78% 38%, #000 0%, transparent 72%); mask-image: radial-gradient(ellipse 60% 75% at 78% 38%, #000 0%, transparent 72%); pointer-events: none; }
+.mast .wrap { position: relative; display: grid; gap: 22px; padding-top: 60px; padding-bottom: 48px; }
+.mast h1 { font: 300 clamp(48px, 7.4vw, 96px)/1.02 var(--serif); letter-spacing: -.015em; margin: 0; color: #fff; text-wrap: balance; }
+.mast .lead { margin: 0; max-width: 70ch; font-size: 17px; line-height: 1.6; color: var(--text); }
+.dial-key { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 10px 0 0; padding: 0; list-style: none; max-width: 1100px; }
+.dial-key li { border-top: 1px solid var(--rule); padding-top: 12px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+.dial-key b { display: block; font: 500 11px/1.6 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--text); margin-bottom: 4px; }
+
+/* sticky control strip */
+.controls { position: sticky; top: 0; z-index: 20; background: var(--ink); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.controls .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; padding-top: 10px; padding-bottom: 10px; }
+.group { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.group > .lab { font: 500 10.5px var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--rule); }
 .seg input { position: absolute; opacity: 0; pointer-events: none; }
-.seg label { padding: 6px 12px; font: 500 14px var(--body); cursor: pointer; color: var(--muted); border-right: 1px solid var(--rule); }
+.seg label { padding: 7px 12px 6px; font: 500 11px/1.4 var(--mono); letter-spacing: .16em; text-transform: uppercase; cursor: pointer; color: var(--muted); border-right: 1px solid var(--rule); }
 .seg label:last-of-type { border-right: 0; }
-.seg input:checked + label { background: var(--leader); color: #1A1406; }
-.seg input:focus-visible + label { outline: 2px solid var(--leader); outline-offset: -2px; }
-button { font: 500 14px var(--body); color: var(--text); background: #26262D; border: 1px solid #3A3A44; border-radius: 7px; padding: 6px 12px; cursor: pointer; }
-button:hover { background: #2E2E36; }
-button[aria-pressed="true"] { background: var(--leader); color: #1A1406; border-color: var(--leader); }
+.seg input:checked + label { background: var(--navy); color: #fff; box-shadow: inset 0 -2px 0 var(--bright); }
+.seg input:focus-visible + label { outline: 2px solid var(--bright); outline-offset: -2px; }
+button { font: 500 11px/1.4 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--text); background: transparent; border: 1px solid var(--rule); border-radius: 0; padding: 7px 12px 6px; cursor: pointer; }
+button:hover { border-color: var(--blue); color: #fff; }
+button[aria-pressed="true"] { background: var(--navy); color: #fff; border-color: var(--rule); box-shadow: inset 0 -2px 0 var(--bright); }
 .fams { display: flex; flex-wrap: wrap; gap: 6px; }
-.fams button { padding: 5px 10px; font-size: 13px; }
-.ps { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); cursor: pointer; }
-.ps input { accent-color: var(--leader); width: 16px; height: 16px; }
+.fams button { padding: 6px 10px 5px; }
+.ps { display: inline-flex; align-items: center; gap: 8px; font: 500 11px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); cursor: pointer; }
+.ps input { accent-color: var(--blue); width: 15px; height: 15px; margin: 0; }
 
-.index { display: flex; flex-wrap: wrap; gap: 6px; padding: 18px 0 8px; margin: 0; list-style: none; }
-.index a { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; color: var(--text); font: 500 12px var(--mono); padding: 5px 9px 5px 6px; border: 1px solid var(--rule); border-radius: 6px; }
-.index a:hover { border-color: var(--leader); }
-.index i { width: 18px; height: 18px; border-radius: 3px; background: linear-gradient(135deg, var(--b) 0 55%, var(--c) 55% 100%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .15); }
+/* theme index */
+.index { display: flex; flex-wrap: wrap; gap: 6px; padding: 28px 0 8px; margin: 0; list-style: none; }
+.index a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text); font: 500 11.5px var(--mono); letter-spacing: .04em; padding: 6px 10px 6px 6px; border: 1px solid var(--rule-soft); }
+.index a:hover { border-color: var(--bright); color: #fff; }
+.index i { width: 16px; height: 16px; background: linear-gradient(135deg, var(--b) 0 55%, var(--c) 55% 100%); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .15); }
 
-.fam-head { margin: 34px 0 12px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
-.fam-head h2 { margin: 0; font: 600 26px/1.1 var(--display); }
-.fam-head p { margin: 0; color: var(--muted); font-size: 15px; }
-.plates { display: grid; gap: 18px; }
-.plate { display: grid; grid-template-columns: 1fr; background: var(--panel); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; scroll-margin-top: 76px; }
-.stage { background: #101013; }
+/* families and plates */
+section[data-fam-block] { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 28px; }
+.fam-head { margin: 0 0 22px; display: grid; gap: 6px; }
+.fam-head h2 { margin: 0; font: 300 clamp(30px, 3.4vw, 42px)/1.05 var(--serif); color: #fff; }
+.fam-head p:not(.slate) { margin: 0; color: var(--muted); font: italic 300 19px/1.45 var(--serif); max-width: 70ch; }
+.plates { display: grid; gap: 24px; }
+.plate { display: grid; grid-template-columns: 1fr; background: var(--navy); border: 1px solid var(--rule); scroll-margin-top: 96px; }
+.stage { background: var(--ink); }
 .screen { position: relative; background: var(--p-bg); aspect-ratio: 16 / 9; }
 .screen canvas { display: block; width: 100%; height: 100%; }
-.beats { display: flex; gap: 6px; padding: 8px; border-top: 1px solid var(--rule); }
+.beats { display: flex; gap: 6px; padding: 8px; border-top: 1px solid var(--rule); background: var(--deep); }
 .beats:empty { display: none; }
-.beat { flex: 1 1 0; min-width: 0; position: relative; overflow: hidden; display: flex; gap: 8px; align-items: baseline; text-align: left; padding: 7px 10px 10px; font: 500 13px/1.2 var(--body); color: var(--muted); background: #1A1A1F; border: 1px solid #2E2E36; border-radius: 6px; }
-.beat:hover { background: #222229; }
-.beat .slot { flex: none; font: 500 11px var(--mono); color: var(--leader); }
+.beat { flex: 1 1 0; min-width: 0; position: relative; overflow: hidden; display: flex; gap: 8px; align-items: baseline; text-align: left; padding: 8px 10px 10px; font: 400 13px/1.25 var(--sans); letter-spacing: 0; text-transform: none; color: var(--muted); background: transparent; border: 1px solid var(--rule-soft); }
+.beat:hover { border-color: var(--rule); color: var(--text); }
+.beat .slot { flex: none; font: 500 10.5px var(--mono); letter-spacing: .12em; color: var(--blue); }
 .beat .bl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.beat i { position: absolute; left: 0; bottom: 0; height: 3px; width: calc(var(--p, 0) * 100%); background: var(--leader); }
-.beat.on { color: var(--text); background: #24242B; border-color: #4A4A55; }
-.lvl-flag { position: absolute; top: 10px; right: 10px; font: 500 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #fff; background: rgba(12, 12, 14, .74); border: 1px solid rgba(255, 255, 255, .16); padding: 6px 8px; border-radius: 5px; }
-.lvl-flag.capped { border-color: var(--leader); }
-.spec { padding: 20px 22px 22px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1fr); gap: 18px 28px; border-top: 1px solid var(--rule); }
-.col { display: grid; gap: 12px; align-content: start; min-width: 0; }
-.spec h3 { margin: 0; font-size: 30px; line-height: 1.08; letter-spacing: .02em; color: var(--text); text-wrap: balance; overflow-wrap: anywhere; }
-.feel { margin: 0; font-size: 16px; line-height: 1.4; }
+.beat i { position: absolute; left: 0; bottom: 0; height: 2px; width: calc(var(--p, 0) * 100%); background: var(--bright); }
+.beat.on { color: #fff; background: var(--navy); border-color: var(--rule); }
+.lvl-flag { position: absolute; top: 10px; right: 10px; font: 500 10.5px/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: #fff; background: rgba(10, 10, 10, .8); border: 1px solid rgba(255, 255, 255, .18); padding: 7px 9px; }
+.lvl-flag.capped { border-color: var(--copper); }
+.spec { padding: 24px 26px 26px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1fr); gap: 20px 32px; border-top: 1px solid var(--rule); }
+.col { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.spec .slate { color: var(--bright); }
+.spec h3 { margin: 0; font-size: 30px; line-height: 1.08; letter-spacing: .02em; color: #fff; text-wrap: balance; overflow-wrap: anywhere; }
+.feel { margin: 0; font: italic 300 19px/1.4 var(--serif); color: var(--text); }
 .badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
-.badges li { font: 500 11px/1 var(--mono); padding: 5px 8px; border-radius: 999px; border: 1px solid #3C3C46; color: var(--text); }
-.badges .b-native, .badges .b-board, .badges .b-news { border-color: #3E6B57; color: #BFE6D2; }
-.badges .b-temp { border-color: #7A6A3A; color: #F1DDA6; }
-.badges .b-avoid { border-color: #7A3E3E; color: #F2C0C0; }
-.sub { font: 500 10px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.badges li { font: 500 10.5px/1 var(--mono); letter-spacing: .08em; padding: 6px 8px; border: 1px solid var(--rule); color: var(--text); }
+.badges .b-native, .badges .b-board, .badges .b-news { border-color: var(--sage); color: #CFE9DB; }
+.badges .b-temp { border-color: var(--stone); color: #E6DFD5; }
+.badges .b-avoid { border-color: var(--copper); color: #F5CDBD; }
+.sub { font: 500 10px/1 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--faint); margin: 0 0 8px; }
 .swatches { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
 .sw { display: grid; gap: 3px; min-width: 0; }
-.sw i { display: block; height: 30px; border-radius: 5px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .14); }
-.sw span { font: 400 10px var(--mono); color: var(--muted); }
+.sw i { display: block; height: 30px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .16); }
+.sw span { font: 400 10px var(--mono); color: var(--faint); }
 .sw code { font: 500 11px var(--mono); color: var(--text); }
-.type { margin: 0; display: grid; gap: 5px; }
-.type div { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-bottom: 1px dashed var(--rule); padding-bottom: 5px; min-width: 0; }
-.type dt { font: 400 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); flex: none; }
+.type { margin: 0; display: grid; gap: 6px; }
+.type div { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-bottom: 1px solid var(--rule-soft); padding-bottom: 6px; min-width: 0; }
+.type dt { font: 400 10px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--faint); flex: none; }
 .type dd { margin: 0; font-size: 18px; line-height: 1.2; text-align: right; overflow-wrap: anywhere; }
-.motion { margin: 0; font: 400 12px/1.5 var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.motion { margin: 0; font: 400 12px/1.6 var(--mono); color: var(--muted); overflow-wrap: anywhere; }
 .motion b { font-weight: 500; color: var(--text); }
 .essence { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
-.essence li { font-size: 13px; padding: 2px 8px; border-radius: 4px; border: 1px solid var(--p-ring); background: var(--p-tint); }
-.board { margin: 0; font-size: 14px; line-height: 1.45; color: var(--muted); padding: 8px 10px; border-left: 3px solid var(--rule); border-radius: 0 6px 6px 0; }
+.essence li { font-size: 13px; padding: 2px 8px; border: 1px solid var(--p-ring); color: var(--text); }
+.board { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--muted); padding: 2px 0 2px 14px; border-left: 2px solid var(--rule); }
 .board b { color: var(--text); font-weight: 600; }
-body.lvl-2 .board { color: var(--text); border-left-color: var(--leader); background: rgba(231, 178, 74, .09); }
+body.lvl-2 .board { color: var(--text); border-left-color: var(--bright); }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.copied { font: 400 12px var(--mono); color: var(--leader); min-height: 1em; }
-details summary { cursor: pointer; font: 500 12px var(--mono); color: var(--muted); }
-details pre { margin: 8px 0 0; overflow-x: auto; font: 400 12px/1.55 var(--mono); background: #101013; border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; color: #DCDAD2; }
-.foot { margin: 40px 0 0; padding: 22px 0 40px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; display: grid; gap: 6px; }
-.foot p { margin: 0; max-width: 90ch; }
+.copied { font: 400 12px var(--mono); color: var(--bright); min-height: 1em; }
+details summary { cursor: pointer; font: 500 10.5px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+details pre { margin: 10px 0 0; overflow-x: auto; font: 400 12px/1.6 var(--mono); background: var(--ink); border: 1px solid var(--rule); padding: 12px 14px; color: #DCE3EA; }
 
+/* about */
+.about { margin-top: 96px; border-top: 1px solid var(--rule); padding-top: 60px; scroll-margin-top: 80px; }
+.about-head { display: grid; gap: 16px; max-width: 980px; }
+.about h2 { margin: 0; font: 300 clamp(36px, 4.6vw, 60px)/1.04 var(--serif); color: #fff; text-wrap: balance; }
+.numbers { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin: 48px 0 0; padding: 0; list-style: none; }
+.numbers li { border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; align-content: start; }
+.numbers b { font: 300 60px/.95 var(--serif); font-variant-numeric: tabular-nums lining-nums; color: #fff; }
+.numbers span { font: 500 10.5px/1.6 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--bright); }
+.numbers p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.5; }
+.cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 32px; margin-top: 60px; }
+.cols > div { border-top: 1px solid var(--rule); padding-top: 16px; }
+.cols h3, .lab-block h3 { margin: 0 0 10px; font: 500 11px/1.6 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--text); }
+.cols p { margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: var(--muted); }
+.rules { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.rules li { font-size: 15px; line-height: 1.5; color: var(--muted); padding-left: 1.3em; position: relative; }
+.rules li::before { content: ""; position: absolute; left: 0; top: .5em; width: .5em; height: .62em; background: var(--blue); clip-path: polygon(0 0, 100% 50%, 0 100%); }
+.lab-block { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px 32px; margin-top: 60px; border-top: 1px solid var(--rule); padding-top: 24px; }
+.lab-block .big { margin: 0; font: 300 clamp(24px, 2.6vw, 32px)/1.3 var(--serif); color: var(--text); max-width: 40ch; }
+.lab-block .pillars { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+.lab-block .pillars b { display: block; font: 500 10.5px/1.6 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--bright); }
+.lab-block .pillars span { font-size: 14.5px; line-height: 1.5; color: var(--muted); }
+
+/* colophon */
+.colophon { margin-top: 96px; border-top: 1px solid var(--rule); }
+.colophon > .wrap { display: grid; grid-template-columns: auto minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: 28px 40px; padding-top: 40px; padding-bottom: 40px; align-items: start; }
+.colophon h4 { margin: 0 0 10px; font: 500 10.5px/1.6 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--faint); }
+.colophon p { margin: 0 0 8px; font-size: 14px; line-height: 1.55; color: var(--muted); }
+.colophon .title { font: 300 26px/1.15 var(--serif); color: #fff; margin-bottom: 10px; }
+.colophon .tag { font: italic 300 19px/1.4 var(--serif); color: var(--text); }
+.colophon ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.colophon li a { font: 500 11px/1.6 var(--mono); letter-spacing: .16em; text-transform: uppercase; text-decoration: none; color: var(--text); }
+.colophon li a:hover { color: #fff; text-decoration: underline; }
+.colophon .badge { width: 120px; }
+
+@media (max-width: 1180px) {
+  :root { --pad: 40px; }
+  .colophon > .wrap { grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr); }
+  .colophon .wrap > :last-child { grid-column: 2 / -1; }
+}
 @media (max-width: 1040px) {
   .spec { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .spec .col:first-child { grid-column: 1 / -1; }
+  .numbers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cols { grid-template-columns: 1fr 1fr; }
+  .lab-block { grid-template-columns: 1fr; }
 }
-@media (max-width: 640px) {
-  .wrap { padding: 0 16px; }
-  .dial-key { grid-template-columns: 1fr; }
+@media (max-width: 720px) {
+  :root { --pad: 18px; }
+  .dial-key { grid-template-columns: 1fr; gap: 14px; }
   .swatches { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .spec h3 { font-size: 24px; }
-  .spec { grid-template-columns: 1fr; }
+  .spec { grid-template-columns: 1fr; padding: 20px 18px; }
   .beat .bl { display: none; }
   .beat.on .bl { display: inline; }
+  .cols { grid-template-columns: 1fr; }
+  .numbers b { font-size: 48px; }
+  .colophon > .wrap { grid-template-columns: 1fr; }
+  .colophon .wrap > :last-child { grid-column: auto; }
+  .strip .wrap { letter-spacing: .2em; }
+  .controls .wrap { gap: 8px 14px; padding-top: 8px; padding-bottom: 8px; }
+  .group:has(.fams) { flex-wrap: nowrap; min-width: 0; max-width: 100%; }
+  .fams { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+  .fams::-webkit-scrollbar { display: none; }
+  .fams button { white-space: nowrap; }
 }
 </style>
 </head>
 <body>
-<header class="wrap mast">
-  <p class="slate">BHIL &middot; Stagehand Theme Codex &middot; STC v1.0 &middot; reel</p>
-  <h1>Stagehand Theme Reel</h1>
-  <p class="lead">Twenty motion themes from the Stagehand Theme Codex, each running as a directed loop through its slot map: hero signature, signature transition, data skin and micro-interaction. Turn the dial to see how a theme holds up in a boardroom, click a beat to jump to it, then copy the tokens or prompt seed into an agent brief.</p>
-  <ul class="dial-key">
-    <li><b>Full</b>Everything on the card: glitch, flicker, stutter and stepped frames, within the safety limits.</li>
-    <li><b>Tempered</b>The signature scene stays; glitch-type effects drop to short accents.</li>
-    <li><b>Boardroom</b>The B2B version. Themes without one play at Tempered and say so on the stage.</li>
-  </ul>
-  <p class="note">Every frame runs through a film pipeline tuned per theme: color grade, bloom and halation, volumetric light, lens dirt, edge chromatic aberration, grain and a focus pull on each cut. Every theme charts the same sample dataset, so data skins compare directly, and each data beat tells the same story in its own style: the chart builds, the insight lands (average line, callout, highlighted leader), then the data re-sorts and ranks. All numbers are placeholders. Codenames only: no franchise names, logos, characters or quotes.</p>
+<a class="skip" href="#reel">Skip to the reel</a>
+
+<div class="strip top">
+  <div class="wrap"><span>Barry Hurd Intelligence Lab &middot; <b>Reel</b></span><span>Ref &middot; STC v1.0 / Reel v5 / Release {{VERSION}}</span></div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="badge" href="{{SITE}}" target="_blank" rel="noopener" aria-label="Barry Hurd Intelligence Lab, barryhurd.com">
+      {{BADGE}}
+    </a>
+    <nav aria-label="Site">
+      <ul class="nav">
+        <li><a href="#reel">Reel</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="ext" href="{{REPO}}/tree/main/docs" target="_blank" rel="noopener">Docs</a></li>
+        <li><a class="ext" href="{{REPO}}" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a class="ext" href="{{SITE}}" target="_blank" rel="noopener">barryhurd.com</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<section class="mast" aria-labelledby="title">
+  <div class="wrap">
+    <p class="eyebrow chev">Stagehand Theme Codex &middot; STC v1.0 &middot; live reel</p>
+    <h1 id="title">Stagehand Theme Reel</h1>
+    <p class="dek">Twenty motion themes for the agents that build pages, reels and decks, each running live at three volumes.</p>
+    <p class="lead">Every theme plays as a directed loop through its slot map: hero signature, signature transition, data skin and micro-interaction. Turn the dial to see how a theme holds up in a boardroom, click a beat to jump to it, then copy the tokens or the prompt seed into an agent brief.</p>
+    <ul class="dial-key">
+      <li><b>Full</b>Everything on the card: glitch, flicker, stutter and stepped frames, within the safety limits.</li>
+      <li><b>Tempered</b>The signature scene stays; glitch-type effects drop to short accents.</li>
+      <li><b>Boardroom</b>The B2B version. Themes without one play at Tempered and say so on the stage.</li>
+    </ul>
+  </div>
+</section>
 
 <div class="controls">
   <div class="wrap">
@@ -164,18 +284,115 @@ details pre { margin: 8px 0 0; overflow-x: auto; font: 400 12px/1.55 var(--mono)
   </div>
 </div>
 
-<main class="wrap">
+<main class="wrap" id="reel" tabindex="-1">
   <ul class="index" aria-label="Jump to a theme">
 {{INDEX}}
   </ul>
 {{PLATES}}
-  <footer class="foot">
-    <p>Built from the <a href="https://polymathwizard.github.io/BHIL-Stagehand-Theme-Reel/">Stagehand Theme Codex</a> (STC v1.0) in <a href="https://github.com/PolymathWizard/BHIL-Stagehand-Theme-Reel">BHIL-Stagehand-Theme-Reel</a>. The codex canon is the source of truth for every token, rule and guardrail; this reel is generated from it. Barry Hurd Intelligence Lab &middot; <a href="https://barryhurd.com">barryhurd.com</a>.</p>
-    <p>Motion plays on load and the Pause button stops all of it. Flashes stay under three per second. All fonts are open-license and inlined, so the page runs with no outside requests.</p>
-  </footer>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="about-head">
+      <p class="eyebrow chev">About the reel</p>
+      <h2 id="about-title">A screening room for the Stagehand Theme Codex.</h2>
+      <p class="dek">The codex is the rulebook. This page is the proof that every rule renders.</p>
+    </div>
+    <ul class="numbers">
+      <li><b>20</b><span>Themes</span><p>Original treatments of film, TV and game genres, each with tokens, open-license fonts, a motion grammar and a prompt seed.</p></li>
+      <li><b>5</b><span>Families</span><p>Digital Frontier, Retro Signal, Epic Cinema, Worlds and Maps, Auteur and Title.</p></li>
+      <li><b>3</b><span>Volumes</span><p>Full, Tempered and Boardroom, set per theme from its B2B fit.</p></li>
+      <li><b>16</b><span>Film passes</span><p>Grade, bloom, halation, volumetric light, lens dirt, aberration, grain and a focus pull on each cut.</p></li>
+    </ul>
+    <div class="cols">
+      <div>
+        <h3>What it is</h3>
+        <p>The Stagehand Theme Codex gives page, reel and deck agents twenty motion themes. Each one is a card: tokens, fonts, a motion grammar, a web slot map, a data skin, a Boardroom translation and guardrails.</p>
+        <p>This page runs every card live, so you can judge a theme before you brief an agent with it.</p>
+      </div>
+      <div>
+        <h3>How to use it</h3>
+        <p>Filter by family or jump to a theme. Turn the dial to see what survives in a boardroom. Click a beat to jump to that slot.</p>
+        <p>Copy the tokens or the prompt seed into your brief. In the repository, the fit test picks between themes from five essence words and the shape of your data.</p>
+      </div>
+      <div>
+        <h3>How it is built</h3>
+        <p>One self-contained file. Every font is open-license and inlined, and nothing loads from the network.</p>
+        <p>Every theme charts the same placeholder dataset in its S4 beat: the chart builds, the insight lands, then the data re-sorts and ranks, so data skins compare directly.</p>
+      </div>
+    </div>
+    <div class="cols">
+      <div>
+        <h3>Rules it keeps</h3>
+        <ul class="rules">
+          <li>Codenames only: no franchise names, logos, characters or quotes.</li>
+          <li>Three flashes a second at most; ambient flicker at 3% opacity and 2 Hz at most; no full-frame flashes.</li>
+          <li>Theme ink at 11:1 contrast or better, measured.</li>
+          <li>All figures in the data beats are placeholders.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Controls</h3>
+        <ul class="rules">
+          <li>Motion plays on load. Pause motion stops all of it.</li>
+          <li>Boardroom swaps in each theme's B2B translation; themes without one say so on the stage.</li>
+          <li>The 2.39 letterbox previews a theme in a cinema frame.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>Code under MIT, content under CC BY 4.0, fonts under SIL OFL 1.1 or Apache 2.0. Canon, docs, agents, prompts, figures and gates live in the repository.</p>
+        <p><a href="{{REPO}}" target="_blank" rel="noopener">BHIL-Stagehand-Theme-Reel on GitHub</a></p>
+      </div>
+    </div>
+    <div class="lab-block">
+      <div>
+        <h3>About BHIL</h3>
+        <p class="big">Barry Hurd Intelligence Lab turns raw signal into decision-grade intelligence: briefs, advisory memos and decks built by a human analyst directing AI instruments.</p>
+      </div>
+      <ul class="pillars">
+        <li><b>Human-directed</b><span>An analyst owns every claim. AI accelerates the work; it never signs it.</span></li>
+        <li><b>AI-enabled</b><span>Instruments do the listening and sorting, at a scale one person could not reach alone.</span></li>
+        <li><b>Commercially tested</b><span>Findings are priced against real decisions. If it would not survive a client call, it does not ship.</span></li>
+      </ul>
+    </div>
+  </section>
 </main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <a class="badge" href="{{SITE}}" target="_blank" rel="noopener" aria-label="Barry Hurd Intelligence Lab, barryhurd.com">
+      {{BADGE}}
+    </a>
+    <div>
+      <p class="title">Stagehand Theme Reel</p>
+      <p>STC v1.0 &middot; Reel v5 &middot; Release {{VERSION}} &middot; {{RELEASED}}</p>
+      <p>Generated from the codex canon, the source of truth for every token, rule and guardrail. Every theme is an original treatment of a genre.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#reel">The reel</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="{{REPO}}" target="_blank" rel="noopener">GitHub repository</a></li>
+        <li><a href="{{REPO}}/tree/main/docs" target="_blank" rel="noopener">Codex docs</a></li>
+        <li><a href="{{SITE}}" target="_blank" rel="noopener">barryhurd.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>License</h4>
+      <p>Code: MIT. Content: CC BY 4.0. Fonts: SIL OFL 1.1 or Apache 2.0.</p>
+      <p class="tag">Human-directed. AI-enabled. Commercially tested.</p>
+    </div>
+  </div>
+  <div class="strip bottom">
+    <div class="wrap"><span>&copy; 2026 &middot; Barry Hurd Intelligence Lab &middot; <b>barryhurd.com</b></span><span>MIT code &middot; CC BY 4.0 content</span></div>
+  </div>
+</footer>
 <script>
 {{SCRIPTS}}
+</script>
+<script>
+/* shell only: stop the badge cursor with the rest of the motion */
+document.getElementById('motion').addEventListener('click', () => document.body.classList.toggle('paused', !window.__reel.state.playing));
 </script>
 </body>
 </html>
