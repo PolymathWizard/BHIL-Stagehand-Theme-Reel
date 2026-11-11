@@ -1,0 +1,353 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">STC-01 · Twenty themes. One stage.</title>
+<desc id="d">Masthead for the Stagehand Theme Codex. Twenty motion themes in five families, each tile showing its codename, five-color palette, home register and B2B fit. Counts: 20 themes, 5 families, 3 intensity levels, 5 web slots, 1 sample dataset, 0 outside requests.</desc>
+<style>
+@font-face{font-family:'IBM Plex Mono';font-weight:400;font-style:normal;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-weight:500;font-style:normal;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'IBM Plex Sans';font-weight:400;font-style:normal;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'Newsreader';font-weight:400;font-style:normal;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:'Newsreader';font-weight:400;font-style:italic;src:url(data:font/woff2;base64,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) format('woff2')}
+.f-mono{font-family:'IBM Plex Mono','Courier New', monospace;font-weight:400;font-style:normal}
+.f-mono5{font-family:'IBM Plex Mono','Courier New', monospace;font-weight:500;font-style:normal}
+.f-sans{font-family:'IBM Plex Sans',Arial, Helvetica, sans-serif;font-weight:400;font-style:normal}
+.f-serif{font-family:'Newsreader',Georgia, 'Times New Roman', serif;font-weight:400;font-style:normal}
+.f-serifi{font-family:'Newsreader',Georgia, 'Times New Roman', serif;font-weight:400;font-style:italic}
+@keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes hl20{0%,4.99%{opacity:1}5%,100%{opacity:0}}
+.am{opacity:0}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.am{display:none}}
+</style>
+<rect width="1600" height="900" fill="#0D1B2E"/>
+<rect width="1600" height="56" fill="#0A0A0A"/>
+<line x1="0" y1="56.5" x2="1600" y2="56.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="72" y="34" class="f-mono5" font-size="13" fill="#6CC0E8" letter-spacing="1.82">BARRY HURD INTELLIGENCE LAB · STAGEHAND</text>
+<text x="1528" y="34" class="f-mono" font-size="13" fill="#F3F3F0" letter-spacing="1.82" text-anchor="end" opacity="0.72">REF STC V1.0 / REEL V5 · FIG STC-01</text>
+<path d="M72 101.5L80.25 107L72 112.5Z" fill="#4FA3D1"/>
+<text x="92" y="112" class="f-mono5" font-size="15" fill="#4FA3D1" letter-spacing="2.4">STAGEHAND THEME CODEX · STC V1.0</text>
+<text x="72" y="176" class="f-serif" font-size="52" fill="#FFFFFF">Twenty themes. One stage.</text>
+<text x="72" y="216" class="f-serifi" font-size="22" fill="#F3F3F0" opacity="0.8">Motion themes that page, reel and deck agents can wear, at three volumes.</text>
+<line x1="72" y1="262.5" x2="280" y2="262.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="72" y="336" class="f-serif" font-size="72" fill="#FFFFFF">20</text>
+<text x="72" y="364" class="f-mono5" font-size="13" fill="#4FA3D1" letter-spacing="1.82">THEMES</text>
+<line x1="304" y1="262.5" x2="512" y2="262.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="304" y="336" class="f-serif" font-size="72" fill="#FFFFFF">5</text>
+<text x="304" y="364" class="f-mono5" font-size="13" fill="#4FA3D1" letter-spacing="1.82">FAMILIES</text>
+<line x1="72" y1="384.5" x2="280" y2="384.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="72" y="458" class="f-serif" font-size="72" fill="#FFFFFF">3</text>
+<text x="72" y="486" class="f-mono5" font-size="13" fill="#4FA3D1" letter-spacing="1.82">INTENSITY LEVELS</text>
+<line x1="304" y1="384.5" x2="512" y2="384.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="304" y="458" class="f-serif" font-size="72" fill="#FFFFFF">5</text>
+<text x="304" y="486" class="f-mono5" font-size="13" fill="#4FA3D1" letter-spacing="1.82">WEB SLOTS</text>
+<line x1="72" y1="506.5" x2="280" y2="506.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="72" y="580" class="f-serif" font-size="72" fill="#FFFFFF">1</text>
+<text x="72" y="608" class="f-mono5" font-size="13" fill="#4FA3D1" letter-spacing="1.82">SAMPLE DATASET</text>
+<line x1="304" y1="506.5" x2="512" y2="506.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="304" y="580" class="f-serif" font-size="72" fill="#FFFFFF">0</text>
+<text x="304" y="608" class="f-mono5" font-size="13" fill="#4FA3D1" letter-spacing="1.82">OUTSIDE REQUESTS</text>
+<text x="72" y="650" class="f-sans" font-size="16" fill="#F3F3F0" opacity="0.82">Inspired by genres, never copied from them. Public copy</text>
+<text x="72" y="673" class="f-sans" font-size="16" fill="#F3F3F0" opacity="0.82">uses codenames only, and every number on screen is a</text>
+<text x="72" y="696" class="f-sans" font-size="16" fill="#F3F3F0" opacity="0.82">labeled placeholder.</text>
+<circle cx="72" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9" style="animation:tw 6s ease-in-out infinite;animation-delay:0s"/>
+<circle cx="90" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="108" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="126" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="144" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="162" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="180" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="198" cy="742" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="216" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="234" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="252" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="270" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5" style="animation:tw 6s ease-in-out infinite;animation-delay:0.9s"/>
+<circle cx="288" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="306" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="324" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="342" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="360" cy="742" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="378" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="396" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="414" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="432" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="450" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="468" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2" style="animation:tw 6s ease-in-out infinite;animation-delay:1.8s"/>
+<circle cx="486" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="504" cy="742" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="72" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="90" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="108" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="126" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="144" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="162" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="180" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9" style="animation:tw 6s ease-in-out infinite;animation-delay:2.7s"/>
+<circle cx="198" cy="760" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="216" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="234" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="252" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="270" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="288" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="306" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="324" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="342" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="360" cy="760" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="378" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2" style="animation:tw 6s ease-in-out infinite;animation-delay:3.6s"/>
+<circle cx="396" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="414" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="432" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="450" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="468" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="486" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="504" cy="760" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="72" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="90" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9" style="animation:tw 6s ease-in-out infinite;animation-delay:4.5s"/>
+<circle cx="108" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="126" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="144" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="162" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="180" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="198" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="216" cy="778" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="234" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="252" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="270" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="288" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5" style="animation:tw 6s ease-in-out infinite;animation-delay:0s"/>
+<circle cx="306" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="324" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="342" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="360" cy="778" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="378" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="396" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="414" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="432" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="450" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="468" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="486" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2" style="animation:tw 6s ease-in-out infinite;animation-delay:0.9s"/>
+<circle cx="504" cy="778" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="72" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="90" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="108" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="126" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="144" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="162" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="180" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="198" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9" style="animation:tw 6s ease-in-out infinite;animation-delay:1.8s"/>
+<circle cx="216" cy="796" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="234" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="252" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="270" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="288" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="306" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="324" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="342" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="360" cy="796" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="378" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="396" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2" style="animation:tw 6s ease-in-out infinite;animation-delay:2.7s"/>
+<circle cx="414" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="432" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="450" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="468" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="486" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="504" cy="796" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="72" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="90" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="108" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9" style="animation:tw 6s ease-in-out infinite;animation-delay:3.6s"/>
+<circle cx="126" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="144" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="162" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="180" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="198" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="216" cy="814" r="1.7" fill="#4FA3D1" opacity="0.9"/>
+<circle cx="234" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="252" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="270" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="288" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="306" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5" style="animation:tw 6s ease-in-out infinite;animation-delay:4.5s"/>
+<circle cx="324" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="342" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="360" cy="814" r="1.7" fill="#4FA3D1" opacity="0.5"/>
+<circle cx="378" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="396" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="414" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="432" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="450" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="468" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="486" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2"/>
+<circle cx="504" cy="814" r="1.7" fill="#4FA3D1" opacity="0.2" style="animation:tw 6s ease-in-out infinite;animation-delay:0s"/>
+<text x="560" y="292" class="f-serif" font-size="36" fill="#6CC0E8">A</text>
+<text x="560" y="316" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">DIGITAL</text>
+<text x="560" y="332" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">FRONTIER</text>
+<rect x="668" y="252" width="164" height="100" fill="#02040A" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="668" y="252" width="54.67" height="6" fill="#00E5FF"/>
+<rect x="722.67" y="252" width="54.67" height="6" fill="#FF6A00"/>
+<rect x="777.33" y="252" width="54.67" height="6" fill="#1E6F8C"/>
+<text x="680" y="284" class="f-mono5" font-size="11" fill="#00E5FF" letter-spacing="1.1">TX-01</text>
+<text x="680" y="310" class="f-mono5" font-size="13" fill="#E6FDFF" letter-spacing="0.52">VECTOR GRID</text>
+<text x="680" y="336" class="f-mono" font-size="9.5" fill="#E6FDFF" letter-spacing="0.38" opacity="0.66">CREATIVE · B2B VERSION</text>
+<rect x="664" y="248" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:0s"/>
+<rect x="842" y="252" width="164" height="100" fill="#000500" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="842" y="252" width="54.67" height="6" fill="#00FF41"/>
+<rect x="896.67" y="252" width="54.67" height="6" fill="#008F11"/>
+<rect x="951.33" y="252" width="54.67" height="6" fill="#7FA8C9"/>
+<text x="854" y="284" class="f-mono5" font-size="11" fill="#00FF41" letter-spacing="1.1">TX-02</text>
+<text x="854" y="310" class="f-mono5" font-size="13" fill="#C8F5CF" letter-spacing="0.52">PHOSPHOR RAIN</text>
+<text x="854" y="336" class="f-mono" font-size="9.5" fill="#C8F5CF" letter-spacing="0.38" opacity="0.66">CREATIVE · B2B VERSION</text>
+<rect x="838" y="248" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:1.2s"/>
+<rect x="1016" y="252" width="164" height="100" fill="#050B14" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1016" y="252" width="54.67" height="6" fill="#6FE3FF"/>
+<rect x="1070.67" y="252" width="54.67" height="6" fill="#F5A623"/>
+<rect x="1125.33" y="252" width="54.67" height="6" fill="#FF3B5C"/>
+<text x="1028" y="284" class="f-mono5" font-size="11" fill="#6FE3FF" letter-spacing="1.1">TX-03</text>
+<text x="1028" y="310" class="f-mono5" font-size="13" fill="#E8F4FF" letter-spacing="0.52">GLASS HUD</text>
+<text x="1028" y="336" class="f-mono" font-size="9.5" fill="#E8F4FF" letter-spacing="0.38" opacity="0.66">B2B · RUNS AT BOARDROOM</text>
+<rect x="1012" y="248" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:2.4s"/>
+<rect x="1190" y="252" width="164" height="100" fill="#05070B" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1190" y="252" width="54.67" height="6" fill="#FF8A1F"/>
+<rect x="1244.67" y="252" width="54.67" height="6" fill="#FF2E88"/>
+<rect x="1299.33" y="252" width="54.67" height="6" fill="#3FD0E0"/>
+<text x="1202" y="284" class="f-mono5" font-size="11" fill="#FF8A1F" letter-spacing="1.1">TX-04</text>
+<text x="1202" y="310" class="f-mono5" font-size="13" fill="#D9E2E8" letter-spacing="0.52">RAINLIGHT NOIR</text>
+<text x="1202" y="336" class="f-mono" font-size="9.5" fill="#D9E2E8" letter-spacing="0.38" opacity="0.66">EDITORIAL · B2B VERSION</text>
+<rect x="1186" y="248" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:3.6s"/>
+<text x="560" y="408" class="f-serif" font-size="36" fill="#6CC0E8">B</text>
+<text x="560" y="432" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">RETRO</text>
+<text x="560" y="448" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">SIGNAL</text>
+<rect x="668" y="368" width="164" height="100" fill="#000000" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="668" y="368" width="54.67" height="6" fill="#FF00A8"/>
+<rect x="722.67" y="368" width="54.67" height="6" fill="#00F0FF"/>
+<rect x="777.33" y="368" width="54.67" height="6" fill="#FFE600"/>
+<text x="680" y="400" class="f-mono5" font-size="11" fill="#FF00A8" letter-spacing="1.1">TX-05</text>
+<text x="680" y="426" class="f-mono5" font-size="12.5" fill="#FFFFFF" letter-spacing="0.5">STUTTER BROADCAST</text>
+<text x="680" y="452" class="f-mono" font-size="10.5" fill="#FFFFFF" letter-spacing="0.42" opacity="0.66">CREATIVE · NEWS DESK</text>
+<rect x="664" y="364" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:4.8s"/>
+<rect x="842" y="368" width="164" height="100" fill="#070608" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="842" y="368" width="54.67" height="6" fill="#E0303A"/>
+<rect x="896.67" y="368" width="54.67" height="6" fill="#8DA3B5"/>
+<rect x="951.33" y="368" width="54.67" height="6" fill="#FF5A4E"/>
+<text x="854" y="400" class="f-mono5" font-size="11" fill="#E0303A" letter-spacing="1.1">TX-06</text>
+<text x="854" y="426" class="f-mono5" font-size="13" fill="#F2E6C9" letter-spacing="0.52">OTHERSIDE ’83</text>
+<text x="854" y="452" class="f-mono" font-size="9.5" fill="#F2E6C9" letter-spacing="0.38" opacity="0.66">CREATIVE · TEMPERED MAX</text>
+<rect x="838" y="364" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:6s"/>
+<rect x="1016" y="368" width="164" height="100" fill="#0B0420" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1016" y="368" width="54.67" height="6" fill="#FF2A6D"/>
+<rect x="1070.67" y="368" width="54.67" height="6" fill="#05D9E8"/>
+<rect x="1125.33" y="368" width="54.67" height="6" fill="#FFB86C"/>
+<text x="1028" y="400" class="f-mono5" font-size="11" fill="#FF2A6D" letter-spacing="1.1">TX-07</text>
+<text x="1028" y="426" class="f-mono5" font-size="13" fill="#F3E8FF" letter-spacing="0.52">NIGHT DRIVE</text>
+<text x="1028" y="452" class="f-mono" font-size="9.5" fill="#F3E8FF" letter-spacing="0.38" opacity="0.66">CREATIVE · NOT FOR B2B</text>
+<rect x="1012" y="364" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:7.2s"/>
+<rect x="1190" y="368" width="164" height="100" fill="#030503" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1190" y="368" width="54.67" height="6" fill="#FFB000"/>
+<rect x="1244.67" y="368" width="54.67" height="6" fill="#33FF66"/>
+<rect x="1299.33" y="368" width="54.67" height="6" fill="#FF3B30"/>
+<text x="1202" y="400" class="f-mono5" font-size="11" fill="#FFB000" letter-spacing="1.1">TX-08</text>
+<text x="1202" y="426" class="f-mono5" font-size="13" fill="#E8E2D0" letter-spacing="0.52">COLD STORAGE</text>
+<text x="1202" y="452" class="f-mono" font-size="8" fill="#E8E2D0" letter-spacing="0.32" opacity="0.66">EDITORIAL · RUNS AT BOARDROOM</text>
+<rect x="1186" y="364" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:8.4s"/>
+<text x="560" y="524" class="f-serif" font-size="36" fill="#6CC0E8">C</text>
+<text x="560" y="548" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">EPIC</text>
+<text x="560" y="564" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">CINEMA</text>
+<rect x="668" y="484" width="164" height="100" fill="#000000" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="668" y="484" width="54.67" height="6" fill="#FFD23F"/>
+<rect x="722.67" y="484" width="54.67" height="6" fill="#7FB3FF"/>
+<rect x="777.33" y="484" width="54.67" height="6" fill="#C0C8D8"/>
+<text x="680" y="516" class="f-mono5" font-size="11" fill="#FFD23F" letter-spacing="1.1">TX-09</text>
+<text x="680" y="542" class="f-mono5" font-size="13" fill="#E6E9F0" letter-spacing="0.52">SPACE OPERA</text>
+<text x="680" y="568" class="f-mono" font-size="9.5" fill="#E6E9F0" letter-spacing="0.38" opacity="0.66">CREATIVE · TEMPERED MAX</text>
+<rect x="664" y="480" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:9.6s"/>
+<rect x="842" y="484" width="164" height="100" fill="#F3E9DA" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="842" y="484" width="54.67" height="6" fill="#9A4A1C"/>
+<rect x="896.67" y="484" width="54.67" height="6" fill="#6E5536"/>
+<rect x="951.33" y="484" width="54.67" height="6" fill="#0E0E0E"/>
+<text x="854" y="516" class="f-mono5" font-size="11" fill="#9A4A1C" letter-spacing="1.1">TX-10</text>
+<text x="854" y="542" class="f-mono5" font-size="13" fill="#2B2620" letter-spacing="0.52">SANDSCALE</text>
+<text x="854" y="568" class="f-mono" font-size="9.5" fill="#2B2620" letter-spacing="0.38" opacity="0.66">B2B · RUNS AT BOARDROOM</text>
+<rect x="838" y="480" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:10.8s"/>
+<rect x="1016" y="484" width="164" height="100" fill="#0A0A0A" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1016" y="484" width="54.67" height="6" fill="#FF7A1A"/>
+<rect x="1070.67" y="484" width="54.67" height="6" fill="#1FB5C9"/>
+<rect x="1125.33" y="484" width="54.67" height="6" fill="#C9C9C9"/>
+<text x="1028" y="516" class="f-mono5" font-size="11" fill="#FF7A1A" letter-spacing="1.1">TX-11</text>
+<text x="1028" y="542" class="f-mono5" font-size="13" fill="#F2E6D0" letter-spacing="0.52">WASTELAND CHROME</text>
+<text x="1028" y="568" class="f-mono" font-size="9.5" fill="#F2E6D0" letter-spacing="0.38" opacity="0.66">CREATIVE · NOT FOR B2B</text>
+<rect x="1012" y="480" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:12s"/>
+<rect x="1190" y="484" width="164" height="100" fill="#000000" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1190" y="484" width="54.67" height="6" fill="#F2A65A"/>
+<rect x="1244.67" y="484" width="54.67" height="6" fill="#5B8CFF"/>
+<rect x="1299.33" y="484" width="54.67" height="6" fill="#9B5DE5"/>
+<text x="1202" y="516" class="f-mono5" font-size="11" fill="#F2A65A" letter-spacing="1.1">TX-12</text>
+<text x="1202" y="542" class="f-mono5" font-size="13" fill="#E8E1D5" letter-spacing="0.52">SLIT-SCAN COSMOS</text>
+<text x="1202" y="568" class="f-mono" font-size="8" fill="#E8E1D5" letter-spacing="0.32" opacity="0.66">EDITORIAL · RUNS AT BOARDROOM</text>
+<rect x="1186" y="480" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:13.2s"/>
+<text x="560" y="640" class="f-serif" font-size="36" fill="#6CC0E8">D</text>
+<text x="560" y="664" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">WORLDS AND</text>
+<text x="560" y="680" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">MAPS</text>
+<rect x="668" y="600" width="164" height="100" fill="#1A1712" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="668" y="600" width="54.67" height="6" fill="#C9A464"/>
+<rect x="722.67" y="600" width="54.67" height="6" fill="#8C1C13"/>
+<rect x="777.33" y="600" width="54.67" height="6" fill="#7A8C96"/>
+<text x="680" y="632" class="f-mono5" font-size="11" fill="#C9A464" letter-spacing="1.1">TX-13</text>
+<text x="680" y="658" class="f-mono5" font-size="13" fill="#E9DCC0" letter-spacing="0.52">CLOCKWORK REALM</text>
+<text x="680" y="684" class="f-mono" font-size="9.5" fill="#E9DCC0" letter-spacing="0.38" opacity="0.66">B2B · RUNS AT BOARDROOM</text>
+<rect x="664" y="596" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:14.4s"/>
+<rect x="842" y="600" width="164" height="100" fill="#E9DCC0" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="842" y="600" width="54.67" height="6" fill="#A8341C"/>
+<rect x="896.67" y="600" width="54.67" height="6" fill="#556B3F"/>
+<rect x="951.33" y="600" width="54.67" height="6" fill="#1F2A33"/>
+<text x="854" y="632" class="f-mono5" font-size="11" fill="#A8341C" letter-spacing="1.1">TX-14</text>
+<text x="854" y="658" class="f-mono5" font-size="11.5" fill="#2E2318" letter-spacing="0.46">RED-LINE EXPEDITION</text>
+<text x="854" y="684" class="f-mono" font-size="9" fill="#2E2318" letter-spacing="0.36" opacity="0.66">EDITORIAL · TEMPERED MAX</text>
+<rect x="838" y="596" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:15.6s"/>
+<rect x="1016" y="600" width="164" height="100" fill="#F7F3E8" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1016" y="600" width="54.67" height="6" fill="#2F6B3F"/>
+<rect x="1070.67" y="600" width="54.67" height="6" fill="#3E64A0"/>
+<rect x="1125.33" y="600" width="54.67" height="6" fill="#B5762A"/>
+<text x="1028" y="632" class="f-mono5" font-size="11" fill="#2F6B3F" letter-spacing="1.1">TX-15</text>
+<text x="1028" y="658" class="f-mono5" font-size="13" fill="#23361F" letter-spacing="0.52">PAINTED WIND</text>
+<text x="1028" y="684" class="f-mono" font-size="9" fill="#23361F" letter-spacing="0.36" opacity="0.66">EDITORIAL · TEMPERED MAX</text>
+<rect x="1012" y="596" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:16.8s"/>
+<text x="560" y="756" class="f-serif" font-size="36" fill="#6CC0E8">E</text>
+<text x="560" y="780" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">AUTEUR AND</text>
+<text x="560" y="796" class="f-mono5" font-size="11" fill="#F3F3F0" letter-spacing="1.32" opacity="0.78">TITLE DESIGN</text>
+<rect x="668" y="716" width="164" height="100" fill="#F2E8D5" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="668" y="716" width="54.67" height="6" fill="#C93A1B"/>
+<rect x="722.67" y="716" width="54.67" height="6" fill="#1F5F7F"/>
+<rect x="777.33" y="716" width="54.67" height="6" fill="#B88A00"/>
+<text x="680" y="748" class="f-mono5" font-size="11" fill="#C93A1B" letter-spacing="1.1">TX-16</text>
+<text x="680" y="774" class="f-mono5" font-size="13" fill="#1C1C1C" letter-spacing="0.52">PAPER CUT TITLES</text>
+<text x="680" y="800" class="f-mono" font-size="9.5" fill="#1C1C1C" letter-spacing="0.38" opacity="0.66">B2B · RUNS AT BOARDROOM</text>
+<rect x="664" y="712" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:18s"/>
+<rect x="842" y="716" width="164" height="100" fill="#050505" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="842" y="716" width="54.67" height="6" fill="#C9A227"/>
+<rect x="896.67" y="716" width="54.67" height="6" fill="#A3262A"/>
+<rect x="951.33" y="716" width="54.67" height="6" fill="#F0D27A"/>
+<text x="854" y="748" class="f-mono5" font-size="11" fill="#C9A227" letter-spacing="1.1">TX-17</text>
+<text x="854" y="774" class="f-mono5" font-size="12" fill="#EDE6D6" letter-spacing="0.48">SILHOUETTE &amp; SMOKE</text>
+<text x="854" y="800" class="f-mono" font-size="9.5" fill="#EDE6D6" letter-spacing="0.38" opacity="0.66">CREATIVE · TEMPERED MAX</text>
+<rect x="838" y="712" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:19.2s"/>
+<rect x="1016" y="716" width="164" height="100" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1016" y="716" width="54.67" height="6" fill="#E6007E"/>
+<rect x="1070.67" y="716" width="54.67" height="6" fill="#0095D6"/>
+<rect x="1125.33" y="716" width="54.67" height="6" fill="#D4C700"/>
+<text x="1028" y="748" class="f-mono5" font-size="11" fill="#E6007E" letter-spacing="1.1">TX-18</text>
+<text x="1028" y="774" class="f-mono5" font-size="11.5" fill="#111111" letter-spacing="0.46">HALFTONE MULTIVERSE</text>
+<text x="1028" y="800" class="f-mono" font-size="9.5" fill="#111111" letter-spacing="0.38" opacity="0.66">CREATIVE · NOT FOR B2B</text>
+<rect x="1012" y="712" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:20.4s"/>
+<rect x="1190" y="716" width="164" height="100" fill="#F7E8DC" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1190" y="716" width="54.67" height="6" fill="#B5452B"/>
+<rect x="1244.67" y="716" width="54.67" height="6" fill="#4F7FA6"/>
+<rect x="1299.33" y="716" width="54.67" height="6" fill="#3F7D5C"/>
+<text x="1202" y="748" class="f-mono5" font-size="11" fill="#B5452B" letter-spacing="1.1">TX-19</text>
+<text x="1202" y="774" class="f-mono5" font-size="13" fill="#3C2B2D" letter-spacing="0.52">SYMMETRY DIORAMA</text>
+<text x="1202" y="800" class="f-mono" font-size="8" fill="#3C2B2D" letter-spacing="0.32" opacity="0.66">EDITORIAL · RUNS AT BOARDROOM</text>
+<rect x="1186" y="712" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:21.6s"/>
+<rect x="1364" y="716" width="164" height="100" fill="#F4F6F5" stroke="#1E3A5F" stroke-width="1"/>
+<rect x="1364" y="716" width="54.67" height="6" fill="#2E6F5E"/>
+<rect x="1418.67" y="716" width="54.67" height="6" fill="#1F8A78"/>
+<rect x="1473.33" y="716" width="54.67" height="6" fill="#6B5E3C"/>
+<text x="1376" y="748" class="f-mono5" font-size="11" fill="#2E6F5E" letter-spacing="1.1">TX-20</text>
+<text x="1376" y="774" class="f-mono5" font-size="13" fill="#1D2B2A" letter-spacing="0.52">LIMINAL OFFICE</text>
+<text x="1376" y="800" class="f-mono" font-size="9.5" fill="#1D2B2A" letter-spacing="0.38" opacity="0.66">B2B · RUNS AT BOARDROOM</text>
+<rect x="1360" y="712" width="172" height="108" fill="none" stroke="#6CC0E8" stroke-width="2" class="am" style="animation:hl20 24s step-end infinite;animation-delay:22.8s"/>
+<line x1="72" y1="846.5" x2="1528" y2="846.5" stroke="#1E3A5F" stroke-width="1"/>
+<text x="72" y="876" class="f-mono" font-size="12" fill="#F3F3F0" letter-spacing="1.68" opacity="0.62">BHIL · STAGEHAND THEME CODEX · FIG STC-01</text>
+<text x="1528" y="876" class="f-mono" font-size="12" fill="#F3F3F0" letter-spacing="1.68" text-anchor="end" opacity="0.62">BARRYHURD.COM</text>
+</svg>
