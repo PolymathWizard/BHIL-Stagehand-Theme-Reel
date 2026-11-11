@@ -1,0 +1,12 @@
+# Internal brief: inspiration names and the shipped-property ledger never ship (ADR-002)
+internal/
+# Local engagement work stays local
+engagements/*
+!engagements/.gitkeep
+# Build outputs and tooling
+site/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+dist-pkg/
