@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-11 WASTELAND CHROME */
+:root {
+  --tx-id: "TX-11";
+  --tx-bg: #0A0A0A;
+  --tx-ink: #F2E6D0;
+  --tx-a1: #FF7A1A;
+  --tx-a2: #1FB5C9;
+  --tx-a3: #C9C9C9;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .10;
+  --tx-display: "Anton", system-ui, sans-serif;
+  --tx-body: "Barlow Condensed", system-ui, sans-serif;
+  --tx-mono: "Stardos Stencil", ui-monospace, monospace;
+  --tx-display-weight: 400;
+  --tx-body-weight: 500;
+  --tx-mono-weight: 700;
+  --tx-ease: cubic-bezier(.87,0,.13,1);
+  --tx-dur: 250ms;
+  --tx-step: steps(8);
+}

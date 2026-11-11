@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-18 HALFTONE MULTIVERSE */
+:root {
+  --tx-id: "TX-18";
+  --tx-bg: #FFFFFF;
+  --tx-ink: #111111;
+  --tx-a1: #E6007E;
+  --tx-a2: #0095D6;
+  --tx-a3: #D4C700;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: 0;
+  --tx-display: "Bangers", system-ui, sans-serif;
+  --tx-body: "Inter", system-ui, sans-serif;
+  --tx-mono: "Permanent Marker", ui-monospace, monospace;
+  --tx-display-weight: 400;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.34,1.56,.64,1);
+  --tx-dur: 400ms;
+  --tx-step: steps(12);
+}

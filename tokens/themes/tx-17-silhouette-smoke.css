@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-17 SILHOUETTE & SMOKE */
+:root {
+  --tx-id: "TX-17";
+  --tx-bg: #050505;
+  --tx-ink: #EDE6D6;
+  --tx-a1: #C9A227;
+  --tx-a2: #A3262A;
+  --tx-a3: #F0D27A;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .04;
+  --tx-display: "Bodoni Moda", system-ui, sans-serif;
+  --tx-body: "Cormorant Garamond", system-ui, sans-serif;
+  --tx-mono: "Josefin Sans", ui-monospace, monospace;
+  --tx-display-weight: 500;
+  --tx-body-weight: 500;
+  --tx-mono-weight: 600;
+  --tx-ease: cubic-bezier(.65,0,.35,1);
+  --tx-dur: 1500ms;
+  --tx-step: none;
+}

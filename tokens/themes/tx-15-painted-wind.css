@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-15 PAINTED WIND */
+:root {
+  --tx-id: "TX-15";
+  --tx-bg: #F7F3E8;
+  --tx-ink: #23361F;
+  --tx-a1: #2F6B3F;
+  --tx-a2: #3E64A0;
+  --tx-a3: #B5762A;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .08;
+  --tx-display: "Shippori Mincho", system-ui, sans-serif;
+  --tx-body: "Zen Maru Gothic", system-ui, sans-serif;
+  --tx-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --tx-display-weight: 600;
+  --tx-body-weight: 500;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.33,0,.2,1);
+  --tx-dur: 1600ms;
+  --tx-step: none;
+}

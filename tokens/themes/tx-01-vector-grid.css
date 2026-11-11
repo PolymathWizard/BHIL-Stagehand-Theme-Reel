@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-01 VECTOR GRID */
+:root {
+  --tx-id: "TX-01";
+  --tx-bg: #02040A;
+  --tx-ink: #E6FDFF;
+  --tx-a1: #00E5FF;
+  --tx-a2: #FF6A00;
+  --tx-a3: #1E6F8C;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: 0;
+  --tx-display: "Orbitron", system-ui, sans-serif;
+  --tx-body: "Exo 2", system-ui, sans-serif;
+  --tx-mono: "Share Tech Mono", ui-monospace, monospace;
+  --tx-display-weight: 700;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.16,1,.3,1);
+  --tx-dur: 600ms;
+  --tx-step: none;
+}

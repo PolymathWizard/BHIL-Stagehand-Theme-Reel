@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-14 RED-LINE EXPEDITION */
+:root {
+  --tx-id: "TX-14";
+  --tx-bg: #E9DCC0;
+  --tx-ink: #2E2318;
+  --tx-a1: #A8341C;
+  --tx-a2: #556B3F;
+  --tx-a3: #1F2A33;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .12;
+  --tx-display: "Alfa Slab One", system-ui, sans-serif;
+  --tx-body: "Libre Caslon Text", system-ui, sans-serif;
+  --tx-mono: "Special Elite", ui-monospace, monospace;
+  --tx-display-weight: 400;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.33,1,.68,1);
+  --tx-dur: 1000ms;
+  --tx-step: none;
+}

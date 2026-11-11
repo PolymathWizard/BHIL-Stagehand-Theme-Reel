@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-20 LIMINAL OFFICE */
+:root {
+  --tx-id: "TX-20";
+  --tx-bg: #F4F6F5;
+  --tx-ink: #1D2B2A;
+  --tx-a1: #2E6F5E;
+  --tx-a2: #1F8A78;
+  --tx-a3: #6B5E3C;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .02;
+  --tx-display: "Instrument Sans", system-ui, sans-serif;
+  --tx-body: "Hanken Grotesk", system-ui, sans-serif;
+  --tx-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --tx-display-weight: 500;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: linear;
+  --tx-dur: 900ms;
+  --tx-step: none;
+}

@@ -1,0 +1,1052 @@
+{
+  "$description": "Stagehand Theme Codex STC v1.0 tokens. Generated from canon by scripts/build_derived.py. Do not edit by hand.",
+  "themes": {
+    "TX-01": {
+      "name": "VECTOR GRID",
+      "color": {
+        "bg": {
+          "$value": "#02040A",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#E6FDFF",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#00E5FF",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#FF6A00",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#1E6F8C",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Orbitron",
+          "weight": 700
+        },
+        "body": {
+          "$value": "Exo 2",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Share Tech Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.16,1,.3,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "600ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": "0"
+      }
+    },
+    "TX-02": {
+      "name": "PHOSPHOR RAIN",
+      "color": {
+        "bg": {
+          "$value": "#000500",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#C8F5CF",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#00FF41",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#008F11",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#7FA8C9",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Share Tech Mono",
+          "weight": 400
+        },
+        "body": {
+          "$value": "IBM Plex Sans",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "VT323",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.22,1,.36,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "750ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".04"
+      }
+    },
+    "TX-03": {
+      "name": "GLASS HUD",
+      "color": {
+        "bg": {
+          "$value": "#050B14",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#E8F4FF",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#6FE3FF",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#F5A623",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#FF3B5C",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Chakra Petch",
+          "weight": 600
+        },
+        "body": {
+          "$value": "Inter",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "B612 Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.33,1,.68,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "450ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": "0"
+      }
+    },
+    "TX-04": {
+      "name": "RAINLIGHT NOIR",
+      "color": {
+        "bg": {
+          "$value": "#05070B",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#D9E2E8",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#FF8A1F",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#FF2E88",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#3FD0E0",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Saira Condensed",
+          "weight": 600
+        },
+        "body": {
+          "$value": "Inter",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Share Tech Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.65,0,.35,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "1600ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".08"
+      }
+    },
+    "TX-05": {
+      "name": "STUTTER BROADCAST",
+      "color": {
+        "bg": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#FFFFFF",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#FF00A8",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#00F0FF",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#FFE600",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Bungee",
+          "weight": 400
+        },
+        "body": {
+          "$value": "Space Grotesk",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "VT323",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.2,0,0,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "350ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "step": "steps(3)",
+        "grain": ".05"
+      }
+    },
+    "TX-06": {
+      "name": "OTHERSIDE ’83",
+      "color": {
+        "bg": {
+          "$value": "#070608",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#F2E6C9",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#E0303A",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#8DA3B5",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#FF5A4E",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Fraunces",
+          "weight": 900
+        },
+        "body": {
+          "$value": "Crimson Pro",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "VT323",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.37,0,.63,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "1400ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".10"
+      }
+    },
+    "TX-07": {
+      "name": "NIGHT DRIVE",
+      "color": {
+        "bg": {
+          "$value": "#0B0420",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#F3E8FF",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#FF2A6D",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#05D9E8",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#FFB86C",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Monoton",
+          "weight": 400
+        },
+        "body": {
+          "$value": "Space Grotesk",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Share Tech Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.45,0,.55,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "1100ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".06"
+      }
+    },
+    "TX-08": {
+      "name": "COLD STORAGE",
+      "color": {
+        "bg": {
+          "$value": "#030503",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#E8E2D0",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#FFB000",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#33FF66",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#FF3B30",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Michroma",
+          "weight": 400
+        },
+        "body": {
+          "$value": "IBM Plex Sans Condensed",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "VT323",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.25,.1,.25,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "500ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "step": "steps(1)",
+        "grain": ".05"
+      }
+    },
+    "TX-09": {
+      "name": "SPACE OPERA",
+      "color": {
+        "bg": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#E6E9F0",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#FFD23F",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#7FB3FF",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#C0C8D8",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Oswald",
+          "weight": 700
+        },
+        "body": {
+          "$value": "News Cycle",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Space Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.4,0,.2,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "900ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": "0"
+      }
+    },
+    "TX-10": {
+      "name": "SANDSCALE",
+      "color": {
+        "bg": {
+          "$value": "#F3E9DA",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#2B2620",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#9A4A1C",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#6E5536",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#0E0E0E",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Syncopate",
+          "weight": 700
+        },
+        "body": {
+          "$value": "Cormorant Garamond",
+          "weight": 500
+        },
+        "mono": {
+          "$value": "IBM Plex Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.65,0,.35,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "2200ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".06"
+      }
+    },
+    "TX-11": {
+      "name": "WASTELAND CHROME",
+      "color": {
+        "bg": {
+          "$value": "#0A0A0A",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#F2E6D0",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#FF7A1A",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#1FB5C9",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#C9C9C9",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Anton",
+          "weight": 400
+        },
+        "body": {
+          "$value": "Barlow Condensed",
+          "weight": 500
+        },
+        "mono": {
+          "$value": "Stardos Stencil",
+          "weight": 700
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.87,0,.13,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "250ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "step": "steps(8)",
+        "grain": ".10"
+      }
+    },
+    "TX-12": {
+      "name": "SLIT-SCAN COSMOS",
+      "color": {
+        "bg": {
+          "$value": "#000000",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#E8E1D5",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#F2A65A",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#5B8CFF",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#9B5DE5",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Inter Tight",
+          "weight": 200
+        },
+        "body": {
+          "$value": "Inter",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Space Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.37,0,.63,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "3000ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".03"
+      }
+    },
+    "TX-13": {
+      "name": "CLOCKWORK REALM",
+      "color": {
+        "bg": {
+          "$value": "#1A1712",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#E9DCC0",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#C9A464",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#8C1C13",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#7A8C96",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Cinzel",
+          "weight": 600
+        },
+        "body": {
+          "$value": "EB Garamond",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Cormorant SC",
+          "weight": 500
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.5,0,.5,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "1200ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "step": "steps(12)",
+        "grain": ".06"
+      }
+    },
+    "TX-14": {
+      "name": "RED-LINE EXPEDITION",
+      "color": {
+        "bg": {
+          "$value": "#E9DCC0",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#2E2318",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#A8341C",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#556B3F",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#1F2A33",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Alfa Slab One",
+          "weight": 400
+        },
+        "body": {
+          "$value": "Libre Caslon Text",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Special Elite",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.33,1,.68,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "1000ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".12"
+      }
+    },
+    "TX-15": {
+      "name": "PAINTED WIND",
+      "color": {
+        "bg": {
+          "$value": "#F7F3E8",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#23361F",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#2F6B3F",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#3E64A0",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#B5762A",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Shippori Mincho",
+          "weight": 600
+        },
+        "body": {
+          "$value": "Zen Maru Gothic",
+          "weight": 500
+        },
+        "mono": {
+          "$value": "IBM Plex Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.33,0,.2,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "1600ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".08"
+      }
+    },
+    "TX-16": {
+      "name": "PAPER CUT TITLES",
+      "color": {
+        "bg": {
+          "$value": "#F2E8D5",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#1C1C1C",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#C93A1B",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#1F5F7F",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#B88A00",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "League Gothic",
+          "weight": 400
+        },
+        "body": {
+          "$value": "Libre Franklin",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Courier Prime",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.76,0,.24,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "320ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "step": "steps(4)",
+        "grain": ".08"
+      }
+    },
+    "TX-17": {
+      "name": "SILHOUETTE & SMOKE",
+      "color": {
+        "bg": {
+          "$value": "#050505",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#EDE6D6",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#C9A227",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#A3262A",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#F0D27A",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Bodoni Moda",
+          "weight": 500
+        },
+        "body": {
+          "$value": "Cormorant Garamond",
+          "weight": 500
+        },
+        "mono": {
+          "$value": "Josefin Sans",
+          "weight": 600
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.65,0,.35,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "1500ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".04"
+      }
+    },
+    "TX-18": {
+      "name": "HALFTONE MULTIVERSE",
+      "color": {
+        "bg": {
+          "$value": "#FFFFFF",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#111111",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#E6007E",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#0095D6",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#D4C700",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Bangers",
+          "weight": 400
+        },
+        "body": {
+          "$value": "Inter",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Permanent Marker",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.34,1.56,.64,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "400ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "step": "steps(12)",
+        "grain": "0"
+      }
+    },
+    "TX-19": {
+      "name": "SYMMETRY DIORAMA",
+      "color": {
+        "bg": {
+          "$value": "#F7E8DC",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#3C2B2D",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#B5452B",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#4F7FA6",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#3F7D5C",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Jost",
+          "weight": 600
+        },
+        "body": {
+          "$value": "Libre Baskerville",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "Courier Prime",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "cubic-bezier(.83,0,.17,1)",
+          "$type": "cubicBezier"
+        },
+        "duration": {
+          "$value": "450ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "fills": "#F4C2C2, #F7E1A1, #A8D5BA, #A9C6E0",
+        "grain": ".03"
+      }
+    },
+    "TX-20": {
+      "name": "LIMINAL OFFICE",
+      "color": {
+        "bg": {
+          "$value": "#F4F6F5",
+          "$type": "color"
+        },
+        "ink": {
+          "$value": "#1D2B2A",
+          "$type": "color"
+        },
+        "a1": {
+          "$value": "#2E6F5E",
+          "$type": "color"
+        },
+        "a2": {
+          "$value": "#1F8A78",
+          "$type": "color"
+        },
+        "a3": {
+          "$value": "#6B5E3C",
+          "$type": "color"
+        }
+      },
+      "font": {
+        "display": {
+          "$value": "Instrument Sans",
+          "weight": 500
+        },
+        "body": {
+          "$value": "Hanken Grotesk",
+          "weight": 400
+        },
+        "mono": {
+          "$value": "IBM Plex Mono",
+          "weight": 400
+        }
+      },
+      "motion": {
+        "ease": {
+          "$value": "linear",
+          "$type": "string"
+        },
+        "duration": {
+          "$value": "900ms",
+          "$type": "duration"
+        }
+      },
+      "extra": {
+        "grain": ".02"
+      }
+    }
+  }
+}

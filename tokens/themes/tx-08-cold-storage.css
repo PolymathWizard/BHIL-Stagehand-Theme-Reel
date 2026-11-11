@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-08 COLD STORAGE */
+:root {
+  --tx-id: "TX-08";
+  --tx-bg: #030503;
+  --tx-ink: #E8E2D0;
+  --tx-a1: #FFB000;
+  --tx-a2: #33FF66;
+  --tx-a3: #FF3B30;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .05;
+  --tx-display: "Michroma", system-ui, sans-serif;
+  --tx-body: "IBM Plex Sans Condensed", system-ui, sans-serif;
+  --tx-mono: "VT323", ui-monospace, monospace;
+  --tx-display-weight: 400;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.25,.1,.25,1);
+  --tx-dur: 500ms;
+  --tx-step: steps(1);
+}

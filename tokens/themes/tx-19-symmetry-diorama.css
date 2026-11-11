@@ -1,0 +1,25 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-19 SYMMETRY DIORAMA */
+:root {
+  --tx-id: "TX-19";
+  --tx-bg: #F7E8DC;
+  --tx-ink: #3C2B2D;
+  --tx-a1: #B5452B;
+  --tx-a2: #4F7FA6;
+  --tx-a3: #3F7D5C;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .03;
+  --tx-display: "Jost", system-ui, sans-serif;
+  --tx-body: "Libre Baskerville", system-ui, sans-serif;
+  --tx-mono: "Courier Prime", ui-monospace, monospace;
+  --tx-display-weight: 600;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.83,0,.17,1);
+  --tx-dur: 450ms;
+  --tx-step: none;
+  --tx-fill-1: #F4C2C2;
+  --tx-fill-2: #F7E1A1;
+  --tx-fill-3: #A8D5BA;
+  --tx-fill-4: #A9C6E0;
+}

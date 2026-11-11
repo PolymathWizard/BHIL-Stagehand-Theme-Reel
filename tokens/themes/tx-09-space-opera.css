@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-09 SPACE OPERA */
+:root {
+  --tx-id: "TX-09";
+  --tx-bg: #000000;
+  --tx-ink: #E6E9F0;
+  --tx-a1: #FFD23F;
+  --tx-a2: #7FB3FF;
+  --tx-a3: #C0C8D8;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: 0;
+  --tx-display: "Oswald", system-ui, sans-serif;
+  --tx-body: "News Cycle", system-ui, sans-serif;
+  --tx-mono: "Space Mono", ui-monospace, monospace;
+  --tx-display-weight: 700;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.4,0,.2,1);
+  --tx-dur: 900ms;
+  --tx-step: none;
+}

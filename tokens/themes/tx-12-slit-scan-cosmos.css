@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-12 SLIT-SCAN COSMOS */
+:root {
+  --tx-id: "TX-12";
+  --tx-bg: #000000;
+  --tx-ink: #E8E1D5;
+  --tx-a1: #F2A65A;
+  --tx-a2: #5B8CFF;
+  --tx-a3: #9B5DE5;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .03;
+  --tx-display: "Inter Tight", system-ui, sans-serif;
+  --tx-body: "Inter", system-ui, sans-serif;
+  --tx-mono: "Space Mono", ui-monospace, monospace;
+  --tx-display-weight: 200;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.37,0,.63,1);
+  --tx-dur: 3000ms;
+  --tx-step: none;
+}

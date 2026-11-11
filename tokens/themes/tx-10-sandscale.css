@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-10 SANDSCALE */
+:root {
+  --tx-id: "TX-10";
+  --tx-bg: #F3E9DA;
+  --tx-ink: #2B2620;
+  --tx-a1: #9A4A1C;
+  --tx-a2: #6E5536;
+  --tx-a3: #0E0E0E;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .06;
+  --tx-display: "Syncopate", system-ui, sans-serif;
+  --tx-body: "Cormorant Garamond", system-ui, sans-serif;
+  --tx-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --tx-display-weight: 700;
+  --tx-body-weight: 500;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.65,0,.35,1);
+  --tx-dur: 2200ms;
+  --tx-step: none;
+}

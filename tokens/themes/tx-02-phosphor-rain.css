@@ -1,0 +1,21 @@
+/* Stagehand Theme Codex STC v1.0. Generated from canon by scripts/build_derived.py. Do not edit by hand. */
+/* TX-02 PHOSPHOR RAIN */
+:root {
+  --tx-id: "TX-02";
+  --tx-bg: #000500;
+  --tx-ink: #C8F5CF;
+  --tx-a1: #00FF41;
+  --tx-a2: #008F11;
+  --tx-a3: #7FA8C9;
+  --tx-glow: 0 0 14px color-mix(in srgb, var(--tx-a1) 55%, transparent);
+  --tx-grain: .04;
+  --tx-display: "Share Tech Mono", system-ui, sans-serif;
+  --tx-body: "IBM Plex Sans", system-ui, sans-serif;
+  --tx-mono: "VT323", ui-monospace, monospace;
+  --tx-display-weight: 400;
+  --tx-body-weight: 400;
+  --tx-mono-weight: 400;
+  --tx-ease: cubic-bezier(.22,1,.36,1);
+  --tx-dur: 750ms;
+  --tx-step: none;
+}
