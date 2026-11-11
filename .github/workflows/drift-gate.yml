@@ -1,0 +1,19 @@
+name: drift-gate
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate derived artifacts in memory and compare (stdlib)
+        run: python3 scripts/verify_drift.py
+      - name: Manifest matches
+        run: python3 -c "import sys; sys.path.insert(0,'scripts'); import build_derived as b; o=b.generate(); s=open('MANIFEST.sha256').read(); sys.exit(0 if s==o['MANIFEST.sha256'] else 'MANIFEST.sha256 is stale')"

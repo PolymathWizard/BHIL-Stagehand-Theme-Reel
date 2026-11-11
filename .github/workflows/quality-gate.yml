@@ -1,0 +1,28 @@
+name: quality-gate
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate (stdlib)
+        run: python3 scripts/validate.py
+      - name: Regression tests (stdlib, includes the reel stub sweep)
+        run: python3 -m unittest discover -s tests -v
+      - name: Reel stub sweep, full intensity range
+        run: node tests/reel_stub_sweep.js reel/dist/stagehand-theme-reel.html 1.25
+      - name: Docs build (strict)
+        run: |
+          pip install -r requirements-docs.txt
+          mkdocs build --strict
