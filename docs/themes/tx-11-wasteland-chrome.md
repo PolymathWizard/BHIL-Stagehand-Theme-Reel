@@ -4,6 +4,8 @@
 
 *Orange-and-teal pursuit at full throttle, center-framed.*
 
+![TX-11 WASTELAND CHROME, a still from the reel at Full](../assets/screens/tx-11-wasteland-chrome.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#0A0A0A" title="--tx-bg #0A0A0A"></span><span class="tx-sw" style="background:#F2E6D0" title="--tx-ink #F2E6D0"></span><span class="tx-sw" style="background:#FF7A1A" title="--tx-a1 #FF7A1A"></span><span class="tx-sw" style="background:#1FB5C9" title="--tx-a2 #1FB5C9"></span><span class="tx-sw" style="background:#C9C9C9" title="--tx-a3 #C9C9C9"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

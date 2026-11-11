@@ -4,6 +4,8 @@
 
 *Centered pastel dollhouse sections and whip-pan chapter cards.*
 
+![TX-19 SYMMETRY DIORAMA, a still from the reel at Full](../assets/screens/tx-19-symmetry-diorama.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#F7E8DC" title="--tx-bg #F7E8DC"></span><span class="tx-sw" style="background:#3C2B2D" title="--tx-ink #3C2B2D"></span><span class="tx-sw" style="background:#B5452B" title="--tx-a1 #B5452B"></span><span class="tx-sw" style="background:#4F7FA6" title="--tx-a2 #4F7FA6"></span><span class="tx-sw" style="background:#3F7D5C" title="--tx-a3 #3F7D5C"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

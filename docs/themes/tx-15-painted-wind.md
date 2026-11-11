@@ -4,6 +4,8 @@
 
 *Hand-painted skies and wind moving through grass.*
 
+![TX-15 PAINTED WIND, a still from the reel at Full](../assets/screens/tx-15-painted-wind.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#F7F3E8" title="--tx-bg #F7F3E8"></span><span class="tx-sw" style="background:#23361F" title="--tx-ink #23361F"></span><span class="tx-sw" style="background:#2F6B3F" title="--tx-a1 #2F6B3F"></span><span class="tx-sw" style="background:#3E64A0" title="--tx-a2 #3E64A0"></span><span class="tx-sw" style="background:#B5762A" title="--tx-a3 #B5762A"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

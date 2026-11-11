@@ -12,5 +12,6 @@
 | [ADR-008](adr-008-contrast-floor.md) | Ink contrast floor of 11:1, measured; TX-19 ink adjusted | Accepted |
 | [ADR-009](adr-009-agent-team.md) | CADRE agent team with enforced tool isolation and a blind homage auditor | Accepted |
 | [ADR-010](adr-010-evidence-tiers.md) | Evidence tiers on every factual claim; gates never issue a clean verdict on a build | Accepted |
+| [ADR-011](adr-011-screens.md) | Reel stills for README and docs navigation, rendered from the built reel and freshness-gated | Accepted |
 
-Files: `adr-001-canonical-source.md`, `adr-002-public-edition.md`, `adr-003-public-guardrails.md`, `adr-004-self-contained-reel.md`, `adr-005-bhil-frame.md`, `adr-006-figure-kit.md`, `adr-007-reel-autoplay.md`, `adr-008-contrast-floor.md`, `adr-009-agent-team.md`, `adr-010-evidence-tiers.md`.
+Files: `adr-001-canonical-source.md`, `adr-002-public-edition.md`, `adr-003-public-guardrails.md`, `adr-004-self-contained-reel.md`, `adr-005-bhil-frame.md`, `adr-006-figure-kit.md`, `adr-007-reel-autoplay.md`, `adr-008-contrast-floor.md`, `adr-009-agent-team.md`, `adr-010-evidence-tiers.md`, `adr-011-screens.md`.

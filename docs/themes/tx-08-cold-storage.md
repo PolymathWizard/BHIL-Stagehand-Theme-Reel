@@ -4,6 +4,8 @@
 
 *Chunky CRT terminals humming in a cold industrial hull.*
 
+![TX-08 COLD STORAGE, a still from the reel at Full](../assets/screens/tx-08-cold-storage.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#030503" title="--tx-bg #030503"></span><span class="tx-sw" style="background:#E8E2D0" title="--tx-ink #E8E2D0"></span><span class="tx-sw" style="background:#FFB000" title="--tx-a1 #FFB000"></span><span class="tx-sw" style="background:#33FF66" title="--tx-a2 #33FF66"></span><span class="tx-sw" style="background:#FF3B30" title="--tx-a3 #FF3B30"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

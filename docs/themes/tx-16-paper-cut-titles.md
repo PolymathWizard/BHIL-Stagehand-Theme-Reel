@@ -4,6 +4,8 @@
 
 *Flat cut-paper shapes snapping to a jazz beat.*
 
+![TX-16 PAPER CUT TITLES, a still from the reel at Full](../assets/screens/tx-16-paper-cut-titles.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#F2E8D5" title="--tx-bg #F2E8D5"></span><span class="tx-sw" style="background:#1C1C1C" title="--tx-ink #1C1C1C"></span><span class="tx-sw" style="background:#C93A1B" title="--tx-a1 #C93A1B"></span><span class="tx-sw" style="background:#1F5F7F" title="--tx-a2 #1F5F7F"></span><span class="tx-sw" style="background:#B88A00" title="--tx-a3 #B88A00"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

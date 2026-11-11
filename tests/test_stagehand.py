@@ -116,10 +116,25 @@ class DerivedTests(unittest.TestCase):
     def test_readme_markers_stay_balanced(self):
         """Bug: a greedy marker regex swallowed the prose between two generated README blocks."""
         s = bd.generate().get('README.md', '')
-        for k in ('roster', 'figures', 'counts'):
+        for k in ('nav', 'roster', 'figures', 'counts'):
             self.assertEqual(s.count(f'<!-- BEGIN:{k} -->'), 1, k)
             self.assertEqual(s.count(f'<!-- END:{k} -->'), 1, k)
         self.assertIn('## ', s.split('<!-- END:roster -->')[1])
+
+    def test_visual_roster_shows_every_theme(self):
+        """Bug: a theme added to canon without a still left a hole in the README grid and a broken image on its card."""
+        out = bd.generate(); th = C('themes.json')['themes']
+        self.assertEqual(set(C('screens.json')['stills']), {t['id'] for t in th})
+        roster = out['README.md'].split('<!-- BEGIN:roster -->')[1].split('<!-- END:roster -->')[0]
+        self.assertEqual(roster.count('<img '), len(th))
+        for t in th:
+            self.assertIn(f'<img src="docs/assets/screens/{t["slug"]}.jpg"', roster)
+            self.assertIn(f'](../assets/screens/{t["slug"]}.jpg)', out[f'docs/themes/{t["slug"]}.md'])
+
+    def test_readme_grid_escapes_codenames(self):
+        """Bug: an ampersand in a codename went into the README grid unescaped, which GitHub's sanitizer can drop."""
+        s = bd.generate()['README.md'].split('<!-- BEGIN:roster -->')[1].split('<details>')[0]
+        self.assertNotRegex(s, r'&(?!amp;|lt;|gt;|quot;|#x27;)')
 
     def test_manifest_lists_every_derived_file(self):
         """Bug: a new generator output was written but never hashed, so its drift went unseen."""

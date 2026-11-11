@@ -4,6 +4,8 @@
 
 *Gold light, silhouettes and ink-smoke morphs.*
 
+![TX-17 SILHOUETTE & SMOKE, a still from the reel at Full](../assets/screens/tx-17-silhouette-smoke.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#050505" title="--tx-bg #050505"></span><span class="tx-sw" style="background:#EDE6D6" title="--tx-ink #EDE6D6"></span><span class="tx-sw" style="background:#C9A227" title="--tx-a1 #C9A227"></span><span class="tx-sw" style="background:#A3262A" title="--tx-a2 #A3262A"></span><span class="tx-sw" style="background:#F0D27A" title="--tx-a3 #F0D27A"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

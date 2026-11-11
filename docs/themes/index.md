@@ -4,6 +4,132 @@
 
 Twenty themes in five families. *Home register* is where a theme runs at full strength; *B2B fit* says whether it survives the Boardroom dial. Data shapes use the U1 vocabulary: flow, network, comparison, timeline, terrain, score and document.
 
+Every still below is a frame from the reel at Full. Select one for its card.
+
+<div class="tx-gallery" markdown>
+
+<div markdown>
+[![TX-01 VECTOR GRID, a still from the reel](../assets/screens/tx-01-vector-grid.jpg){ loading=lazy }](tx-01-vector-grid.md)
+**TX-01** [VECTOR GRID](tx-01-vector-grid.md)  
+Neon light-lines racing across an endless dark grid.
+</div>
+
+<div markdown>
+[![TX-02 PHOSPHOR RAIN, a still from the reel](../assets/screens/tx-02-phosphor-rain.jpg){ loading=lazy }](tx-02-phosphor-rain.md)
+**TX-02** [PHOSPHOR RAIN](tx-02-phosphor-rain.md)  
+Green code cascading until the hidden truth resolves.
+</div>
+
+<div markdown>
+[![TX-03 GLASS HUD, a still from the reel](../assets/screens/tx-03-glass-hud.jpg){ loading=lazy }](tx-03-glass-hud.md)
+**TX-03** [GLASS HUD](tx-03-glass-hud.md)  
+Translucent data panels assembling around one datum.
+</div>
+
+<div markdown>
+[![TX-04 RAINLIGHT NOIR, a still from the reel](../assets/screens/tx-04-rainlight-noir.jpg){ loading=lazy }](tx-04-rainlight-noir.md)
+**TX-04** [RAINLIGHT NOIR](tx-04-rainlight-noir.md)  
+Rain, haze and neon reflections in a city that watches.
+</div>
+
+<div markdown>
+[![TX-05 STUTTER BROADCAST, a still from the reel](../assets/screens/tx-05-stutter-broadcast.jpg){ loading=lazy }](tx-05-stutter-broadcast.md)
+**TX-05** [STUTTER BROADCAST](tx-05-stutter-broadcast.md)  
+A pirate-TV host stuttering through a glitching broadcast.
+</div>
+
+<div markdown>
+[![TX-06 OTHERSIDE ’83, a still from the reel](../assets/screens/tx-06-otherside-83.jpg){ loading=lazy }](tx-06-otherside-83.md)
+**TX-06** [OTHERSIDE ’83](tx-06-otherside-83.md)  
+1983 night, a red-glow title, and a world flipped under the surface.
+</div>
+
+<div markdown>
+[![TX-07 NIGHT DRIVE, a still from the reel](../assets/screens/tx-07-night-drive.jpg){ loading=lazy }](tx-07-night-drive.md)
+**TX-07** [NIGHT DRIVE](tx-07-night-drive.md)  
+A pink-and-cyan night cruise toward a striped sunset.
+</div>
+
+<div markdown>
+[![TX-08 COLD STORAGE, a still from the reel](../assets/screens/tx-08-cold-storage.jpg){ loading=lazy }](tx-08-cold-storage.md)
+**TX-08** [COLD STORAGE](tx-08-cold-storage.md)  
+Chunky CRT terminals humming in a cold industrial hull.
+</div>
+
+<div markdown>
+[![TX-09 SPACE OPERA, a still from the reel](../assets/screens/tx-09-space-opera.jpg){ loading=lazy }](tx-09-space-opera.md)
+**TX-09** [SPACE OPERA](tx-09-space-opera.md)  
+A perspective crawl, starfields and wipes at mythic scale.
+</div>
+
+<div markdown>
+[![TX-10 SANDSCALE, a still from the reel](../assets/screens/tx-10-sandscale.jpg){ loading=lazy }](tx-10-sandscale.md)
+**TX-10** [SANDSCALE](tx-10-sandscale.md)  
+Monumental forms rising from haze; tiny figures, vast forces.
+</div>
+
+<div markdown>
+[![TX-11 WASTELAND CHROME, a still from the reel](../assets/screens/tx-11-wasteland-chrome.jpg){ loading=lazy }](tx-11-wasteland-chrome.md)
+**TX-11** [WASTELAND CHROME](tx-11-wasteland-chrome.md)  
+Orange-and-teal pursuit at full throttle, center-framed.
+</div>
+
+<div markdown>
+[![TX-12 SLIT-SCAN COSMOS, a still from the reel](../assets/screens/tx-12-slit-scan-cosmos.jpg){ loading=lazy }](tx-12-slit-scan-cosmos.md)
+**TX-12** [SLIT-SCAN COSMOS](tx-12-slit-scan-cosmos.md)  
+Light corridors, lensing rings, and silence as a beat.
+</div>
+
+<div markdown>
+[![TX-13 CLOCKWORK REALM, a still from the reel](../assets/screens/tx-13-clockwork-realm.jpg){ loading=lazy }](tx-13-clockwork-realm.md)
+**TX-13** [CLOCKWORK REALM](tx-13-clockwork-realm.md)  
+A brass map where mechanisms rise to show who holds what.
+</div>
+
+<div markdown>
+[![TX-14 RED-LINE EXPEDITION, a still from the reel](../assets/screens/tx-14-red-line-expedition.jpg){ loading=lazy }](tx-14-red-line-expedition.md)
+**TX-14** [RED-LINE EXPEDITION](tx-14-red-line-expedition.md)  
+A red route inking across an aged map, stamp by stamp.
+</div>
+
+<div markdown>
+[![TX-15 PAINTED WIND, a still from the reel](../assets/screens/tx-15-painted-wind.jpg){ loading=lazy }](tx-15-painted-wind.md)
+**TX-15** [PAINTED WIND](tx-15-painted-wind.md)  
+Hand-painted skies and wind moving through grass.
+</div>
+
+<div markdown>
+[![TX-16 PAPER CUT TITLES, a still from the reel](../assets/screens/tx-16-paper-cut-titles.jpg){ loading=lazy }](tx-16-paper-cut-titles.md)
+**TX-16** [PAPER CUT TITLES](tx-16-paper-cut-titles.md)  
+Flat cut-paper shapes snapping to a jazz beat.
+</div>
+
+<div markdown>
+[![TX-17 SILHOUETTE & SMOKE, a still from the reel](../assets/screens/tx-17-silhouette-smoke.jpg){ loading=lazy }](tx-17-silhouette-smoke.md)
+**TX-17** [SILHOUETTE & SMOKE](tx-17-silhouette-smoke.md)  
+Gold light, silhouettes and ink-smoke morphs.
+</div>
+
+<div markdown>
+[![TX-18 HALFTONE MULTIVERSE, a still from the reel](../assets/screens/tx-18-halftone-multiverse.jpg){ loading=lazy }](tx-18-halftone-multiverse.md)
+**TX-18** [HALFTONE MULTIVERSE](tx-18-halftone-multiverse.md)  
+Comic panels, misregistered inks, one art style per world.
+</div>
+
+<div markdown>
+[![TX-19 SYMMETRY DIORAMA, a still from the reel](../assets/screens/tx-19-symmetry-diorama.jpg){ loading=lazy }](tx-19-symmetry-diorama.md)
+**TX-19** [SYMMETRY DIORAMA](tx-19-symmetry-diorama.md)  
+Centered pastel dollhouse sections and whip-pan chapter cards.
+</div>
+
+<div markdown>
+[![TX-20 LIMINAL OFFICE, a still from the reel](../assets/screens/tx-20-liminal-office.jpg){ loading=lazy }](tx-20-liminal-office.md)
+**TX-20** [LIMINAL OFFICE](tx-20-liminal-office.md)  
+White corridors, teal carpet, and numbers that feel uneasy.
+</div>
+
+</div>
+
 ## A · Digital Frontier
 
 Cold light, code and interfaces. This is the family for AI, data and threat stories, and the one with the highest overlap with shipped BHIL properties, so run U3 carefully.

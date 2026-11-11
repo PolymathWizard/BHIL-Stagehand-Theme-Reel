@@ -4,6 +4,8 @@
 
 *A perspective crawl, starfields and wipes at mythic scale.*
 
+![TX-09 SPACE OPERA, a still from the reel at Full](../assets/screens/tx-09-space-opera.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#000000" title="--tx-bg #000000"></span><span class="tx-sw" style="background:#E6E9F0" title="--tx-ink #E6E9F0"></span><span class="tx-sw" style="background:#FFD23F" title="--tx-a1 #FFD23F"></span><span class="tx-sw" style="background:#7FB3FF" title="--tx-a2 #7FB3FF"></span><span class="tx-sw" style="background:#C0C8D8" title="--tx-a3 #C0C8D8"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

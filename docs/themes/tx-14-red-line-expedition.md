@@ -4,6 +4,8 @@
 
 *A red route inking across an aged map, stamp by stamp.*
 
+![TX-14 RED-LINE EXPEDITION, a still from the reel at Full](../assets/screens/tx-14-red-line-expedition.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#E9DCC0" title="--tx-bg #E9DCC0"></span><span class="tx-sw" style="background:#2E2318" title="--tx-ink #2E2318"></span><span class="tx-sw" style="background:#A8341C" title="--tx-a1 #A8341C"></span><span class="tx-sw" style="background:#556B3F" title="--tx-a2 #556B3F"></span><span class="tx-sw" style="background:#1F2A33" title="--tx-a3 #1F2A33"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

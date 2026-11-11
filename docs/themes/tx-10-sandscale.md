@@ -4,6 +4,8 @@
 
 *Monumental forms rising from haze; tiny figures, vast forces.*
 
+![TX-10 SANDSCALE, a still from the reel at Full](../assets/screens/tx-10-sandscale.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#F3E9DA" title="--tx-bg #F3E9DA"></span><span class="tx-sw" style="background:#2B2620" title="--tx-ink #2B2620"></span><span class="tx-sw" style="background:#9A4A1C" title="--tx-a1 #9A4A1C"></span><span class="tx-sw" style="background:#6E5536" title="--tx-a2 #6E5536"></span><span class="tx-sw" style="background:#0E0E0E" title="--tx-a3 #0E0E0E"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

@@ -161,6 +161,58 @@ def figures():
         check(sums.get(f'svg/{p.name}') == hashlib.sha256(raw).hexdigest(), f'figures: {png.name} stale; run scripts/render_figures.py')
 
 
+def jpeg_size(p):
+    """Width and height from a JPEG's start-of-frame marker, stdlib only."""
+    b = p.read_bytes(); i = 2
+    if b[:2] != b'\xff\xd8':
+        return None
+    while i < len(b) - 9:
+        if b[i] != 0xFF:
+            return None
+        m = b[i + 1]
+        if m == 0xFF:
+            i += 1; continue
+        if m in (0xC0, 0xC1, 0xC2):
+            return int.from_bytes(b[i + 7:i + 9], 'big'), int.from_bytes(b[i + 5:i + 7], 'big')
+        if m == 0x01 or 0xD0 <= m <= 0xD8:
+            i += 2; continue
+        i += 2 + int.from_bytes(b[i + 2:i + 4], 'big')
+    return None
+
+
+def screens():
+    cfg = C('screens.json'); th = C('themes.json')['themes']; figs = C('figures.json')['figures']
+    S = ROOT / 'docs' / 'assets' / 'screens'; T = ROOT / 'docs' / 'assets' / 'figures' / 'thumb'
+    check(set(cfg['stills']) == {t['id'] for t in th}, 'screens: canon/screens.json must pick exactly one still per theme')
+    for k, v in cfg['stills'].items():
+        check((isinstance(v['beat'], int) and v['beat'] >= 0) or v['beat'] in ('S1', 'S2', 'S3', 'S4', 'S5'), f'screens: {k} beat must be an index or a slot id')
+        check(isinstance(v['t'], (int, float)) and v['t'] >= 0.6, f'screens: {k} t must leave the 0.6 s warm-up')
+    ids = {'stills': {t['id'] for t in th}, 'figures': {f[0] for f in figs}}
+    for n, m in cfg['mosaics'].items():
+        check(len(m['pick']) == m['cols'] * m['rows'] and set(m['pick']) <= ids[m['from']], f'screens: mosaic {n} pick must fill its grid from known ids')
+    want = {S / f'{t["slug"]}.jpg': cfg['still_size'] for t in th}
+    want.update({S / f'{n}.jpg': cfg['still_size'] for n in cfg['mosaics']})
+    want.update({T / f'{f[1]}.jpg': cfg['thumb_size'] for f in figs})
+    for p, size in want.items():
+        rel = p.relative_to(ROOT).as_posix()
+        check(p.exists() and jpeg_size(p) == tuple(size), f'screens: {rel} missing or not {size[0]}x{size[1]}; run python3 scripts/render_screens.py')
+        check(not p.exists() or p.stat().st_size <= 150 * 1024, f'screens: {rel} over 150 KB')
+    for p in list(S.glob('*.jpg')) + list(T.glob('*.jpg')):
+        check(p in want, f'screens: stray {p.relative_to(ROOT).as_posix()}; it is not in canon')
+    src = S / 'SOURCES.sha256'
+    check(src.exists(), 'screens: SOURCES.sha256 missing; run python3 scripts/render_screens.py')
+    if src.exists():
+        seen = set()
+        for line in src.read_text().splitlines():
+            h, rel = line.split('  '); seen.add(rel)
+            check((ROOT / rel).exists() and hashlib.sha256((ROOT / rel).read_bytes()).hexdigest() == h, f'screens: stale against {rel}; run python3 scripts/render_screens.py')
+        need = {'reel/dist/stagehand-theme-reel.html', 'canon/screens.json', 'scripts/render_screens.py'} | {f'docs/assets/figures/png/{f[1]}.png' for f in figs}
+        check(need <= seen, 'screens: SOURCES.sha256 must hash the reel, canon/screens.json, the script and every figure PNG')
+    for c in cfg['start_here']:
+        check((ROOT / c['image']).exists(), f'screens: start-here card {c["title"]} image missing')
+        check(c['href'].startswith(('http', '$reel_live')) or (ROOT / c['href']).exists(), f'screens: start-here card {c["title"]} links to a missing file')
+
+
 def reel():
     d = ROOT / 'reel' / 'dist'; html = d / 'stagehand-theme-reel.html'
     check(html.exists(), 'reel: dist/stagehand-theme-reel.html missing; run reel/build_reel.py')
@@ -186,15 +238,17 @@ def repo():
     for f in ('README.md', 'LICENSE', 'LICENSE-CONTENT.md', 'CHANGELOG.md', 'CONTRIBUTING.md', 'SECURITY.md', 'CITATION.cff', 'CLAUDE.md', 'mkdocs.yml', '.gitignore', 'MANIFEST.sha256'):
         check((ROOT / f).exists(), f'repo: missing {f}')
     rd = (ROOT / 'README.md').read_text(encoding='utf-8') if (ROOT / 'README.md').exists() else ''
-    for k in ('roster', 'figures', 'counts'):
+    for k in ('nav', 'roster', 'figures', 'counts'):
         check(f'<!-- BEGIN:{k} -->' in rd and f'<!-- END:{k} -->' in rd, f'readme: missing {k} markers')
+    for t in C('themes.json')['themes']:
+        check(f'docs/assets/screens/{t["slug"]}.jpg' in rd and f'docs/themes/{t["slug"]}.md' in rd, f'readme: {t["id"]} still or card link missing from the roster')
     check(C('stagehand.json')['repo'] in rd, 'readme: must link the canonical repo URL')
     gi = (ROOT / '.gitignore').read_text() if (ROOT / '.gitignore').exists() else ''
     check('internal/' in gi, '.gitignore must exclude internal/ (the deny-list source)')
 
 
 def main():
-    for fn in (canon, text_gates, agents, prompts, adrs, docs_nav, figures, reel, repo):
+    for fn in (canon, text_gates, agents, prompts, adrs, docs_nav, figures, screens, reel, repo):
         try:
             fn()
         except Exception as e:  # a crashed check is a failure, never a pass

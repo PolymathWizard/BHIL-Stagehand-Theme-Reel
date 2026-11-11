@@ -35,6 +35,7 @@ You keep the reel honest: every theme on the page is the theme in the codex, and
 ```bash
 python3 scripts/build_derived.py
 cd reel && python3 build_reel.py && cd ..
+python3 scripts/render_screens.py      # README and card stills; a new theme needs its frame in canon/screens.json first
 node tests/reel_stub_sweep.js reel/dist/stagehand-theme-reel.html 2.5
 python3 scripts/validate.py
 python3 -m unittest discover -s tests

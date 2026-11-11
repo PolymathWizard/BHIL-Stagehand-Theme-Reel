@@ -4,6 +4,8 @@
 
 *Translucent data panels assembling around one datum.*
 
+![TX-03 GLASS HUD, a still from the reel at Full](../assets/screens/tx-03-glass-hud.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#050B14" title="--tx-bg #050B14"></span><span class="tx-sw" style="background:#E8F4FF" title="--tx-ink #E8F4FF"></span><span class="tx-sw" style="background:#6FE3FF" title="--tx-a1 #6FE3FF"></span><span class="tx-sw" style="background:#F5A623" title="--tx-a2 #F5A623"></span><span class="tx-sw" style="background:#FF3B5C" title="--tx-a3 #FF3B5C"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

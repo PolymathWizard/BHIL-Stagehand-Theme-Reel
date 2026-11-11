@@ -4,6 +4,8 @@
 
 *1983 night, a red-glow title, and a world flipped under the surface.*
 
+![TX-06 OTHERSIDE ’83, a still from the reel at Full](../assets/screens/tx-06-otherside-83.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#070608" title="--tx-bg #070608"></span><span class="tx-sw" style="background:#F2E6C9" title="--tx-ink #F2E6C9"></span><span class="tx-sw" style="background:#E0303A" title="--tx-a1 #E0303A"></span><span class="tx-sw" style="background:#8DA3B5" title="--tx-a2 #8DA3B5"></span><span class="tx-sw" style="background:#FF5A4E" title="--tx-a3 #FF5A4E"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

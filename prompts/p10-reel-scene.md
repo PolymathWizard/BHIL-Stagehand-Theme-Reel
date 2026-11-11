@@ -39,6 +39,7 @@ three per second; ambient flicker at 3% opacity or less and 2 Hz or less.
 ```bash
 python3 scripts/build_derived.py
 cd reel && python3 build_reel.py && cd ..
+python3 scripts/render_screens.py      # README and card stills; a new theme needs its frame in canon/screens.json first
 node tests/reel_stub_sweep.js reel/dist/stagehand-theme-reel.html 2.5
 python3 -m unittest discover -s tests
 python3 scripts/validate.py
@@ -57,6 +58,7 @@ Add an entry to `POST` in `fx.js` (bloom, threshold, transition style, camera) a
 - [ ] Viewed at Full, Tempered and Boardroom.
 - [ ] No franchise words in labels or on-screen text (the validator scans).
 - [ ] `reel/dist/SOURCES.sha256` updated by the build.
+- [ ] A still picked in `canon/screens.json` and `docs/assets/screens/SOURCES.sha256` refreshed by `render_screens.py`.
 
 ## Failure modes
 

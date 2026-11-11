@@ -19,6 +19,7 @@ git checkout -b feat/your-change
 python3 scripts/build_derived.py
 cd reel && npm ci && python3 build_reel.py && cd ..          # if you touched the reel or theme tokens
 python3 scripts/figures.py && python3 scripts/render_figures.py  # if you touched canon the figures read
+python3 scripts/render_screens.py                                # if you rebuilt the reel or the figures
 python3 scripts/validate.py
 python3 scripts/verify_drift.py
 python3 -m unittest discover -s tests
@@ -26,7 +27,7 @@ node tests/reel_stub_sweep.js reel/dist/stagehand-theme-reel.html
 mkdocs build --strict
 ```
 
-The reel and figure builders need `pip install fonttools brotli playwright` and `npx playwright install chromium` (or set `CHROME` to a local Chrome). The gates need nothing beyond Python 3.10+ and Node 18+.
+The reel, figure and screenshot builders need `pip install fonttools brotli playwright pillow` and `npx playwright install chromium` (or set `CHROME` to a local Chrome). The gates need nothing beyond Python 3.10+ and Node 18+.
 
 ## Commits
 

@@ -4,6 +4,8 @@
 
 *Light corridors, lensing rings, and silence as a beat.*
 
+![TX-12 SLIT-SCAN COSMOS, a still from the reel at Full](../assets/screens/tx-12-slit-scan-cosmos.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#000000" title="--tx-bg #000000"></span><span class="tx-sw" style="background:#E8E1D5" title="--tx-ink #E8E1D5"></span><span class="tx-sw" style="background:#F2A65A" title="--tx-a1 #F2A65A"></span><span class="tx-sw" style="background:#5B8CFF" title="--tx-a2 #5B8CFF"></span><span class="tx-sw" style="background:#9B5DE5" title="--tx-a3 #9B5DE5"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

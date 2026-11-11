@@ -4,6 +4,8 @@
 
 *A pirate-TV host stuttering through a glitching broadcast.*
 
+![TX-05 STUTTER BROADCAST, a still from the reel at Full](../assets/screens/tx-05-stutter-broadcast.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#000000" title="--tx-bg #000000"></span><span class="tx-sw" style="background:#FFFFFF" title="--tx-ink #FFFFFF"></span><span class="tx-sw" style="background:#FF00A8" title="--tx-a1 #FF00A8"></span><span class="tx-sw" style="background:#00F0FF" title="--tx-a2 #00F0FF"></span><span class="tx-sw" style="background:#FFE600" title="--tx-a3 #FFE600"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

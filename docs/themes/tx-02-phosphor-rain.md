@@ -4,6 +4,8 @@
 
 *Green code cascading until the hidden truth resolves.*
 
+![TX-02 PHOSPHOR RAIN, a still from the reel at Full](../assets/screens/tx-02-phosphor-rain.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#000500" title="--tx-bg #000500"></span><span class="tx-sw" style="background:#C8F5CF" title="--tx-ink #C8F5CF"></span><span class="tx-sw" style="background:#00FF41" title="--tx-a1 #00FF41"></span><span class="tx-sw" style="background:#008F11" title="--tx-a2 #008F11"></span><span class="tx-sw" style="background:#7FA8C9" title="--tx-a3 #7FA8C9"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

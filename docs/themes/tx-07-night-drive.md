@@ -4,6 +4,8 @@
 
 *A pink-and-cyan night cruise toward a striped sunset.*
 
+![TX-07 NIGHT DRIVE, a still from the reel at Full](../assets/screens/tx-07-night-drive.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#0B0420" title="--tx-bg #0B0420"></span><span class="tx-sw" style="background:#F3E8FF" title="--tx-ink #F3E8FF"></span><span class="tx-sw" style="background:#FF2A6D" title="--tx-a1 #FF2A6D"></span><span class="tx-sw" style="background:#05D9E8" title="--tx-a2 #05D9E8"></span><span class="tx-sw" style="background:#FFB86C" title="--tx-a3 #FFB86C"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

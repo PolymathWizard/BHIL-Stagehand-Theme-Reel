@@ -4,6 +4,8 @@
 
 *Rain, haze and neon reflections in a city that watches.*
 
+![TX-04 RAINLIGHT NOIR, a still from the reel at Full](../assets/screens/tx-04-rainlight-noir.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#05070B" title="--tx-bg #05070B"></span><span class="tx-sw" style="background:#D9E2E8" title="--tx-ink #D9E2E8"></span><span class="tx-sw" style="background:#FF8A1F" title="--tx-a1 #FF8A1F"></span><span class="tx-sw" style="background:#FF2E88" title="--tx-a2 #FF2E88"></span><span class="tx-sw" style="background:#3FD0E0" title="--tx-a3 #3FD0E0"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

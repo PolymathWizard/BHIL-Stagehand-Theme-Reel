@@ -4,6 +4,8 @@
 
 *Comic panels, misregistered inks, one art style per world.*
 
+![TX-18 HALFTONE MULTIVERSE, a still from the reel at Full](../assets/screens/tx-18-halftone-multiverse.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#FFFFFF" title="--tx-bg #FFFFFF"></span><span class="tx-sw" style="background:#111111" title="--tx-ink #111111"></span><span class="tx-sw" style="background:#E6007E" title="--tx-a1 #E6007E"></span><span class="tx-sw" style="background:#0095D6" title="--tx-a2 #0095D6"></span><span class="tx-sw" style="background:#D4C700" title="--tx-a3 #D4C700"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

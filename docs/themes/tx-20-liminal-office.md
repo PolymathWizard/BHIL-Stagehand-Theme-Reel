@@ -4,6 +4,8 @@
 
 *White corridors, teal carpet, and numbers that feel uneasy.*
 
+![TX-20 LIMINAL OFFICE, a still from the reel at Full](../assets/screens/tx-20-liminal-office.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#F4F6F5" title="--tx-bg #F4F6F5"></span><span class="tx-sw" style="background:#1D2B2A" title="--tx-ink #1D2B2A"></span><span class="tx-sw" style="background:#2E6F5E" title="--tx-a1 #2E6F5E"></span><span class="tx-sw" style="background:#1F8A78" title="--tx-a2 #1F8A78"></span><span class="tx-sw" style="background:#6B5E3C" title="--tx-a3 #6B5E3C"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

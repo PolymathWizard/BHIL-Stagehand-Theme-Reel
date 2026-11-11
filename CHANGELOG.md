@@ -2,6 +2,17 @@
 
 All notable changes to this repository. Versions follow semantic versioning; commits follow conventional commits scoped to `stagehand`.
 
+## 1.1.0 · 2026-11-10
+
+Visual navigation: the README and the docs now show every theme instead of listing it.
+
+- **Start here grid.** Six cards at the top of the README (live reel, roster, codex, agents and prompts, reel engine, figures), each with an image.
+- **Visual roster.** One still per theme from the reel at Full, in a four-column grid; each still links to its card. The full roster table is folded underneath.
+- **Figure grid.** Thumbnails of STC-01 to STC-10 replace the figure table.
+- **Stills on every theme card** and a gallery on the docs roster page.
+- `canon/screens.json` picks each theme's frame; `scripts/render_screens.py` renders the stills, thumbnails and two mosaics with the reel paused and seeded (ADR-011).
+- The validator checks every still and thumbnail for presence, size and freshness against the reel, canon and the figure PNGs, and rejects stray images. Two new regression tests.
+
 ## 1.0.0 · 2026-11-10
 
 First public release: the public edition of the Stagehand Theme Codex (STC v1.0) and the Stagehand Theme Reel (v5).

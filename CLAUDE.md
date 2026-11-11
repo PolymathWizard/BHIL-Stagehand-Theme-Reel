@@ -21,6 +21,7 @@ node tests/reel_stub_sweep.js reel/dist/stagehand-theme-reel.html
 python3 scripts/fit_test.py --words "a, b, c, d, e" --shape score --register b2b
 cd reel && python3 build_reel.py      # rebuild the reel (needs npm ci, fonttools, brotli)
 python3 scripts/figures.py && python3 scripts/render_figures.py   # rebuild figures (fonttools, playwright)
+python3 scripts/render_screens.py     # rebuild reel stills and README thumbnails (playwright, pillow); after any reel or figure rebuild
 mkdocs build --strict
 ```
 
@@ -37,7 +38,8 @@ Seven agents live in `.claude/agents/`. Start themed work with `stagehand-direct
 | `reel/dist/` | The built reel and its input hashes |
 | `tokens/` | Generated CSS and JSON tokens |
 | `docs/` | MkDocs site; themes, codex, reference and three reel pages are generated |
-| `docs/assets/figures/` | Figure kit: svg, png, input and output hashes |
+| `docs/assets/figures/` | Figure kit: svg, png, README thumbnails, input and output hashes |
+| `docs/assets/screens/` | One reel still per theme, the README mosaics and their input hashes (ADR-011) |
 | `prompts/` | P00 to P10 |
 | `scripts/` | Generators, gates and the two non-stdlib builders |
 | `tests/` | Regression tests and the canvas stub sweep |

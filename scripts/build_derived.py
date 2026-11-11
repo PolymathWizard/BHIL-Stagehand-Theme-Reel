@@ -5,7 +5,7 @@
 
 Derived artifacts are never hand-edited (ADR-001). Edit canon, then rebuild.
 """
-import hashlib, json, re, sys
+import hashlib, html, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -80,13 +80,27 @@ def swatches(t):
     return f'<div class="tx-swatches">{cells}</div>\n'
 
 
+def grid(cells, cols):
+    """An HTML table grid for GitHub READMEs, which drop CSS but keep table, width and align attributes."""
+    rows = [cells[i:i + cols] for i in range(0, len(cells), cols)]
+    w = f'{100 // cols}%'
+    return '<table>\n' + ''.join('<tr>\n' + ''.join(f'<td align="center" valign="top" width="{w}">{c}</td>\n' for c in r) + '</tr>\n' for r in rows) + '</table>\n'
+
+
+def card(href, img, alt, width, title, sub):
+    e = html.escape
+    return (f'<a href="{e(href)}"><img src="{e(img)}" width="{width}" alt="{e(alt)}"></a><br>'
+            f'<b><a href="{e(href)}">{title}</a></b><br><sub>{e(sub)}</sub>')
+
+
 def theme_page(t, fam, beats, fonts, dial, slots):
     k = t['tokens']; fname = {f['family']: f for f in fonts}
     ink = contrast(k['ink'], k['bg'])
     acc = [(r, contrast(k[r], k['bg'])) for r in ('a1', 'a2', 'a3')]
     b = beats.get(t['id'], []); total = sum(x[2] for x in b)
     sname = {s['id']: s['name'] for s in slots}
-    L = [f'# {t["id"]} {t["name"]}\n', f'<!-- {GEN} -->\n', f'*{t["feel"]}*\n', swatches(t),
+    L = [f'# {t["id"]} {t["name"]}\n', f'<!-- {GEN} -->\n', f'*{t["feel"]}*\n',
+         f'![{t["id"]} {t["name"]}, a still from the reel at Full](../assets/screens/{t["slug"]}.jpg)\n', swatches(t),
          table(['Family', 'Home register', 'B2B fit', 'Data shapes', 'Best for'],
                [[f'{fam["id"]} · {fam["name"]}', t['home_register'], dial['b2b_fit'][t['b2b']], ', '.join(t['data_shapes']), t['best_for']]]),
          '## Tokens\n', f'Paste-ready custom properties. Download: [`tokens/themes/{t["slug"]}.css`](https://github.com/PolymathWizard/BHIL-Stagehand-Theme-Reel/blob/main/tokens/themes/{t["slug"]}.css).\n',
@@ -128,7 +142,11 @@ def generate(root=ROOT):
     # theme pages and roster
     for t in themes:
         out[f'docs/themes/{t["slug"]}.md'] = theme_page(t, F[t['family']], beats, fonts, dial, slotsc['slots'])
-    R = ['# Theme roster\n', f'<!-- {GEN} -->\n', f'Twenty themes in five families. *Home register* is where a theme runs at full strength; *B2B fit* says whether it survives the Boardroom dial. Data shapes use the U1 vocabulary: flow, network, comparison, timeline, terrain, score and document.\n']
+    R = ['# Theme roster\n', f'<!-- {GEN} -->\n', f'Twenty themes in five families. *Home register* is where a theme runs at full strength; *B2B fit* says whether it survives the Boardroom dial. Data shapes use the U1 vocabulary: flow, network, comparison, timeline, terrain, score and document.\n',
+         'Every still below is a frame from the reel at Full. Select one for its card.\n',
+         '<div class="tx-gallery" markdown>\n\n' + '\n'.join(
+             f'<div markdown>\n[![{t["id"]} {t["name"]}, a still from the reel](../assets/screens/{t["slug"]}.jpg){{ loading=lazy }}]({t["slug"]}.md)\n**{t["id"]}** [{t["name"]}]({t["slug"]}.md)  \n{t["feel"]}\n</div>\n'
+             for t in themes) + '\n</div>\n']
     for f in fams:
         R.append(f'## {f["id"]} · {f["name"]}\n'); R.append(f['intro'] + '\n')
         R.append(table(['ID', 'Codename', 'Feel in one line', 'Best for', 'Data shapes', 'Home', 'B2B fit'],
@@ -281,8 +299,16 @@ def generate(root=ROOT):
     readme = root / 'README.md'
     if readme.exists():
         s = readme.read_text(encoding='utf-8')
-        blocks = {'roster': table(['ID', 'Codename', 'Feel', 'Home', 'B2B fit'], [[t['id'], f'[{t["name"]}](docs/themes/{t["slug"]}.md)', t['feel'], t['home_register'], dial['b2b_fit'][t['b2b']]] for t in themes]),
-                  'figures': table(['ID', 'Figure', 'Use it in'], [[f[0], f'[{f[2]}](docs/assets/figures/png/{f[1]}.png)', f[3]] for f in figs]),
+        scr = load(root, 'screens.json')
+        nav = grid([card(c['href'].replace('$reel_live', meta['reel_live']), c['image'], c['title'], 250, html.escape(c['title']), c['blurb']) for c in scr['start_here']], 3)
+        roster = grid([card(f'docs/themes/{t["slug"]}.md', f'docs/assets/screens/{t["slug"]}.jpg', f'{t["id"]} {t["name"]}, a still from the reel', 190,
+                            f'{t["id"]} · {html.escape(t["name"])}', t['feel']) for t in themes], 4)
+        roster += ('\n<details>\n<summary>The roster as a table, with home register and B2B fit</summary>\n\n' +
+                   table(['ID', 'Codename', 'Feel', 'Home', 'B2B fit'], [[t['id'], f'[{t["name"]}](docs/themes/{t["slug"]}.md)', t['feel'], t['home_register'], dial['b2b_fit'][t['b2b']]] for t in themes]) +
+                   '\n</details>\n')
+        fig_grid = grid([card(f'docs/assets/figures/png/{f[1]}.png', f'docs/assets/figures/thumb/{f[1]}.jpg', f'{f[0]} · {f[2]}', 400,
+                              f'{f[0]} · {html.escape(f[2])}', f'Use it in: {f[3]}') for f in figs], 2)
+        blocks = {'nav': nav, 'roster': roster, 'figures': fig_grid,
                   'counts': f'**{len(themes)} themes · {len(fams)} families · {len(dial["levels"])} intensity levels · {len(slotsc["slots"])} web slots · {len(figs)} figures · {len(agents["agents"])} agents · {len(prompts)} prompts · {len(fonts)} open-license font families**\n'}
         for k, v in blocks.items():
             s = re.sub(rf'(<!-- BEGIN:{k} -->\n).*?(<!-- END:{k} -->)', lambda m: m.group(1) + v + m.group(2), s, flags=re.S)

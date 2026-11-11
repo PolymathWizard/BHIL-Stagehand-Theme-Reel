@@ -19,3 +19,8 @@
 .md-typeset img { border: 1px solid #1E3A5F; }
 .tx-swatches { display: flex; gap: 0; margin: .4rem 0 1.2rem; border: 1px solid #1E3A5F; width: max-content; }
 .tx-sw { display: inline-block; width: 64px; height: 40px; }
+.tx-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: .9rem; margin: 1rem 0 2rem; }
+.tx-gallery > div { border: 1px solid #1E3A5F; background: #0A0A0A; padding: 0 0 .5rem; }
+.tx-gallery img { display: block; width: 100%; height: auto; border: 0; }
+.tx-gallery p { margin: .45rem .6rem 0; font-size: .68rem; line-height: 1.4; color: #C9D3DC; }
+.tx-gallery p strong { color: #4FA3D1; font-family: "IBM Plex Mono", monospace; font-weight: 500; }

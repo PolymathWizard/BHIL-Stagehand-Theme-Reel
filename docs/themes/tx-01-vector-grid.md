@@ -4,6 +4,8 @@
 
 *Neon light-lines racing across an endless dark grid.*
 
+![TX-01 VECTOR GRID, a still from the reel at Full](../assets/screens/tx-01-vector-grid.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#02040A" title="--tx-bg #02040A"></span><span class="tx-sw" style="background:#E6FDFF" title="--tx-ink #E6FDFF"></span><span class="tx-sw" style="background:#00E5FF" title="--tx-a1 #00E5FF"></span><span class="tx-sw" style="background:#FF6A00" title="--tx-a2 #FF6A00"></span><span class="tx-sw" style="background:#1E6F8C" title="--tx-a3 #1E6F8C"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

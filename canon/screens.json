@@ -1,0 +1,41 @@
+{
+  "note": "One still per theme for the README roster and the theme pages, plus the README start-here cards. scripts/render_screens.py renders each still from the built reel at Full: beat is a beat index or a slot id, t is seconds into that beat, and the scene warms up for 0.6 s before the frame is taken. An href of $reel_live resolves to canon/stagehand.json.",
+  "still_size": [800, 450],
+  "thumb_size": [640, 360],
+  "jpeg_quality": 80,
+  "seed": 20261110,
+  "stills": {
+    "TX-01": {"beat": 0, "t": 4.6},
+    "TX-02": {"beat": 0, "t": 3.2},
+    "TX-03": {"beat": 0, "t": 4.6},
+    "TX-04": {"beat": 0, "t": 4.6},
+    "TX-05": {"beat": 0, "t": 4.6},
+    "TX-06": {"beat": 0, "t": 1.6},
+    "TX-07": {"beat": 0, "t": 3.2},
+    "TX-08": {"beat": 0, "t": 4.6},
+    "TX-09": {"beat": "S4", "t": 4.3},
+    "TX-10": {"beat": 0, "t": 3.2},
+    "TX-11": {"beat": 0, "t": 1.6},
+    "TX-12": {"beat": 0, "t": 4.6},
+    "TX-13": {"beat": 0, "t": 4.6},
+    "TX-14": {"beat": 0, "t": 3.2},
+    "TX-15": {"beat": 0, "t": 3.2},
+    "TX-16": {"beat": 0, "t": 4.6},
+    "TX-17": {"beat": 0, "t": 4.6},
+    "TX-18": {"beat": 0, "t": 3.2},
+    "TX-19": {"beat": 0, "t": 3.2},
+    "TX-20": {"beat": 1, "t": 2.4}
+  },
+  "mosaics": {
+    "reel-mosaic": {"from": "stills", "cols": 4, "rows": 4, "pick": ["TX-01", "TX-10", "TX-07", "TX-16", "TX-15", "TX-03", "TX-18", "TX-11", "TX-13", "TX-14", "TX-05", "TX-20", "TX-09", "TX-04", "TX-19", "TX-02"]},
+    "figure-mosaic": {"from": "figures", "cols": 3, "rows": 3, "pick": ["STC-01", "STC-02", "STC-03", "STC-04", "STC-05", "STC-06", "STC-07", "STC-08", "STC-09"]}
+  },
+  "start_here": [
+    {"title": "Live reel", "href": "$reel_live", "image": "docs/assets/screens/reel-mosaic.jpg", "blurb": "All twenty themes running, with the Full, Tempered and Boardroom dial."},
+    {"title": "Theme roster", "href": "docs/themes/index.md", "image": "docs/assets/figures/thumb/stc-02-families-and-fit.jpg", "blurb": "Five families, home registers, B2B fit and quick picks by story type."},
+    {"title": "The codex", "href": "docs/codex/card-anatomy.md", "image": "docs/assets/figures/thumb/stc-03-card-anatomy.jpg", "blurb": "Card anatomy, the Homage Rule, the dial, web slots, safety and the video kit."},
+    {"title": "Agents and prompts", "href": "docs/agents.md", "image": "docs/assets/figures/thumb/stc-10-brief-to-manifest.jpg", "blurb": "Seven agents and eleven prompts that run a brief to one manifest line."},
+    {"title": "Reel engine", "href": "docs/reel/index.md", "image": "docs/assets/figures/thumb/stc-06-film-pipeline.jpg", "blurb": "The sixteen-pass film pipeline, the beat grammar and how to add a scene."},
+    {"title": "Figures", "href": "docs/figures.md", "image": "docs/assets/screens/figure-mosaic.jpg", "blurb": "Ten teaching figures as animated SVG and PNG, with exercises."}
+  ]
+}

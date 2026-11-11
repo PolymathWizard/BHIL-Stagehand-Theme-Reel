@@ -4,6 +4,8 @@
 
 *A brass map where mechanisms rise to show who holds what.*
 
+![TX-13 CLOCKWORK REALM, a still from the reel at Full](../assets/screens/tx-13-clockwork-realm.jpg)
+
 <div class="tx-swatches"><span class="tx-sw" style="background:#1A1712" title="--tx-bg #1A1712"></span><span class="tx-sw" style="background:#E9DCC0" title="--tx-ink #E9DCC0"></span><span class="tx-sw" style="background:#C9A464" title="--tx-a1 #C9A464"></span><span class="tx-sw" style="background:#8C1C13" title="--tx-a2 #8C1C13"></span><span class="tx-sw" style="background:#7A8C96" title="--tx-a3 #7A8C96"></span></div>
 
 | Family | Home register | B2B fit | Data shapes | Best for |

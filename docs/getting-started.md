@@ -63,8 +63,9 @@ mkdocs build --strict                             # this site
 | --- | --- | --- |
 | Change a theme's words, tokens or slot fills | `canon/themes.json` | `python3 scripts/build_derived.py`, then rebuild the reel and figures |
 | Add a theme | `canon/themes.json`, `canon/families.json`, a scene in `reel/src/` | Prompt P09 and P10 walk through it |
-| Change the reel's motion | `reel/src/*.js` (never `data.js`) | `cd reel && npm ci && python3 build_reel.py` |
-| Change a figure | `scripts/figures.py` or canon | `python3 scripts/figures.py && python3 scripts/render_figures.py` |
+| Change the reel's motion | `reel/src/*.js` (never `data.js`) | `cd reel && npm ci && python3 build_reel.py`, then `python3 scripts/render_screens.py` |
+| Change a figure | `scripts/figures.py` or canon | `python3 scripts/figures.py && python3 scripts/render_figures.py`, then `python3 scripts/render_screens.py` |
+| Change a README still | `canon/screens.json` | `python3 scripts/render_screens.py` |
 | Change prose on a hand-written page | that page | `mkdocs build --strict` |
 
 Generated files carry a "Generated from canon" comment at the top. Do not edit them by hand; the drift gate will fail. See [CONTRIBUTING](https://github.com/PolymathWizard/BHIL-Stagehand-Theme-Reel/blob/main/CONTRIBUTING.md).
