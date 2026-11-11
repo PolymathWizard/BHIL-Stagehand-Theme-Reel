@@ -1,0 +1,32 @@
+{
+  "intro": "Every theme ships as a site, a video, or both. The video works as the site's trailer: the same title treatment, palette and motif as the S1.",
+  "formats": [
+    "Masters at 16:9, 1920 x 1080; cutdowns at 9:16 and 1:1. TX-04, TX-10 and TX-12 letterbox to 2.39:1 inside the 16:9 frame.",
+    "24 fps is the cinematic default. Use 30 fps for broadcast and interface themes (TX-03, TX-05, TX-08, TX-20). TX-18 mixes 24 fps with 12 fps on twos for stylized moves."
+  ],
+  "lengths": [
+    [
+      "15 s",
+      "Hook (0 to 2 s), one stat in the theme's data skin, end card",
+      "Social teaser, ad"
+    ],
+    [
+      "30 s",
+      "Hook, title card, 2 beats, end card",
+      "Launch post, event promo"
+    ],
+    [
+      "60 to 90 s",
+      "Cold open, title card, 3 beats, resolve, end card",
+      "Site trailer, keynote opener"
+    ]
+  ],
+  "rules": [
+    "Title cards and lower thirds use the card's display and mono faces.",
+    "Pacing follows the card's BPM range. Cut on downbeats unless the card calls for holds (TX-12, TX-15, TX-20).",
+    "Audio is original or a properly licensed library track matching the card's sound bed. No sound-alikes of franchise themes. A public-domain composition still needs a licensed or original recording.",
+    "Captions are burned in on social cutdowns, with an SRT alongside every master.",
+    "Flash testing: any cut with flicker, glitch, strobe or fast light changes is tested before publishing, with the free PEAT tool from the Trace R&D Center for web and social, or a commercial flash test for broadcast and paid media.",
+    "Manifest parity: a video gets the same manifest lines as a site: theme, intensity, homage-check, audio license, flash-test result."
+  ]
+}

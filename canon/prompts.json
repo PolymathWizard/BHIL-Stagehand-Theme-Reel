@@ -1,0 +1,81 @@
+{
+  "prompts": [
+    [
+      "P00",
+      "p00-director.md",
+      "Director kickoff",
+      "stagehand-director",
+      "all"
+    ],
+    [
+      "P01",
+      "p01-essence.md",
+      "U1 essence extraction",
+      "essence-reader",
+      "U1"
+    ],
+    [
+      "P02",
+      "p02-fit-test.md",
+      "Fit test and shortlist",
+      "theme-scout",
+      "U1"
+    ],
+    [
+      "P03",
+      "p03-triptych.md",
+      "Concept triptych",
+      "theme-scout",
+      "U2"
+    ],
+    [
+      "P04",
+      "p04-ledger.md",
+      "Ledger check",
+      "theme-scout",
+      "U3"
+    ],
+    [
+      "P05",
+      "p05-dial.md",
+      "Intensity and Boardroom translation",
+      "theme-stylist",
+      "R"
+    ],
+    [
+      "P06",
+      "p06-slots.md",
+      "Slot fill plan",
+      "theme-stylist",
+      "E"
+    ],
+    [
+      "P07",
+      "p07-homage-audit.md",
+      "Homage swap test and safety audit",
+      "homage-auditor",
+      "T"
+    ],
+    [
+      "P08",
+      "p08-manifest.md",
+      "Manifest line",
+      "stagehand-director",
+      "M"
+    ],
+    [
+      "P09",
+      "p09-new-card.md",
+      "New theme card",
+      "card-author",
+      "R, T"
+    ],
+    [
+      "P10",
+      "p10-reel-scene.md",
+      "Reel scene for a theme",
+      "reel-engineer",
+      "C"
+    ]
+  ]
+}

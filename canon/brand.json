@@ -1,0 +1,27 @@
+{
+  "source": "BHIL Brand Guidelines v1.0",
+  "colors": {
+    "terminal_navy": "#0D1B2E",
+    "ink": "#0A0A0A",
+    "paper": "#FFFFFF",
+    "paper_3": "#F3F3F0",
+    "bh_blue": "#4FA3D1",
+    "bh_blue_2": "#2E80B0",
+    "bh_blue_3": "#1E3A5F",
+    "bh_blue_bright": "#6CC0E8",
+    "copper": "#D97757",
+    "stone": "#6B6258",
+    "sage": "#4A8A6E"
+  },
+  "type": {
+    "headline": "Newsreader",
+    "label": "IBM Plex Mono",
+    "body": "IBM Plex Sans"
+  },
+  "rules": [
+    "One blue does the work: BH Blue carries accents, hairlines and eyebrows, never body text and never large fills.",
+    "Copper only for warnings and anything switched off.",
+    "Square corners, no drop shadows, no gradients on motifs.",
+    "No em or en dashes anywhere."
+  ]
+}

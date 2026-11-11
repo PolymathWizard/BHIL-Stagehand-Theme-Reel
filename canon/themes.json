@@ -1,0 +1,1293 @@
+{
+  "version": "1.0.0",
+  "codex": "STC v1.0",
+  "themes": [
+    {
+      "id": "TX-01",
+      "name": "VECTOR GRID",
+      "slug": "tx-01-vector-grid",
+      "family": "A",
+      "feel": "Neon light-lines racing across an endless dark grid.",
+      "best_for": "AI infrastructure, data flows, platform launches",
+      "data_shapes": [
+        "flow",
+        "network"
+      ],
+      "home_register": "Creative",
+      "b2b": "board",
+      "b2b_label": "Has a Boardroom translation",
+      "tokens": {
+        "bg": "#02040A",
+        "ink": "#E6FDFF",
+        "a1": "#00E5FF",
+        "a2": "#FF6A00",
+        "a3": "#1E6F8C"
+      },
+      "extra_tokens": {
+        "grain": "0"
+      },
+      "fonts": {
+        "display": [
+          "Orbitron",
+          700
+        ],
+        "body": [
+          "Exo 2",
+          400
+        ],
+        "mono": [
+          "Share Tech Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.16,1,.3,1)",
+      "dur": "600ms",
+      "essence": [
+        "circuitry",
+        "speed",
+        "precision",
+        "inside the machine",
+        "rivalry",
+        "light"
+      ],
+      "look": "Black void, cyan light-lines with white-hot cores, and one orange \"rival\" force. One-point perspective floor grid, horizon glow, hard 90° geometry. No grain; bloom on lines only.",
+      "motion": "Constant-velocity runs that break into hard 90° turns. \"Wire-in\" builds go wireframe, then fill, then glow. \"Shard-out\" exits break into square shards. `expo.out`, 400 to 800 ms.",
+      "slots": {
+        "S1": "perspective grid floor scrolling toward the horizon while a light-trail draws the headline (T1 CSS 3D + gradient grid; T3 option: three.js grid with bloom).",
+        "S2": "DrawSVG light-trails linking section points at right angles.",
+        "S3": "horizon glow + 2% scanlines.",
+        "S4": "bars as glowing light-walls (scaleY only), lines as trails with a fading wake.",
+        "S5": "neon focus rings with circuit-trace corners."
+      },
+      "video": "Cold open riding the grid at speed, cuts on 90° turns landing on downbeats, titles wiring in line by line. Arpeggiated synth with a sub pulse, 100 to 120 BPM.",
+      "data_skin": "Hairline luminous strokes, no fills, mono values. The rival series is always the orange.",
+      "boardroom": "Deep navy ground, grid at 8% opacity, cyan only on the key path, no shards.",
+      "guardrails": "No light-racing vehicles, throwing-disc weapons or circuit-lined suits on human figures, and no recreated title styling. Keep the light abstract: lines, grids and shards.",
+      "collision": "Sits near sci-fi dashboard builds. Keep VECTOR GRID about motion through space, not HUD panels.",
+      "seed": "TX-01 VECTOR GRID: inside-the-machine neon geometry; cyan light-lines on black with one orange rival; wire-in reveals, right-angle light-trail connectors, shard-out exits."
+    },
+    {
+      "id": "TX-02",
+      "name": "PHOSPHOR RAIN",
+      "slug": "tx-02-phosphor-rain",
+      "family": "A",
+      "feel": "Green code cascading until the hidden truth resolves.",
+      "best_for": "Threat intel, hidden-system reveals, AI",
+      "data_shapes": [
+        "document",
+        "network"
+      ],
+      "home_register": "Creative",
+      "b2b": "board",
+      "b2b_label": "Has a Boardroom translation",
+      "tokens": {
+        "bg": "#000500",
+        "ink": "#C8F5CF",
+        "a1": "#00FF41",
+        "a2": "#008F11",
+        "a3": "#7FA8C9"
+      },
+      "extra_tokens": {
+        "grain": ".04"
+      },
+      "fonts": {
+        "display": [
+          "Share Tech Mono",
+          400
+        ],
+        "body": [
+          "IBM Plex Sans",
+          400
+        ],
+        "mono": [
+          "VT323",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.22,1,.36,1)",
+      "dur": "750ms",
+      "essence": [
+        "code",
+        "hidden truth",
+        "simulation",
+        "awakening",
+        "signal in noise",
+        "control"
+      ],
+      "look": "Near-black green, falling glyph columns with a bright lead glyph, phosphor bloom. A \"real world\" chapter switches the grade to cold steel blue (`--tx-a3`). **Build the rain from the subject's own material** (its keywords, hex of its data, its numerals), never a borrowed glyph set. This is the theme's uniqueness lever.",
+      "motion": "Columns fall at varied speeds; headings decode out of noise; one \"freeze-orbit\" moment where scroll stops time and circles a single data point. Decodes run 600 to 900 ms.",
+      "slots": {
+        "S1": "canvas rain that resolves into the headline (T2 to T3; 60 columns desktop, 24 mobile; stops or pauses after 5 s).",
+        "S2": "ScrambleText decode on section heads.",
+        "S3": "CRT scanlines + light bloom.",
+        "S4": "numbers decode from glyph noise to the true value, which sits in the DOM.",
+        "S5": "terminal caret and green focus outline."
+      },
+      "video": "Black frame with a blinking cursor, rain resolving into the title, green \"inside\" scenes cut against steel-blue \"outside\" scenes, a freeze-orbit shot for the key stat. Low industrial pulse with glitch percussion, 90 to 100 BPM.",
+      "data_skin": "5-step monochrome green ramp, mono numerals, glyph-noise texture in empty chart space at 5%.",
+      "boardroom": "Rain only in the hero at 15% opacity or less, frozen after 3 s; decode accents on KPIs only.",
+      "guardrails": "Rain glyphs come from the subject, never a borrowed or mirrored glyph set. No two-pill choice motif, no figures in long coats and dark glasses, no phone-booth exits, no film dialogue.",
+      "collision": "Sits near threat-intel builds with spectrogram or heap-grid signatures. Vary the S1 family if either shipped in the last two builds.",
+      "seed": "TX-02 PHOSPHOR RAIN: code rain built from this subject's own words and numbers; truths decode out of noise; one freeze-orbit data moment; green inside, steel-blue outside."
+    },
+    {
+      "id": "TX-03",
+      "name": "GLASS HUD",
+      "slug": "tx-03-glass-hud",
+      "family": "A",
+      "feel": "Translucent data panels assembling around one datum.",
+      "best_for": "Monitoring, CI dashboards, agent systems",
+      "data_shapes": [
+        "score",
+        "comparison"
+      ],
+      "home_register": "B2B",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#050B14",
+        "ink": "#E8F4FF",
+        "a1": "#6FE3FF",
+        "a2": "#F5A623",
+        "a3": "#FF3B5C"
+      },
+      "extra_tokens": {
+        "grain": "0"
+      },
+      "fonts": {
+        "display": [
+          "Chakra Petch",
+          600
+        ],
+        "body": [
+          "Inter",
+          400
+        ],
+        "mono": [
+          "B612 Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.33,1,.68,1)",
+      "dur": "450ms",
+      "essence": [
+        "foresight",
+        "monitoring",
+        "augmentation",
+        "command",
+        "precision",
+        "overlay"
+      ],
+      "look": "Deep navy, translucent glass panels, ice-cyan linework, amber thresholds, one alert red. A central datum surrounded by orbiting panels, brackets, tick ladders and reticles. B612 Mono was drawn for cockpit legibility, so it suits dense readouts.",
+      "motion": "Staged boot sequences: lines draw, brackets snap, labels scramble, values settle. Micro moves 150 to 300 ms, assemblies 800 ms, `power2.out`, parallax depth between glass layers. Blur is applied to static layers only and never animated.",
+      "slots": {
+        "S1": "panels assemble in depth around the headline datum (CSS 3D + static backdrop blur, T2; T3 option: three.js).",
+        "S2": "panel boot per section.",
+        "S3": "slow reticle rings at 6% opacity.",
+        "S4": "radial gauges, ring meters, sparklines with tick ladders.",
+        "S5": "targeting-bracket focus states."
+      },
+      "video": "Camera pushes through glass layers toward the subject; callouts track to it; panel wipes. Low synth bed, 80 to 90 BPM, sparse UI chirps (video only; web stays silent).",
+      "data_skin": "Thin rings, bracketed labels, tabular mono numerals, amber for any threshold crossing.",
+      "boardroom": "Native. Cap it at 3 panels per view and stop the rotating reticles.",
+      "guardrails": "No armored suits or helmets, no named AI assistants from films, no gesture-glove props and no prediction-chamber imagery.",
+      "collision": "The highest dashboard-collision risk in the codex. Set the HUD over something real (a photo, a map, a document) rather than shipping another standalone dashboard.",
+      "seed": "TX-03 GLASS HUD: translucent panels boot up around one decisive datum; brackets snap, values settle; amber marks every threshold crossing."
+    },
+    {
+      "id": "TX-04",
+      "name": "RAINLIGHT NOIR",
+      "slug": "tx-04-rainlight-noir",
+      "family": "A",
+      "feel": "Rain, haze and neon reflections in a city that watches.",
+      "best_for": "Privacy, data brokers, AI ethics, future of work",
+      "data_shapes": [
+        "terrain",
+        "timeline"
+      ],
+      "home_register": "Editorial",
+      "b2b": "board",
+      "b2b_label": "Has a Boardroom translation",
+      "tokens": {
+        "bg": "#05070B",
+        "ink": "#D9E2E8",
+        "a1": "#FF8A1F",
+        "a2": "#FF2E88",
+        "a3": "#3FD0E0"
+      },
+      "extra_tokens": {
+        "grain": ".08"
+      },
+      "fonts": {
+        "display": [
+          "Saira Condensed",
+          600
+        ],
+        "body": [
+          "Inter",
+          400
+        ],
+        "mono": [
+          "Share Tech Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.65,0,.35,1)",
+      "dur": "1600ms",
+      "essence": [
+        "memory",
+        "identity",
+        "surveillance",
+        "rain",
+        "melancholy",
+        "scale"
+      ],
+      "look": "Wet blacks, teal shadow, sodium-orange haze, magenta and cyan signage, rain highlights. Tall verticals, layered haze, floor reflections, ad-scale typography. Any non-English signage must be real, correctly written words, or left out.",
+      "motion": "Slow push-ins and dissolves of 1.2 to 2.5 s. Neon signs flicker on with 2 flickers at most, under 3 per second. Rain is constant but pausable.",
+      "slots": {
+        "S1": "rain on glass over a neon-bokeh scene, title flickering on as a sign (VFX-JS custom shader or canvas droplets; the page's one WebGL layer).",
+        "S2": "slow dolly reveals: scale plus a crossfade between pre-blurred layers.",
+        "S3": "drifting fog bands + rain streaks (transform-only).",
+        "S4": "tall translucent \"billboard\" stat panels with a scanning light.",
+        "S5": "neon-tube hover outlines."
+      },
+      "video": "Long takes, slow push-ins, reflections, silhouettes against haze, 2.39:1 letterbox. Lush analog brass pads and long reverb, 60 to 80 BPM or free time.",
+      "data_skin": "Bars as vertical light columns, orange-vs-teal for two series, tall condensed caps for labels.",
+      "boardroom": "Keep haze and palette. Rain freezes after 5 s, no flicker, neon only as underline accents.",
+      "guardrails": "No synthetic-human interrogation tests, origami figures, flying police vehicles, invented megacorporations, or recreated skyline shots.",
+      "collision": "Sits near dark forensic looks; differentiate through the rain-and-neon S1. A strong fit for data-broker and privacy stories.",
+      "seed": "TX-04 RAINLIGHT NOIR: a rain-streaked, neon-lit city that watches back; slow push-ins through haze; signage-scale numbers; orange versus teal."
+    },
+    {
+      "id": "TX-05",
+      "name": "STUTTER BROADCAST",
+      "slug": "tx-05-stutter-broadcast",
+      "family": "B",
+      "feel": "A pirate-TV host stuttering through a glitching broadcast.",
+      "best_for": "Synthetic media, AI presenters, media disruption",
+      "data_shapes": [
+        "timeline",
+        "comparison"
+      ],
+      "home_register": "Creative",
+      "b2b": "news",
+      "b2b_label": "Boardroom is news-desk only",
+      "tokens": {
+        "bg": "#000000",
+        "ink": "#FFFFFF",
+        "a1": "#FF00A8",
+        "a2": "#00F0FF",
+        "a3": "#FFE600"
+      },
+      "extra_tokens": {
+        "step": "steps(3)",
+        "grain": ".05"
+      },
+      "fonts": {
+        "display": [
+          "Bungee",
+          400
+        ],
+        "body": [
+          "Space Grotesk",
+          400
+        ],
+        "mono": [
+          "VT323",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.2,0,0,1)",
+      "dur": "350ms",
+      "essence": [
+        "broadcast",
+        "synthetic host",
+        "satire",
+        "interruption",
+        "media control",
+        "glitch"
+      ],
+      "look": "Black studio void behind a rotating box of colored lines. Saturated magenta, cyan, yellow and electric blue; scanlines; generic test-card bars. An \"on-air\" frame: a central presenter window, a lower-third chyron, an original station bug in the corner.",
+      "motion": "The stutter-repeat. A word or frame repeats 2 to 3 times with a jitter before it lands (\"re-re-revenue\"). Frame holds, channel-change cuts with 200 ms of static at most, a tracking band rolling through.",
+      "slots": {
+        "S1": "rotating line-box backdrop (CSS 3D, T1 to T2) behind an on-air frame, with the headline stuttering in.",
+        "S2": "stutter-repeat reveals on section heads; the repeats sit in `aria-hidden` spans and the real text appears once.",
+        "S3": "scanlines + 2 px chroma offset.",
+        "S4": "charts \"change channel\" between states (crossfade + 150 ms noise).",
+        "S5": "a LIVE bug and chyron-style hovers."
+      },
+      "video": "News-desk framing, a presenter cut off by interruptions, stutter edits on the beat, interlace artifacts, a 4:3 frame inside 16:9. Synth-pop at 110 to 120 BPM, chopped vocal stabs (original), short static stings.",
+      "data_skin": "Flat primary bars on black, VT323 tickers, key numbers delivered as \"breaking\" chyrons.",
+      "boardroom": "News-desk format only: chyrons, lower thirds, a ticker and clean cuts. No stutter, glitch or chroma.",
+      "guardrails": "No recreation of an existing synthetic presenter's face, hair, wardrobe or name, and no lines from any show. Any AI host must be an original design.",
+      "collision": "Sits near host-led stories. The natural home for AI presenters, avatars and synthetic-media stories.",
+      "seed": "TX-05 STUTTER BROADCAST: a pirate-TV broadcast fronted by an original synthetic host; stutter-repeat headlines; channel-change data transitions; chyrons for every key number."
+    },
+    {
+      "id": "TX-06",
+      "name": "OTHERSIDE ’83",
+      "slug": "tx-06-otherside-83",
+      "family": "B",
+      "feel": "1983 night, a red-glow title, and a world flipped under the surface.",
+      "best_for": "Hidden risk, \"under the surface\" data, TTRPG, nostalgia",
+      "data_shapes": [
+        "comparison",
+        "document"
+      ],
+      "home_register": "Creative",
+      "b2b": "temp",
+      "b2b_label": "Tempered is the ceiling",
+      "tokens": {
+        "bg": "#070608",
+        "ink": "#F2E6C9",
+        "a1": "#E0303A",
+        "a2": "#8DA3B5",
+        "a3": "#FF5A4E"
+      },
+      "extra_tokens": {
+        "grain": ".10"
+      },
+      "fonts": {
+        "display": [
+          "Fraunces",
+          900
+        ],
+        "body": [
+          "Crimson Pro",
+          400
+        ],
+        "mono": [
+          "VT323",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.37,0,.63,1)",
+      "dur": "1400ms",
+      "essence": [
+        "nostalgia",
+        "dread",
+        "hidden world",
+        "friendship",
+        "small town",
+        "signal"
+      ],
+      "look": "A 1983 night: blue-black, a crimson title glow, warm practical lamps, cream paper. Display is Fraunces at weight 900, tightly tracked, outlined, with a red outer glow; it reads as 80s paperback, not as any franchise's lockup. The \"flipped\" chapter goes desaturated blue-grey with drifting ash. VHS noise stays at 8% or less over text.",
+      "motion": "A slow title assembly where letters drift together and kern tight over 3 to 4 s. VHS tracking-roll between chapters, flashlight reveals in dark sections, particles drifting slowly upward.",
+      "slots": {
+        "S1": "the title assembly in glowing outlined serif over a dark field (T1 to T2; no autoplay audio).",
+        "S2": "VHS tracking-roll transitions (clip + offset, 300 ms or less).",
+        "S3": "floating ash (tsParticles slim, 40 desktop / 20 mobile) + film grain.",
+        "S4": "charts as 80s graph-paper plots and photocopied handouts; the flipped chapter shows the same chart with the hidden variable revealed.",
+        "S5": "a flashlight spotlight cursor, gated to `(hover:hover)`; touch gets a static vignette."
+      },
+      "video": "A slow push on the title, analog synth arpeggios at 80 to 100 BPM, dissolves, practical-light flicker under 3 per second.",
+      "data_skin": "Two-worlds comparisons, surface versus underneath. \"Hidden\" series are dashed until the flip.",
+      "boardroom": "Tempered is the ceiling. Keep the two-worlds device and palette; drop the VHS roll and the flashlight cursor.",
+      "guardrails": "No series title lockup or its typeface, no creatures or characters, no alphabet-light wall, no named town or lab, no kids-on-bikes silhouettes.",
+      "collision": "Sits near dark case-file looks. A strong fit for TTRPG work and for 'what's under the surface' risk stories.",
+      "seed": "TX-06 OTHERSIDE ’83: a 1983-night story with a glowing serif title; every key chart has a flipped 'other side' that reveals the hidden variable; ash drifts, VHS rolls between chapters."
+    },
+    {
+      "id": "TX-07",
+      "name": "NIGHT DRIVE",
+      "slug": "tx-07-night-drive",
+      "family": "B",
+      "feel": "A pink-and-cyan night cruise toward a striped sunset.",
+      "best_for": "Event promos, community, retro gaming",
+      "data_shapes": [
+        "timeline",
+        "comparison"
+      ],
+      "home_register": "Creative",
+      "b2b": "avoid",
+      "b2b_label": "Never pitched for B2B",
+      "tokens": {
+        "bg": "#0B0420",
+        "ink": "#F3E8FF",
+        "a1": "#FF2A6D",
+        "a2": "#05D9E8",
+        "a3": "#FFB86C"
+      },
+      "extra_tokens": {
+        "grain": ".06"
+      },
+      "fonts": {
+        "display": [
+          "Monoton",
+          400
+        ],
+        "body": [
+          "Space Grotesk",
+          400
+        ],
+        "mono": [
+          "Share Tech Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.45,0,.55,1)",
+      "dur": "1100ms",
+      "essence": [
+        "momentum",
+        "nostalgia",
+        "cool",
+        "night",
+        "ambition",
+        "glamour"
+      ],
+      "look": "Deep violet sky, hot-pink and cyan neon, a striped setting sun on a magenta horizon grid, generic palm and skyline silhouettes, chrome type. Unlike TX-01's cold interior cyberspace, this is a warm, analog sunset.",
+      "motion": "The cruise: long eased scrolls (`sine.inOut`, 1 to 1.5 s), neon flicking on, passing-light streaks across the frame, slow-motion holds.",
+      "slots": {
+        "S1": "a striped sun sinking behind a scrolling horizon grid under a chrome title (T1 CSS; T3 option: a shader sun).",
+        "S2": "neon-sign flicker-on headers + script underline draw.",
+        "S3": "static heat-haze shimmer + VHS softness.",
+        "S4": "equalizer bars and gradient chrome numerals.",
+        "S5": "neon glow hovers."
+      },
+      "video": "Passing lights through a car window, mirror framing with no identifiable car, script title cards, synthwave at 85 to 118 BPM with gated-reverb drums.",
+      "data_skin": "Pink-to-cyan gradient bars, outlined neon numerals.",
+      "boardroom": "Avoid. If forced, keep only the palette, muted to dusk violet.",
+      "guardrails": "No recreations of specific TV openings, film title scripts or costume pieces, and no real car models or brands.",
+      "collision": "Clear. Best for community event promos, launches and retro gaming.",
+      "seed": "TX-07 NIGHT DRIVE: a neon night cruise toward a striped sunset; chrome numerals, script accents, headers that flick on like signs; momentum without hurry."
+    },
+    {
+      "id": "TX-08",
+      "name": "COLD STORAGE",
+      "slug": "tx-08-cold-storage",
+      "family": "B",
+      "feel": "Chunky CRT terminals humming in a cold industrial hull.",
+      "best_for": "System status, audits, monitoring, legacy tech",
+      "data_shapes": [
+        "score",
+        "document"
+      ],
+      "home_register": "Editorial",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#030503",
+        "ink": "#E8E2D0",
+        "a1": "#FFB000",
+        "a2": "#33FF66",
+        "a3": "#FF3B30"
+      },
+      "extra_tokens": {
+        "step": "steps(1)",
+        "grain": ".05"
+      },
+      "fonts": {
+        "display": [
+          "Michroma",
+          400
+        ],
+        "body": [
+          "IBM Plex Sans Condensed",
+          400
+        ],
+        "mono": [
+          "VT323",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.25,.1,.25,1)",
+      "dur": "500ms",
+      "essence": [
+        "isolation",
+        "systems",
+        "warning",
+        "industrial",
+        "protocol",
+        "dread"
+      ],
+      "look": "Green and amber CRT text on black, beige plastic consoles, gunmetal panels, red alarm lamps. Rounded screen bezels, curvature vignette, phosphor persistence. DSEG7 supplies the 7-segment numerals.",
+      "motion": "Line-by-line type-on with a block cursor, vector wireframes drawing stroke by stroke, status lamps blinking at 1 Hz, slow tracking moves.",
+      "slots": {
+        "S1": "a monochrome vector wireframe (terrain, schematic or data structure) drawing onto a CRT beside live status readouts (DrawSVG + CSS scanlines, T1 to T2).",
+        "S2": "terminal type-on section heads (TextPlugin; real text in the DOM).",
+        "S3": "CRT vignette, 2% scanlines, a faint hum flicker at 3% opacity or less and 2 Hz or less.",
+        "S4": "segmented bar meters, 7-segment counters, blinking threshold lamps.",
+        "S5": "hardware-key buttons with pressed states."
+      },
+      "video": "Slow pans across instrument panels, blinking lights, long silences. Ship hum and relay clicks; no score, or a sparse drone.",
+      "data_skin": "Segmented bars, monochrome green with amber thresholds; red only for a breach.",
+      "boardroom": "Ready as is. Drop phosphor trails and blinking; keep the terminal grammar and segmented meters.",
+      "guardrails": "No ship or onboard-computer names, no creature, egg or biomechanical forms, no film corporation logos, no franchise wordmark.",
+      "collision": "Sits near security builds with heap-grid or sonar signatures. Prefer non-security subjects, or a different S1 family when either shipped recently.",
+      "seed": "TX-08 COLD STORAGE: a humming late-70s ship console; vector wireframes draw onto green CRTs; segmented meters and 7-segment counters; red appears only at breach."
+    },
+    {
+      "id": "TX-09",
+      "name": "SPACE OPERA",
+      "slug": "tx-09-space-opera",
+      "family": "C",
+      "feel": "A perspective crawl, starfields and wipes at mythic scale.",
+      "best_for": "Origin sagas, multi-part series, campaign settings",
+      "data_shapes": [
+        "timeline",
+        "network"
+      ],
+      "home_register": "Creative",
+      "b2b": "temp",
+      "b2b_label": "Tempered is the ceiling",
+      "tokens": {
+        "bg": "#000000",
+        "ink": "#E6E9F0",
+        "a1": "#FFD23F",
+        "a2": "#7FB3FF",
+        "a3": "#C0C8D8"
+      },
+      "extra_tokens": {
+        "grain": "0"
+      },
+      "fonts": {
+        "display": [
+          "Oswald",
+          700
+        ],
+        "body": [
+          "News Cycle",
+          400
+        ],
+        "mono": [
+          "Space Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.4,0,.2,1)",
+      "dur": "900ms",
+      "essence": [
+        "saga",
+        "destiny",
+        "rebellion",
+        "empire",
+        "journey",
+        "myth"
+      ],
+      "look": "Star-black, a warm gold title color, cool steel greys, hyperspace-blue streaks. Deep space, low planet horizons, symmetric wide frames. Oswald at weight 700 for titles, News Cycle for crawl and body.",
+      "motion": "A perspective text crawl (rotateX about 25°, scroll-scrubbed). Wipes as chapter transitions: horizontal, clock and iris, the classic serial-film grammar. Hyperspace streak bursts of 500 ms or less.",
+      "slots": {
+        "S1": "a scroll-scrubbed crawl receding into a starfield, then tilting down into chapter one (T1 CSS 3D; starfield canvas T2).",
+        "S2": "wipe transitions between chapters (clip-path; the clock wipe uses a conic-gradient mask).",
+        "S3": "a 3-layer parallax starfield.",
+        "S4": "fleet-style unit charts (small glyph units), star-map networks, episode timelines.",
+        "S5": "a hyperspace streak on CTA click."
+      },
+      "video": "Crawl, then tilt down to a planet; wipes between scenes; orchestral brass with a short original motif per faction or competitor.",
+      "data_skin": "Gold on black, Roman-numeral episodes, factions as color pairs.",
+      "boardroom": "Tempered is the ceiling. Keep the wipes and the episode structure. Use the crawl only if the intro is 60 words or fewer and also readable as plain text.",
+      "guardrails": "No famous opening line or its variants, no franchise logo or its crawl yellow, no glowing swords, ships, robots or helmets from films, no franchise terminology.",
+      "collision": "Sits near starfield builds. Use a different starfield treatment, or drop S3, if one is among the last two builds.",
+      "seed": "TX-09 SPACE OPERA: an episodic saga opened by a receding crawl; chapters change by wipe; competitors as factions on a star map; gold on black."
+    },
+    {
+      "id": "TX-10",
+      "name": "SANDSCALE",
+      "slug": "tx-10-sandscale",
+      "family": "C",
+      "feel": "Monumental forms rising from haze; tiny figures, vast forces.",
+      "best_for": "Macro forces, market scale, geopolitics",
+      "data_shapes": [
+        "terrain",
+        "comparison"
+      ],
+      "home_register": "B2B",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#F3E9DA",
+        "ink": "#2B2620",
+        "a1": "#9A4A1C",
+        "a2": "#6E5536",
+        "a3": "#0E0E0E"
+      },
+      "extra_tokens": {
+        "grain": ".06"
+      },
+      "fonts": {
+        "display": [
+          "Syncopate",
+          700
+        ],
+        "body": [
+          "Cormorant Garamond",
+          500
+        ],
+        "mono": [
+          "IBM Plex Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.65,0,.35,1)",
+      "dur": "2200ms",
+      "essence": [
+        "scale",
+        "endurance",
+        "power",
+        "scarcity",
+        "prophecy",
+        "gravity"
+      ],
+      "look": "A light theme: pale haze ground, sand ochre, basalt shadow, one ember accent. Extreme scale contrast, with a tiny human-scale marker against a massive form. 2.39:1 letterbox, heavy negative space, Syncopate in widely spaced caps. An \"infrared\" chapter switches to high-key black and white for the threat or antagonist data.",
+      "motion": "Slow and heavy: 1.5 to 3 s, `power2.inOut`. Forms rise out of haze; sand-sweep wipes through noise masks; light camera shake on the S1 only.",
+      "slots": {
+        "S1": "a monumental reveal: a ridge, a structure or the key number at architectural scale rising from layered haze above a tiny marker (layered parallax, T1 to T2).",
+        "S2": "sand-sweep noise-mask wipes.",
+        "S3": "drifting particulate (30 max) + static heat shimmer.",
+        "S4": "bars as textured stone slabs, contour terrain charts for distributions, tiny figures for per-capita comparisons.",
+        "S5": "restrained."
+      },
+      "video": "Extreme wides, slow pushes, silhouettes on ridgelines, long holds. Sub-bass drones and low choral textures.",
+      "data_skin": "Slabs, contours and scale figures. Every comparison is drawn at true proportion.",
+      "boardroom": "Native. Cap haze at 3 layers.",
+      "guardrails": "No giant worms, desert survival suits, flapping-wing aircraft, noble-house sigils, invented resource names or glyph alphabets, and no custom wordmark. No black monolith slab either; that belongs to TX-12's genre.",
+      "collision": "Sits near contour-terrain builds. Avoid a contour-terrain S1 if one is among the last two builds.",
+      "seed": "TX-10 SANDSCALE: forces too large to see whole; the key number rises from haze at architectural scale over a tiny human marker; slow, heavy, ochre; an infrared chapter for the threat."
+    },
+    {
+      "id": "TX-11",
+      "name": "WASTELAND CHROME",
+      "slug": "tx-11-wasteland-chrome",
+      "family": "C",
+      "feel": "Orange-and-teal pursuit at full throttle, center-framed.",
+      "best_for": "Disruption, competitive races, crisis and survival",
+      "data_shapes": [
+        "flow",
+        "comparison"
+      ],
+      "home_register": "Creative",
+      "b2b": "avoid",
+      "b2b_label": "Never pitched for B2B",
+      "tokens": {
+        "bg": "#0A0A0A",
+        "ink": "#F2E6D0",
+        "a1": "#FF7A1A",
+        "a2": "#1FB5C9",
+        "a3": "#C9C9C9"
+      },
+      "extra_tokens": {
+        "step": "steps(8)",
+        "grain": ".10"
+      },
+      "fonts": {
+        "display": [
+          "Anton",
+          400
+        ],
+        "body": [
+          "Barlow Condensed",
+          500
+        ],
+        "mono": [
+          "Stardos Stencil",
+          700
+        ]
+      },
+      "ease": "cubic-bezier(.87,0,.13,1)",
+      "dur": "250ms",
+      "essence": [
+        "velocity",
+        "scarcity",
+        "rivalry",
+        "escape",
+        "fury",
+        "machinery"
+      ],
+      "look": "Burnt-orange desert, teal sky, crushed blacks, chrome highlights, dust. A day-for-night blue chapter. Subjects sit dead center so the eye never hunts during fast cuts.",
+      "motion": "Crash zooms (scale 1.3 to 1 in 250 ms), stepped \"under-cranked\" bursts (`steps(8)`), then sudden slow-motion holds; diagonal dust bursts.",
+      "slots": {
+        "S1": "a scroll-scrubbed charge: speed lines and dust converge on a center-framed headline (canvas, T2 to T3).",
+        "S2": "crash-zoom section reveals with pre-baked motion blur.",
+        "S3": "dust and grit overlay at 8% or less.",
+        "S4": "gauge needles, warning-stencil labels, heat-scorch maps.",
+        "S5": "stencil-stamp hovers."
+      },
+      "video": "Rapid cutting with centered eye-trace, an orange-teal grade, speed ramps, war-drum percussion at 140 BPM or faster.",
+      "data_skin": "Gauges and needles, stencil labels, orange versus teal for rivals.",
+      "boardroom": "Avoid. For editorial work, Tempered keeps the palette and center framing and drops the stepped bursts.",
+      "guardrails": "No war-convoy vehicles, skull-and-wheel or faction emblems, characters, masks, flame-throwing guitars, or franchise names.",
+      "collision": "Clear. Good for disruption and race narratives, crisis-and-survival stories and sales-kickoff energy.",
+      "seed": "TX-11 WASTELAND CHROME: a full-throttle chase for scarce advantage; center-framed crash zooms; stencil-labeled gauges; orange versus teal rivals; sudden slow-motion on the decisive number."
+    },
+    {
+      "id": "TX-12",
+      "name": "SLIT-SCAN COSMOS",
+      "slug": "tx-12-slit-scan-cosmos",
+      "family": "C",
+      "feel": "Light corridors, lensing rings, and silence as a beat.",
+      "best_for": "AI timelines, futures, keynotes on scale and time",
+      "data_shapes": [
+        "timeline",
+        "terrain"
+      ],
+      "home_register": "Editorial",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#000000",
+        "ink": "#E8E1D5",
+        "a1": "#F2A65A",
+        "a2": "#5B8CFF",
+        "a3": "#9B5DE5"
+      },
+      "extra_tokens": {
+        "grain": ".03"
+      },
+      "fonts": {
+        "display": [
+          "Inter Tight",
+          200
+        ],
+        "body": [
+          "Inter",
+          400
+        ],
+        "mono": [
+          "Space Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.37,0,.63,1)",
+      "dur": "3000ms",
+      "essence": [
+        "time",
+        "scale",
+        "transcendence",
+        "inevitability",
+        "intelligence",
+        "silence"
+      ],
+      "look": "True black, bone white, accretion amber, stellar blue, one nebula violet. One-point perspective, centered symmetry, vast negative space. Display is Inter Tight at weights 200 to 300 with wide tracking.",
+      "motion": "Very slow: 2 to 6 s, `sine.inOut`. Slit-scan light corridors, a gravitational-lens ring, and silence as a beat: sections that hold completely still.",
+      "slots": {
+        "S1": "choose one: a slit-scan light corridor (VFX-JS slitScan) or a gravitational-lens ring around the key number (custom shader). Either is the page's one WebGL layer.",
+        "S2": "slow fades with long holds.",
+        "S3": "sparse stars, no parallax.",
+        "S4": "log-scale timelines, orbital diagrams, dual \"time-dilation\" clocks.",
+        "S5": "minimal."
+      },
+      "video": "Long static frames, intermission cards, organ or orchestral textures. A public-domain composition still needs a licensed or original recording.",
+      "data_skin": "Hairline strokes, log scales, ring diagrams.",
+      "boardroom": "Native. Keep the slow pacing; swap the shader for a static lens poster.",
+      "guardrails": "No black monolith, no red-eyed ship computer, no film ship designs, no bookshelf-dimension sets, no soundtrack recordings.",
+      "collision": "Sits near starfield builds. Use the corridor or the lens ring, not a starfield, as the S1.",
+      "seed": "TX-12 SLIT-SCAN COSMOS: a story about time at scale; one light corridor or lensing ring; log-scale timelines; silence held as deliberately as motion."
+    },
+    {
+      "id": "TX-13",
+      "name": "CLOCKWORK REALM",
+      "slug": "tx-13-clockwork-realm",
+      "family": "D",
+      "feel": "A brass map where mechanisms rise to show who holds what.",
+      "best_for": "Market landscapes, ecosystems, power maps",
+      "data_shapes": [
+        "network",
+        "terrain"
+      ],
+      "home_register": "B2B",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#1A1712",
+        "ink": "#E9DCC0",
+        "a1": "#C9A464",
+        "a2": "#8C1C13",
+        "a3": "#7A8C96"
+      },
+      "extra_tokens": {
+        "step": "steps(12)",
+        "grain": ".06"
+      },
+      "fonts": {
+        "display": [
+          "Cinzel",
+          600
+        ],
+        "body": [
+          "EB Garamond",
+          400
+        ],
+        "mono": [
+          "Cormorant SC",
+          500
+        ]
+      },
+      "ease": "cubic-bezier(.5,0,.5,1)",
+      "dur": "1200ms",
+      "essence": [
+        "power",
+        "territory",
+        "alliances",
+        "machinery",
+        "succession",
+        "strategy"
+      ],
+      "look": "Dark vellum, brass and bronze, parchment, slate, a wax-red seal accent. An overhead, tilted map-as-tabletop; mechanisms rise from its tiles; armillary rings turn overhead.",
+      "motion": "Mechanical. Gear-driven rotations, ratchet ticks (`steps(12)`), extrusions rising from the map, a camera that glides between regions on a pinned scrub.",
+      "slots": {
+        "S1": "a tilted map where each player's mechanism rises and assembles as you scroll (CSS 3D + SVG gears, T2; T3 option: three.js).",
+        "S2": "gear-turn chapter transitions and armillary sweeps.",
+        "S3": "slow rotating rings at 5% opacity.",
+        "S4": "territories as tiles that flip to reveal share, plus brass-ruled tables. Gear size is decoration, never data.",
+        "S5": "brass toggle hovers."
+      },
+      "video": "An overhead glide across the map while structures assemble; an original cello ostinato at 90 to 110 BPM.",
+      "data_skin": "Tile maps, brass-ruled tables, engraved numerals.",
+      "boardroom": "Native. This is the natural skin for a market terrain board.",
+      "guardrails": "No noble-house sigils, continent shapes or place names from any series, no astrolabe-sun opener composition, no theme melody.",
+      "collision": "Sits near ink-drawn territory maps and Voronoi market boards. Differentiate with mechanical assembly, not ink lines or cells.",
+      "seed": "TX-13 CLOCKWORK REALM: the market as a brass tabletop map; each player's mechanism rises and locks in as you scroll; tiles flip to reveal share; ratchet-tick transitions."
+    },
+    {
+      "id": "TX-14",
+      "name": "RED-LINE EXPEDITION",
+      "slug": "tx-14-red-line-expedition",
+      "family": "D",
+      "feel": "A red route inking across an aged map, stamp by stamp.",
+      "best_for": "Journeys, company histories, investigations, provenance",
+      "data_shapes": [
+        "timeline",
+        "flow"
+      ],
+      "home_register": "Editorial",
+      "b2b": "temp",
+      "b2b_label": "Tempered is the ceiling",
+      "tokens": {
+        "bg": "#E9DCC0",
+        "ink": "#2E2318",
+        "a1": "#A8341C",
+        "a2": "#556B3F",
+        "a3": "#1F2A33"
+      },
+      "extra_tokens": {
+        "grain": ".12"
+      },
+      "fonts": {
+        "display": [
+          "Alfa Slab One",
+          400
+        ],
+        "body": [
+          "Libre Caslon Text",
+          400
+        ],
+        "mono": [
+          "Special Elite",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.33,1,.68,1)",
+      "dur": "1000ms",
+      "essence": [
+        "journey",
+        "discovery",
+        "evidence",
+        "adventure",
+        "provenance",
+        "risk"
+      ],
+      "look": "Aged map paper, route red, ink brown, khaki, faded green, and a night-camp navy chapter. Paper grain, folds, light stains, lamp vignette. Typewriter field notes; old-style map labels.",
+      "motion": "The red line draws continuously with scroll while a small generic vintage plane or ship icon rides it. Place labels stamp in at each stop; photo prints slide in under paper corners.",
+      "slots": {
+        "S1": "the route draws across an aged map as you scroll, with stamps landing at each stop (DrawSVG + MotionPath, T1 to T2).",
+        "S2": "journal-page reveals.",
+        "S3": "paper grain + lamp flicker at 3% opacity or less and 2 Hz or less.",
+        "S4": "routes annotated with distance and time, dated stamps as data markers, ledger tables.",
+        "S5": "compass-needle hovers."
+      },
+      "video": "A map-travel montage dissolving into \"on location\" scenes; original adventure brass and strings at 100 to 120 BPM.",
+      "data_skin": "Timelines drawn as routes, stamps as markers, ledger-style tables.",
+      "boardroom": "Tempered is the ceiling. Keep the route grammar for customer journeys and timelines; drop stains and flicker.",
+      "guardrails": "No hat-and-whip silhouettes, named relics, franchise typography or theme melody.",
+      "collision": "Sits near ink-drawn maps and bearing-line forensics. Avoid if either is among the last two builds. A natural fit for provenance and investigation timelines.",
+      "seed": "TX-14 RED-LINE EXPEDITION: the story as a journey; a red route inks across an aged map as you scroll; each stop stamps in with its evidence; field notes in typewriter."
+    },
+    {
+      "id": "TX-15",
+      "name": "PAINTED WIND",
+      "slug": "tx-15-painted-wind",
+      "family": "D",
+      "feel": "Hand-painted skies and wind moving through grass.",
+      "best_for": "Health and care, community, sustainability, poetry",
+      "data_shapes": [
+        "timeline",
+        "comparison"
+      ],
+      "home_register": "Editorial",
+      "b2b": "temp",
+      "b2b_label": "Tempered is the ceiling",
+      "tokens": {
+        "bg": "#F7F3E8",
+        "ink": "#23361F",
+        "a1": "#2F6B3F",
+        "a2": "#3E64A0",
+        "a3": "#B5762A"
+      },
+      "extra_tokens": {
+        "grain": ".08"
+      },
+      "fonts": {
+        "display": [
+          "Shippori Mincho",
+          600
+        ],
+        "body": [
+          "Zen Maru Gothic",
+          500
+        ],
+        "mono": [
+          "IBM Plex Mono",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.33,0,.2,1)",
+      "dur": "1600ms",
+      "essence": [
+        "wonder",
+        "nature",
+        "care",
+        "stillness",
+        "community",
+        "growth"
+      ],
+      "look": "Painterly skies, towering cumulus, meadow greens, golden-hour light, dusk blue. Watercolor paper, soft edges, hand-painted backgrounds. Every landscape is original.",
+      "motion": "Gentle 1 to 2 s fades, wind rolling across layered grass, drifting clouds, and *ma*: deliberate pauses where nothing moves.",
+      "slots": {
+        "S1": "a painted landscape with wind passing through layered grass (SVG or canvas sway, T2) under parallax clouds.",
+        "S2": "soft fades with held pause beats.",
+        "S3": "drifting seeds or petals (20 max).",
+        "S4": "watercolor charts: Rough.js hachure with soft fills on paper texture.",
+        "S5": "soft lift hovers."
+      },
+      "video": "Lingering establishing shots, slow cloud pans, quiet moments, piano and strings in 3/4.",
+      "data_skin": "Hand-painted feel, rounded labels, natural metaphors used honestly (a growing plant only where the number actually grows).",
+      "boardroom": "Tempered is the ceiling. For human-centered health or community briefs, keep the palette and pacing and drop particles.",
+      "guardrails": "No characters, creatures, forest spirits, flying machines or animal-bus vehicles that read as one studio's work, and no studio logo or film titles.",
+      "collision": "Sits near watercolor-and-kintsugi poetry builds. Do not pair this theme with poetry if one shipped in the last two builds.",
+      "seed": "TX-15 PAINTED WIND: a human story told in painted landscapes; wind moves through grass as you scroll; watercolor charts; pauses are part of the rhythm."
+    },
+    {
+      "id": "TX-16",
+      "name": "PAPER CUT TITLES",
+      "slug": "tx-16-paper-cut-titles",
+      "family": "E",
+      "feel": "Flat cut-paper shapes snapping to a jazz beat.",
+      "best_for": "Frameworks, process explainers, keynotes",
+      "data_shapes": [
+        "flow",
+        "comparison"
+      ],
+      "home_register": "B2B",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#F2E8D5",
+        "ink": "#1C1C1C",
+        "a1": "#C93A1B",
+        "a2": "#1F5F7F",
+        "a3": "#B88A00"
+      },
+      "extra_tokens": {
+        "step": "steps(4)",
+        "grain": ".08"
+      },
+      "fonts": {
+        "display": [
+          "League Gothic",
+          400
+        ],
+        "body": [
+          "Libre Franklin",
+          400
+        ],
+        "mono": [
+          "Courier Prime",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.76,0,.24,1)",
+      "dur": "320ms",
+      "essence": [
+        "rhythm",
+        "clarity",
+        "modernism",
+        "persuasion",
+        "structure",
+        "wit"
+      ],
+      "look": "Warm paper, vermilion, black, mustard, teal. Flat shapes with hand-cut jagged edges, bold diagonals, big negative space, asymmetric balance. No gradients.",
+      "motion": "Syncopated. Shapes snap on the beat, hold, then snap again. Bars slide in like cut strips, and each shape transforms into the next section's form.",
+      "slots": {
+        "S1": "cut-paper shapes assemble into the headline in a jazz-timed sequence (SVG + GSAP; jagged edges from an feTurbulence displacement baked once, never animated).",
+        "S2": "hard-edged shape wipes.",
+        "S3": "paper texture.",
+        "S4": "bars as cut strips, pies as paper wedges, arrows as cut shards.",
+        "S5": "shapes nudge on hover."
+      },
+      "video": "Title-sequence grammar: every cut on the beat, shapes morphing into the next frame, original swing jazz with brass stabs at 120 to 140 BPM.",
+      "data_skin": "Flat fills, one accent per chart, labels set in condensed caps.",
+      "boardroom": "Native, and one of the strongest B2B themes. Slow the rhythm to 600 to 900 ms.",
+      "guardrails": "No recreations of specific title sequences or posters (a famous spiral, a falling-businessman silhouette, a fragmented-figure layout), and no film titles.",
+      "collision": "Clear. Ideal for frameworks, process explainers, marketing strategy and briefing decks.",
+      "seed": "TX-16 PAPER CUT TITLES: the framework told in flat cut-paper shapes that snap to a jazz beat; every shape becomes the next section's diagram; vermilion on warm paper."
+    },
+    {
+      "id": "TX-17",
+      "name": "SILHOUETTE & SMOKE",
+      "slug": "tx-17-silhouette-smoke",
+      "family": "E",
+      "feel": "Gold light, silhouettes and ink-smoke morphs.",
+      "best_for": "Intelligence briefings, luxury, high-stakes launches",
+      "data_shapes": [
+        "comparison",
+        "score"
+      ],
+      "home_register": "Creative",
+      "b2b": "temp",
+      "b2b_label": "Tempered is the ceiling",
+      "tokens": {
+        "bg": "#050505",
+        "ink": "#EDE6D6",
+        "a1": "#C9A227",
+        "a2": "#A3262A",
+        "a3": "#F0D27A"
+      },
+      "extra_tokens": {
+        "grain": ".04"
+      },
+      "fonts": {
+        "display": [
+          "Bodoni Moda",
+          500
+        ],
+        "body": [
+          "Cormorant Garamond",
+          500
+        ],
+        "mono": [
+          "Josefin Sans",
+          600
+        ]
+      },
+      "ease": "cubic-bezier(.65,0,.35,1)",
+      "dur": "1500ms",
+      "essence": [
+        "intrigue",
+        "elegance",
+        "danger",
+        "secrecy",
+        "seduction",
+        "precision"
+      ],
+      "look": "Black, gold, oxblood, smoke white, midnight blue. Silhouettes of abstract forms, hands and architecture against light; mirrored kaleidoscope frames; Didone display type with widely spaced caps.",
+      "motion": "Liquid. Slow-motion ink and smoke flows, blob morphs between sections, kaleidoscopic mirror openers. 1 to 2 s, `power2.inOut`.",
+      "slots": {
+        "S1": "smoke or ink flowing through a gold-lit frame to reveal the title (VFX-JS fluid at FULL only; poster + MorphSVG at TEMPERED).",
+        "S2": "liquid MorphSVG transitions.",
+        "S3": "slow smoke drift.",
+        "S4": "thin gold line charts on black with Didone numerals.",
+        "S5": "gold underline sweeps."
+      },
+      "video": "Slow-motion liquids, silhouettes, mirrored frames, and an original orchestral ballad feel with brass.",
+      "data_skin": "Hairline gold, generous whitespace, Didone numerals.",
+      "boardroom": "Tempered is the ceiling: gold-on-black luxury minimalism with no fluid sim (WebGL fluid never runs in B2B).",
+      "guardrails": "No gun-barrel opening, agent-number marks, firearm silhouettes, character names, theme melody or sound-alikes.",
+      "collision": "Sits near espionage dossiers and briefing builds. Never use it within two builds of either.",
+      "seed": "TX-17 SILHOUETTE & SMOKE: an intelligence briefing opened like a title sequence; ink and smoke reveal each finding in gold light; Didone numerals; slow, liquid, exact."
+    },
+    {
+      "id": "TX-18",
+      "name": "HALFTONE MULTIVERSE",
+      "slug": "tx-18-halftone-multiverse",
+      "family": "E",
+      "feel": "Comic panels, misregistered inks, one art style per world.",
+      "best_for": "Personas, segmentation, multiple perspectives",
+      "data_shapes": [
+        "comparison",
+        "network"
+      ],
+      "home_register": "Creative",
+      "b2b": "avoid",
+      "b2b_label": "Never pitched for B2B",
+      "tokens": {
+        "bg": "#FFFFFF",
+        "ink": "#111111",
+        "a1": "#E6007E",
+        "a2": "#0095D6",
+        "a3": "#D4C700"
+      },
+      "extra_tokens": {
+        "step": "steps(12)",
+        "grain": "0"
+      },
+      "fonts": {
+        "display": [
+          "Bangers",
+          400
+        ],
+        "body": [
+          "Inter",
+          400
+        ],
+        "mono": [
+          "Permanent Marker",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.34,1.56,.64,1)",
+      "dur": "400ms",
+      "essence": [
+        "perspective",
+        "identity",
+        "energy",
+        "remix",
+        "multiplicity",
+        "youth"
+      ],
+      "look": "White paper, CMYK process inks, misregistered color offsets, Ben-Day dots, thick keylines. The signature device: **each \"world\" (segment, persona, viewpoint) gets its own art style.**",
+      "motion": "Frame-stepped moves \"on twos\" (12 fps via `steps()`) for anything character-like, smooth moves for camera. Smash cuts, panel-to-panel camera, sound-effect words popping on impact.",
+      "slots": {
+        "S1": "comic panels burst into a split-screen hero, each panel in a different style (T2; VFX-JS halftone optional as the WebGL layer).",
+        "S2": "panel-to-panel transitions with on-twos stepping.",
+        "S3": "slow Ben-Day dot drift.",
+        "S4": "flat-ink charts with halftone shading and caption-box annotations, each segment drawn in its own visual dialect.",
+        "S5": "sticker pops."
+      },
+      "video": "Mixed frame rates (24 and 12), split screens, sound-effect words on hits, misregistration on cuts.",
+      "data_skin": "One style per segment, the theme's tool for personas and multiple perspectives.",
+      "boardroom": "Avoid. Tempered only for creative-adjacent editorial work.",
+      "guardrails": "No spider motifs, masks, suits, webs, franchise logos, or a comics publisher's trade dress.",
+      "collision": "Sits near persona and correlation-network builds; a different S1 family keeps it clear. Strong for fan communities, creators and TTRPG.",
+      "seed": "TX-18 HALFTONE MULTIVERSE: one dataset, many worlds; each persona or segment is drawn in its own art style; comic panels, misregistered inks, on-twos motion."
+    },
+    {
+      "id": "TX-19",
+      "name": "SYMMETRY DIORAMA",
+      "slug": "tx-19-symmetry-diorama",
+      "family": "E",
+      "feel": "Centered pastel dollhouse sections and whip-pan chapter cards.",
+      "best_for": "Org stories, team intros, product tours",
+      "data_shapes": [
+        "document",
+        "flow"
+      ],
+      "home_register": "Editorial",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#F7E8DC",
+        "ink": "#3C2B2D",
+        "a1": "#B5452B",
+        "a2": "#4F7FA6",
+        "a3": "#3F7D5C"
+      },
+      "extra_tokens": {
+        "fills": "#F4C2C2, #F7E1A1, #A8D5BA, #A9C6E0",
+        "grain": ".03"
+      },
+      "fonts": {
+        "display": [
+          "Jost",
+          600
+        ],
+        "body": [
+          "Libre Baskerville",
+          400
+        ],
+        "mono": [
+          "Courier Prime",
+          400
+        ]
+      },
+      "ease": "cubic-bezier(.83,0,.17,1)",
+      "dur": "450ms",
+      "essence": [
+        "order",
+        "craft",
+        "whimsy",
+        "nostalgia",
+        "ensemble",
+        "ritual"
+      ],
+      "look": "Pastel pink, butter yellow, mint and powder blue, with rust and aubergine accents. Dead-center symmetry, dollhouse cross-sections, centered chapter cards in Jost caps (an open-source geometric face in the Futura tradition).",
+      "motion": "Lateral tracking, whip pans (a fast horizontal swipe with pre-baked blur), snap zooms. Crisp 300 to 600 ms moves with precise stops.",
+      "slots": {
+        "S1": "a cross-section building whose rooms are the story's chapters; scroll tracks laterally room to room (a pinned horizontal scroll; mobile gets a native scroll-snap row).",
+        "S2": "whip-pan transitions and centered chapter cards.",
+        "S3": "none.",
+        "S4": "pictogram rows, specimen-label charts, inventory tables.",
+        "S5": "crisp, exact micro-interactions."
+      },
+      "video": "Symmetrical frames, lateral dollies, snap zooms, chapter cards, original chamber-pop plucked strings at 100 to 120 BPM.",
+      "data_skin": "Centered, labeled, inventory-like. Pictograms over bars.",
+      "boardroom": "Native. Mute the pastels about 15% for org and process stories.",
+      "guardrails": "No recreations of specific hotels, buildings, vehicles or sets from films, no film titles, no actor likenesses.",
+      "collision": "Sits near exploded technical-drawing builds. Differentiate with a pastel diorama, not line art. A natural fit for team intros and org stories.",
+      "seed": "TX-19 SYMMETRY DIORAMA: the organization as a pastel dollhouse cross-section; scroll tracks room to room; centered chapter cards; whip pans; every number shown as a labeled specimen."
+    },
+    {
+      "id": "TX-20",
+      "name": "LIMINAL OFFICE",
+      "slug": "tx-20-liminal-office",
+      "family": "E",
+      "feel": "White corridors, teal carpet, and numbers that feel uneasy.",
+      "best_for": "Future of work, AI workforce, compliance",
+      "data_shapes": [
+        "score",
+        "comparison"
+      ],
+      "home_register": "B2B",
+      "b2b": "native",
+      "b2b_label": "Runs at Boardroom as is",
+      "tokens": {
+        "bg": "#F4F6F5",
+        "ink": "#1D2B2A",
+        "a1": "#2E6F5E",
+        "a2": "#1F8A78",
+        "a3": "#6B5E3C"
+      },
+      "extra_tokens": {
+        "grain": ".02"
+      },
+      "fonts": {
+        "display": [
+          "Instrument Sans",
+          500
+        ],
+        "body": [
+          "Hanken Grotesk",
+          400
+        ],
+        "mono": [
+          "IBM Plex Mono",
+          400
+        ]
+      },
+      "ease": "linear",
+      "dur": "900ms",
+      "essence": [
+        "work",
+        "identity",
+        "compliance",
+        "routine",
+        "unease",
+        "separation"
+      ],
+      "look": "Sterile white corridors, deep carpet green, pale teal, beige retro hardware, dark terminal panels with teal numerals. One-point corridors, sterile symmetry, low ceilings, isolated desks.",
+      "motion": "Deadpan. Clean cuts, long holds, precise slides at constant speed. Numbers drift in clusters. Fluorescent flicker stays at 3% opacity or less and 2 Hz or less.",
+      "slots": {
+        "S1": "an endless corridor in CSS 3D one-point perspective that scroll walks down; doors open onto chapters (T1).",
+        "S2": "clean slide-ins and held cuts.",
+        "S3": "the fluorescent hum at the safety limits.",
+        "S4": "a sorting interaction on a teal-on-black terminal grid: the reader drags numbers into bins, then sees the real distribution (predict-then-reveal).",
+        "S5": "corporate-polite toasts."
+      },
+      "video": "Long hallway dollies, symmetrical framing, uneasy synth pads under a warm office-music bed.",
+      "data_skin": "Grids of numerals, bins, completion percentages, sterile tables.",
+      "boardroom": "Native, and the strongest theme in the codex for AI-workforce briefs.",
+      "guardrails": "No company name, logo, founder imagery or mascot from any series, and none of its vocabulary for departments, workers or procedures.",
+      "collision": "Clear. Built for workforce, AI-plus-human staffing and compliance stories.",
+      "seed": "TX-20 LIMINAL OFFICE: the future of work as an endless white corridor; doors open onto chapters; the reader sorts the numbers before the real answer appears; constant speed, deadpan holds."
+    }
+  ]
+}

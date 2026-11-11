@@ -1,0 +1,21 @@
+{
+  "title": "The Port Delay Index",
+  "client": "Halden Freight (fictional)",
+  "brief": "A quarterly B2B intelligence brief for Halden Freight, a fictional regional freight operator. It scores twelve ports on delay risk, flags the three that crossed the warning line this quarter, and recommends where to reroute. The audience is the operations leadership team; the format is a scroll page plus a 30-second video trailer.",
+  "register": "b2b",
+  "u1_words": ["monitoring", "precision", "systems", "warning", "compliance"],
+  "shape": "score",
+  "ledger": ["TX-03"],
+  "ledger_note": "The last build shipped TX-03 GLASS HUD, so the ledger blocks it here even though it passes the fit test.",
+  "chosen": "TX-08",
+  "triptych": [
+    ["A", "Theme-led", "TX-08 COLD STORAGE at Boardroom: the port network drawn as a vector wireframe on a green console, segmented meters for each port's score, amber at the warning line."],
+    ["B", "Theme-free", "A plain ranked list that re-sorts as the reader scrubs the quarter, with the three warning ports pinned to the top."],
+    ["C", "Theme-free", "A map-first page: twelve ports sized by delay score, with the reroute recommendation drawn as a single line."]
+  ],
+  "s1": "The port network draws onto the console as a vector wireframe, one port at a time, beside a live readout of the index. The wireframe is the subject's own network, not a generic terrain.",
+  "step_up": "None. The whole property stays at Boardroom.",
+  "audio": "Original drone bed, 30 s, licensed to the build.",
+  "flash": "Not required: Boardroom drops blinking and the video has no flicker cuts.",
+  "manifest": "theme: TX-08 COLD STORAGE · boardroom · fit 2/5 · homage-check PASS"
+}

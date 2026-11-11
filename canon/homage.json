@@ -1,0 +1,42 @@
+{
+  "principle": "Themes borrow a genre's grammar: light, palette mood, type feel, camera language, edit rhythm and sound texture. They borrow nothing a studio owns. A style can't be owned, but logos, characters and specific creative expression can.",
+  "borrow": [
+    [
+      "Light",
+      "Neon, haze, gold, phosphor, daylight."
+    ],
+    [
+      "Palette mood",
+      "Night, dusk, archive, broadcast."
+    ],
+    [
+      "Type feel",
+      "Open-license faces with the right temperament."
+    ],
+    [
+      "Camera language",
+      "Push-ins, crawls, tracking shots, crash zooms."
+    ],
+    [
+      "Edit rhythm",
+      "On the beat, on twos, held pauses."
+    ],
+    [
+      "Sound texture",
+      "Hum, hiss, tape, room tone. Never a melody."
+    ]
+  ],
+  "never_ship": [
+    "Franchise names, logos, wordmarks or title-card lockups, including look-alike recreations.",
+    "Characters, creatures, likenesses, costumes, or silhouettes that read as a specific character.",
+    "Named places, organizations, ships, products or invented terms from the work.",
+    "Quotes, catchphrases or recognizable dialogue.",
+    "Scores, sound-alikes of a theme melody, or signature sound effects.",
+    "Stills, frames, posters, or traced compositions of specific shots.",
+    "The franchise's own typefaces. Use the open-license fonts on each card and record them in the manifest."
+  ],
+  "naming": "Public pages, meta tags, alt text, repositories and client deliverables use the codename only (\"TX-07 NIGHT DRIVE\"), never a franchise name with \"-style\" after it. Internal briefs may name the inspiration. Nothing may imply endorsement or affiliation.",
+  "swap_test": "Picture the theme swapped for its nearest genre neighbor. Any element that only makes sense as one franchise's property gets cut or redesigned. Log homage-check: PASS or FAIL at the T stage.",
+  "commentary": "A story that is about a film or franchise (a fan community, a review, a cultural analysis) may name it in copy as factual reference. It still uses no logos or studio assets, and carries the property's disclaimer where one exists. If a client asks for a licensed look, escalate to Barry.",
+  "public_edition": "This repository is the public edition of the codex. Inspiration names and the shipped-property ledger stay in BHIL's internal brief. The validator enforces this with a salted, hashed deny list, so the list itself never ships."
+}

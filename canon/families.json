@@ -1,0 +1,64 @@
+{
+  "families": [
+    {
+      "id": "A",
+      "name": "Digital Frontier",
+      "intro": "Cold light, code and interfaces. This is the family for AI, data and threat stories, and the one with the highest overlap with shipped BHIL properties, so run U3 carefully.",
+      "themes": [
+        "TX-01",
+        "TX-02",
+        "TX-03",
+        "TX-04"
+      ],
+      "blurb": "Cold light, code and interfaces: AI, data and threat stories."
+    },
+    {
+      "id": "B",
+      "name": "Retro Signal",
+      "intro": "Analog screens, VHS, synths and CRTs from 1979 to 1987. This is the family for nostalgia, media and \"the system is talking\" stories. It carries the most flash and glitch risk, so the safety table applies in full.",
+      "themes": [
+        "TX-05",
+        "TX-06",
+        "TX-07",
+        "TX-08"
+      ],
+      "blurb": "Analog screens, VHS, synths and CRTs from 1979 to 1987: nostalgia and media stories."
+    },
+    {
+      "id": "C",
+      "name": "Epic Cinema",
+      "intro": "Scale, myth and time. This is the family for sagas, macro forces and long-horizon strategy. Three of its four themes are B2B-capable, because gravitas reads as authority.",
+      "themes": [
+        "TX-09",
+        "TX-10",
+        "TX-11",
+        "TX-12"
+      ],
+      "blurb": "Scale, myth and time: sagas, macro forces and long-horizon strategy."
+    },
+    {
+      "id": "D",
+      "name": "Worlds and Maps",
+      "intro": "Territory, journeys and landscapes. This is the family for landscapes, histories and human-centered stories. Two of its themes sit close to shipped cartographic builds, so the U3 check matters here.",
+      "themes": [
+        "TX-13",
+        "TX-14",
+        "TX-15"
+      ],
+      "blurb": "Territory, journeys and landscapes: maps, histories and human-centered stories."
+    },
+    {
+      "id": "E",
+      "name": "Auteur and Title Design",
+      "intro": "Director signatures and title-sequence craft. These are the most B2B-friendly themes in the codex, because their power comes from composition and rhythm rather than spectacle.",
+      "themes": [
+        "TX-16",
+        "TX-17",
+        "TX-18",
+        "TX-19",
+        "TX-20"
+      ],
+      "blurb": "Director signatures and title-sequence craft: the most B2B-friendly family."
+    }
+  ]
+}

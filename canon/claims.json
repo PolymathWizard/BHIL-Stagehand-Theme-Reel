@@ -1,0 +1,86 @@
+{
+  "tiers": [
+    "VERIFIED",
+    "CORROBORATED",
+    "STATED",
+    "UNCORROBORATED",
+    "INFERENCE"
+  ],
+  "claims": [
+    {
+      "id": "CL-01",
+      "tier": "VERIFIED",
+      "claim": "Every theme's ink on its ground measures 11:1 or better.",
+      "basis": "Computed by scripts/build_derived.py with the WCAG 2.x relative-luminance formula; listed on the contrast reference page and gated by the validator."
+    },
+    {
+      "id": "CL-02",
+      "tier": "VERIFIED",
+      "claim": "All 48 font families the reel and figures use are licensed SIL OFL 1.1 or Apache 2.0.",
+      "basis": "License field of each @fontsource package manifest, recorded in canon/fonts.json on 2026-11-10."
+    },
+    {
+      "id": "CL-03",
+      "tier": "VERIFIED",
+      "claim": "The built reel is one self-contained HTML file that requests nothing from the network.",
+      "basis": "The validator scans reel/dist for src, href and url() references to http or https; only plain anchor links are allowed."
+    },
+    {
+      "id": "CL-04",
+      "tier": "VERIFIED",
+      "claim": "Every S4 data beat in the reel runs 9.5 seconds, and every loop runs 21 to 26.3 seconds.",
+      "basis": "Parsed from the beats arrays in reel/src/scenes-*.js by the build and checked by a regression test."
+    },
+    {
+      "id": "CL-05",
+      "tier": "VERIFIED",
+      "claim": "The reel exposes one global Pause control and per-plate beat chips; motion plays on load.",
+      "basis": "reel/src/engine.js and shell.html."
+    },
+    {
+      "id": "CL-06",
+      "tier": "VERIFIED",
+      "claim": "Under 26 ms average frame time the reel holds full render scale; above it the scale steps down to a 50% floor.",
+      "basis": "Adaptive loop in reel/src/engine.js."
+    },
+    {
+      "id": "CL-07",
+      "tier": "STATED",
+      "claim": "Content must not flash more than three times in any one-second period.",
+      "basis": "W3C WCAG 2.2, Success Criterion 2.3.1 Three Flashes or Below Threshold.",
+      "source": "https://www.w3.org/TR/WCAG22/#three-flashes-or-below-threshold"
+    },
+    {
+      "id": "CL-08",
+      "tier": "STATED",
+      "claim": "Moving content that starts automatically and lasts more than five seconds needs a way to pause, stop or hide it.",
+      "basis": "W3C WCAG 2.2, Success Criterion 2.2.2 Pause, Stop, Hide.",
+      "source": "https://www.w3.org/TR/WCAG22/#pause-stop-hide"
+    },
+    {
+      "id": "CL-09",
+      "tier": "STATED",
+      "claim": "PEAT is a free photosensitive epilepsy analysis tool from the Trace Research and Development Center.",
+      "basis": "Trace Center's PEAT page.",
+      "source": "https://www.trace.umd.edu/?p=1669"
+    },
+    {
+      "id": "CL-10",
+      "tier": "STATED",
+      "claim": "B612 was drawn for legibility on aircraft cockpit screens.",
+      "basis": "The B612 project's own description."
+    },
+    {
+      "id": "CL-11",
+      "tier": "INFERENCE",
+      "claim": "A visual style cannot be owned, while logos, characters and specific creative expression can.",
+      "basis": "The working position behind the Homage Rule. It is a design rule, not legal advice; escalate any licensed-look request."
+    },
+    {
+      "id": "CL-12",
+      "tier": "INFERENCE",
+      "claim": "Composition- and rhythm-led themes (family E) survive the Boardroom dial better than glitch-led ones (family B).",
+      "basis": "Read from the B2B fit column: three of five family E themes run at Boardroom as is, against one of four in family B."
+    }
+  ]
+}

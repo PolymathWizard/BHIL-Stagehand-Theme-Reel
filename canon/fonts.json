@@ -1,0 +1,632 @@
+{
+  "note": "Licenses read from each @fontsource package manifest on 2026-11-10 (VERIFIED). Confirm on the font page before any client build.",
+  "fonts": [
+    {
+      "family": "Alfa Slab One",
+      "package": "@fontsource/alfa-slab-one",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-14"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Anton",
+      "package": "@fontsource/anton",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-11"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "B612 Mono",
+      "package": "@fontsource/b612-mono",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-03"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Bangers",
+      "package": "@fontsource/bangers",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-18"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Barlow Condensed",
+      "package": "@fontsource/barlow-condensed",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        500
+      ],
+      "themes": [
+        "TX-11"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Bodoni Moda",
+      "package": "@fontsource/bodoni-moda",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        500
+      ],
+      "themes": [
+        "TX-17"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Bungee",
+      "package": "@fontsource/bungee",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-05"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Chakra Petch",
+      "package": "@fontsource/chakra-petch",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        600
+      ],
+      "themes": [
+        "TX-03"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Cinzel",
+      "package": "@fontsource/cinzel",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        600
+      ],
+      "themes": [
+        "TX-13"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Cormorant Garamond",
+      "package": "@fontsource/cormorant-garamond",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        500
+      ],
+      "themes": [
+        "TX-10",
+        "TX-17"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Cormorant SC",
+      "package": "@fontsource/cormorant-sc",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        500
+      ],
+      "themes": [
+        "TX-13"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Courier Prime",
+      "package": "@fontsource/courier-prime",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-16",
+        "TX-19"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Crimson Pro",
+      "package": "@fontsource/crimson-pro",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-06"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "EB Garamond",
+      "package": "@fontsource/eb-garamond",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-13"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Exo 2",
+      "package": "@fontsource/exo-2",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-01"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Fraunces",
+      "package": "@fontsource/fraunces",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        900
+      ],
+      "themes": [
+        "TX-06"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Hanken Grotesk",
+      "package": "@fontsource/hanken-grotesk",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-20"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "package": "@fontsource/ibm-plex-mono",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-10",
+        "TX-15",
+        "TX-20"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "package": "@fontsource/ibm-plex-sans",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-02"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "IBM Plex Sans Condensed",
+      "package": "@fontsource/ibm-plex-sans-condensed",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-08"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "IM Fell English",
+      "package": "@fontsource/im-fell-english",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [],
+      "themes": [],
+      "use": "reel interface"
+    },
+    {
+      "family": "Instrument Sans",
+      "package": "@fontsource/instrument-sans",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        500
+      ],
+      "themes": [
+        "TX-20"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Inter",
+      "package": "@fontsource/inter",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-03",
+        "TX-04",
+        "TX-12",
+        "TX-18"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Inter Tight",
+      "package": "@fontsource/inter-tight",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        200
+      ],
+      "themes": [
+        "TX-12"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Josefin Sans",
+      "package": "@fontsource/josefin-sans",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        600
+      ],
+      "themes": [
+        "TX-17"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Jost",
+      "package": "@fontsource/jost",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        600
+      ],
+      "themes": [
+        "TX-19"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "League Gothic",
+      "package": "@fontsource/league-gothic",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-16"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Libre Baskerville",
+      "package": "@fontsource/libre-baskerville",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-19"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Libre Caslon Text",
+      "package": "@fontsource/libre-caslon-text",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-14"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Libre Franklin",
+      "package": "@fontsource/libre-franklin",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-16"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Michroma",
+      "package": "@fontsource/michroma",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-08"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Monoton",
+      "package": "@fontsource/monoton",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-07"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Mr Dafoe",
+      "package": "@fontsource/mr-dafoe",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [],
+      "themes": [],
+      "use": "reel interface"
+    },
+    {
+      "family": "News Cycle",
+      "package": "@fontsource/news-cycle",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-09"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Newsreader",
+      "package": "@fontsource/newsreader",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [],
+      "themes": [],
+      "use": "figures"
+    },
+    {
+      "family": "Orbitron",
+      "package": "@fontsource/orbitron",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        700
+      ],
+      "themes": [
+        "TX-01"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Oswald",
+      "package": "@fontsource/oswald",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        700
+      ],
+      "themes": [
+        "TX-09"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Permanent Marker",
+      "package": "@fontsource/permanent-marker",
+      "license": "Apache-2.0",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-18"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Saira Condensed",
+      "package": "@fontsource/saira-condensed",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        600
+      ],
+      "themes": [
+        "TX-04"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Share Tech Mono",
+      "package": "@fontsource/share-tech-mono",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-01",
+        "TX-02",
+        "TX-04",
+        "TX-07"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Shippori Mincho",
+      "package": "@fontsource/shippori-mincho",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        600
+      ],
+      "themes": [
+        "TX-15"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Space Grotesk",
+      "package": "@fontsource/space-grotesk",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-05",
+        "TX-07"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Space Mono",
+      "package": "@fontsource/space-mono",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-09",
+        "TX-12"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Special Elite",
+      "package": "@fontsource/special-elite",
+      "license": "Apache-2.0",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-14"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Stardos Stencil",
+      "package": "@fontsource/stardos-stencil",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        700
+      ],
+      "themes": [
+        "TX-11"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Syncopate",
+      "package": "@fontsource/syncopate",
+      "license": "Apache-2.0",
+      "version": "5.3.0",
+      "weights": [
+        700
+      ],
+      "themes": [
+        "TX-10"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "VT323",
+      "package": "@fontsource/vt323",
+      "license": "OFL-1.1",
+      "version": "5.3.0",
+      "weights": [
+        400
+      ],
+      "themes": [
+        "TX-02",
+        "TX-05",
+        "TX-06",
+        "TX-08"
+      ],
+      "use": "theme"
+    },
+    {
+      "family": "Zen Maru Gothic",
+      "package": "@fontsource/zen-maru-gothic",
+      "license": "OFL-1.1",
+      "version": "5.3.1",
+      "weights": [
+        500
+      ],
+      "themes": [
+        "TX-15"
+      ],
+      "use": "theme"
+    }
+  ]
+}

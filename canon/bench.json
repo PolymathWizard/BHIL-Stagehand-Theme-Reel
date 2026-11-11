@@ -1,0 +1,35 @@
+{
+  "intro": "Six alternates sketched in one line each, ready to grow into full cards when a story needs them. A bench entry graduates only with every card field, a contrast check and a homage review.",
+  "alternates": [
+    [
+      "SPOT-COLOR NOIR",
+      "Ink-black and white with one blood-red accent",
+      "TX-04, when a story turns on one critical variable"
+    ],
+    [
+      "NEO-CEL",
+      "90s cel-shaded cyberpunk, light trails, red against cyan",
+      "TX-04, for anime and creator audiences"
+    ],
+    [
+      "ATOMIC OPTIMISM",
+      "Sunny retro-futurist ads with a dark undertone",
+      "TX-20, for promised-future-versus-reality stories"
+    ],
+    [
+      "FOLDING CITY",
+      "Architecture folding over itself; time slowing in nested layers",
+      "TX-12, for nested-scenario and second-order-effect stories"
+    ],
+    [
+      "RED ROOM SURREAL",
+      "Red drapes, chevron floors, backward dream logic",
+      "TX-06, for uncanny or contradictory data"
+    ],
+    [
+      "HEX PAINTERLY",
+      "Painted 3D, graffiti, glowing crystalline tech",
+      "TX-15, for grittier creative communities"
+    ]
+  ]
+}

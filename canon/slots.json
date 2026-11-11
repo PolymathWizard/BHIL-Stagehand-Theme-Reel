@@ -1,0 +1,47 @@
+{
+  "intro": "Every themed page fills the same five slots. A card's web slot map says how this theme fills each one.",
+  "slots": [
+    {
+      "id": "S1",
+      "name": "Hero signature",
+      "role": "The opening moment that only this subject could have. The theme dresses it; the subject still decides it."
+    },
+    {
+      "id": "S2",
+      "name": "Section transitions",
+      "role": "How one chapter hands off to the next: wipes, rolls, cuts, decodes."
+    },
+    {
+      "id": "S3",
+      "name": "Ambient layer",
+      "role": "The texture that runs under everything: grain, scanlines, haze, drifting particles. Always quiet, always pausable."
+    },
+    {
+      "id": "S4",
+      "name": "Data skin",
+      "role": "How charts, numbers and labels look and move. Every data beat in the reel demonstrates one."
+    },
+    {
+      "id": "S5",
+      "name": "Interaction and focus",
+      "role": "Hover, focus and press states, including the page's one call to action."
+    }
+  ],
+  "tiers": [
+    {
+      "id": "T1",
+      "name": "CSS and SVG",
+      "role": "Transforms, gradients, clip paths and SVG strokes. The default tier and the safest."
+    },
+    {
+      "id": "T2",
+      "name": "Canvas and script",
+      "role": "2D canvas, particles and animation libraries. Needs a pause control when it runs past five seconds."
+    },
+    {
+      "id": "T3",
+      "name": "WebGL",
+      "role": "Shaders and 3D. At most one WebGL layer per page, and never fluid simulation in B2B work."
+    }
+  ]
+}

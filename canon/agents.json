@@ -1,0 +1,132 @@
+{
+  "pattern": "CADRE: one Opus director over Sonnet specialists. Tool isolation is declared here and enforced by scripts/validate.py against .claude/agents/*.md.",
+  "agents": [
+    {
+      "name": "stagehand-director",
+      "model": "opus",
+      "stages": [
+        "D",
+        "I",
+        "U1",
+        "U2",
+        "U3",
+        "R",
+        "E",
+        "C",
+        "T",
+        "M"
+      ],
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Task"
+      ],
+      "role": "Runs the eight moves, delegates each to a specialist, and writes the manifest line."
+    },
+    {
+      "name": "essence-reader",
+      "model": "sonnet",
+      "stages": [
+        "U1"
+      ],
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep"
+      ],
+      "role": "Reads the brief and returns five essence words and the dominant data shape. Never opens the codex."
+    },
+    {
+      "name": "theme-scout",
+      "model": "sonnet",
+      "stages": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep"
+      ],
+      "role": "Runs the fit test, proposes the triptych with at most one theme-led concept, and checks the ledger."
+    },
+    {
+      "name": "theme-stylist",
+      "model": "sonnet",
+      "stages": [
+        "R",
+        "E",
+        "C"
+      ],
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Bash"
+      ],
+      "role": "Applies the dial, fills S1 to S5 from the card, and wires tokens and fonts into the build."
+    },
+    {
+      "name": "homage-auditor",
+      "model": "sonnet",
+      "stages": [
+        "T"
+      ],
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep"
+      ],
+      "role": "Grades blind: runs the swap test and the safety table against the built output, with no write tools and no access to the stylist's rationale."
+    },
+    {
+      "name": "reel-engineer",
+      "model": "sonnet",
+      "stages": [
+        "C"
+      ],
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Bash"
+      ],
+      "role": "Adds or changes reel scenes, keeps the scene API and the data beat grammar, and rebuilds the reel."
+    },
+    {
+      "name": "card-author",
+      "model": "sonnet",
+      "stages": [
+        "R",
+        "T"
+      ],
+      "tools": [
+        "Read",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Bash"
+      ],
+      "role": "Writes a new theme card into canon (bench graduation), with every field, a contrast check and a homage review."
+    }
+  ],
+  "write_tools": [
+    "Write",
+    "Edit",
+    "Bash",
+    "NotebookEdit"
+  ],
+  "read_only": [
+    "essence-reader",
+    "theme-scout",
+    "homage-auditor"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "note": "Ten figures for READMEs, docs and teaching. SVG animates with CSS only and stops under reduced motion; PNG is the designed static frame.",
+  "figures": [
+    [
+      "STC-01",
+      "stc-01-masthead",
+      "Twenty themes. One stage.",
+      "README hero, docs home",
+      "What a motion theme is, and why there are twenty.",
+      "Pick three tiles and say which kind of story each would suit."
+    ],
+    [
+      "STC-02",
+      "stc-02-families-and-fit",
+      "Five families. Each knows its room.",
+      "Roster, selection matrix",
+      "Families, home register and B2B fit.",
+      "Sort five of your recent projects by register, then shortlist themes for each."
+    ],
+    [
+      "STC-03",
+      "stc-03-card-anatomy",
+      "Every card carries the same eleven fields.",
+      "Card anatomy, token schema",
+      "The eleven card fields and the stage that reads each one.",
+      "Write the tokens block for a new theme and check that ink on ground reaches 11:1."
+    ],
+    [
+      "STC-04",
+      "stc-04-slots-and-beats",
+      "Five slots on the page. Twenty loops on the reel.",
+      "Web slots, reel structure",
+      "S1 to S5 on the page, and how each reel beat demonstrates one slot.",
+      "Map the five slots onto a page you already ship."
+    ],
+    [
+      "STC-05",
+      "stc-05-intensity-dial",
+      "One theme. Three volumes.",
+      "Intensity dial, Boardroom translations",
+      "Full, Tempered and Boardroom, and what each one keeps or removes.",
+      "Take one theme and write its Tempered and Boardroom versions in a line each."
+    ],
+    [
+      "STC-06",
+      "stc-06-film-pipeline",
+      "Sixteen passes make one frame.",
+      "Reel engine, contributing guide",
+      "The render pipeline, the scene API and the quality governor.",
+      "Add a pass on paper: where does it go, and what does each level do to it?"
+    ],
+    [
+      "STC-07",
+      "stc-07-data-story",
+      "Build. Insight. Re-sort. Rank.",
+      "Data skin, chart guidelines",
+      "The four-part data story every reel data beat tells.",
+      "Storyboard the same four beats for a line chart instead of bars."
+    ],
+    [
+      "STC-08",
+      "stc-08-twenty-skins",
+      "One dataset. Twenty skins.",
+      "Data skins gallery",
+      "One dataset in twenty palettes and display faces.",
+      "Which skins still read in a grayscale print? Which fail, and why?"
+    ],
+    [
+      "STC-09",
+      "stc-09-homage-rule",
+      "Evoke the genre. Never the property.",
+      "Homage Rule, contributor policy",
+      "Borrow the grammar, never the property; naming and the swap test.",
+      "Run the swap test on a theme and log what you would cut."
+    ],
+    [
+      "STC-10",
+      "stc-10-brief-to-manifest",
+      "From brief to manifest in eight moves.",
+      "Agent workflow, build manifest",
+      "How an agent picks, tunes, checks and records a theme.",
+      "Walk a real brief through the eight moves and write the manifest line."
+    ]
+  ]
+}

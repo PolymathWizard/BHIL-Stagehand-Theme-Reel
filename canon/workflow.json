@@ -1,0 +1,123 @@
+{
+  "moves": [
+    {
+      "n": 1,
+      "stage": "U1",
+      "name": "Essence",
+      "body": "Write five essence words and the dominant data shape before opening the codex."
+    },
+    {
+      "n": 2,
+      "stage": "U1",
+      "name": "Fit test",
+      "body": "Shortlist themes whose essence words match two or more U1 words and whose data shapes include the U1 shape."
+    },
+    {
+      "n": 3,
+      "stage": "U2",
+      "name": "Triptych",
+      "body": "Three concepts. At most one is theme-led, so the comparison stays honest. A theme-led concept still needs its own subject-specific S1."
+    },
+    {
+      "n": 4,
+      "stage": "U3",
+      "name": "Ledger",
+      "body": "No theme repeats in consecutive builds, or twice in one register within three builds. Check the card's collision note."
+    },
+    {
+      "n": 5,
+      "stage": "R",
+      "name": "Dial",
+      "body": "Set intensity from the register: Full, Tempered or Boardroom."
+    },
+    {
+      "n": 6,
+      "stage": "E",
+      "name": "Slots",
+      "body": "Fill S1 to S5 from the card's web slot map. Every effect still resolves through your effect library."
+    },
+    {
+      "n": 7,
+      "stage": "T",
+      "name": "Swap test",
+      "body": "Run the Homage Rule swap test and the safety table. Log homage-check PASS or FAIL."
+    },
+    {
+      "n": 8,
+      "stage": "M",
+      "name": "Manifest",
+      "body": "Record the theme line in the build manifest."
+    }
+  ],
+  "stages": {
+    "D, I": "Phase 1: decide format and modules. A theme never picks the format.",
+    "U1": "Essence extraction: five words and the dominant data shape.",
+    "U2": "Concept triptych: three directions, at most one theme-led.",
+    "U3": "Ledger check against recent builds.",
+    "R": "Register and look: intensity, palette, type.",
+    "E": "Effects: fill the five slots.",
+    "C": "Code: tokens, fonts and the build.",
+    "T": "Tests: homage swap test, safety and accessibility.",
+    "M": "Manifest: the record that ships with the build."
+  },
+  "precedence": [
+    [
+      "Hard gates",
+      "Budgets, reduced motion, accessibility, honesty, licensing."
+    ],
+    [
+      "Client brand",
+      "Client tokens replace ground, ink and type; the theme lends motion."
+    ],
+    [
+      "The Homage Rule",
+      "Evoke the genre, never the property."
+    ],
+    [
+      "Register",
+      "Set through the intensity dial."
+    ],
+    [
+      "The theme card",
+      "The last word, never the first."
+    ]
+  ],
+  "intake": [
+    [
+      "theme: auto",
+      "The agent may propose at most one theme inside the triptych."
+    ],
+    [
+      "theme: none",
+      "Switches the codex off."
+    ],
+    [
+      "theme: TX-##",
+      "Forces a theme. The fit test still runs, and a failed fit is flagged, not silently obeyed."
+    ]
+  ],
+  "intensity_intake": "theme intensity: [auto | full | tempered | boardroom]",
+  "manifest_format": "theme: TX-## CODENAME · intensity · fit score · homage-check PASS/FAIL",
+  "manifest_example": "theme: TX-03 GLASS HUD · boardroom · fit 4/5 · homage-check PASS",
+  "ledger_columns": [
+    "Property",
+    "Register",
+    "Recipe",
+    "Theme (TX · intensity)",
+    "S1 signature family",
+    "Novelty axis",
+    "Motif",
+    "Shipped"
+  ],
+  "ledger_example": [
+    "Example Story",
+    "B2B",
+    "5",
+    "TX-13 · boardroom",
+    "mechanism-rise map board",
+    "mechanical assembly",
+    "the ratchet tick",
+    "Nov 2026"
+  ],
+  "ledger_rule": "A theme never repeats in consecutive builds, and never appears twice in the same register within three builds. Rows from before the codex get none in the Theme column."
+}

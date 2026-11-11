@@ -1,0 +1,94 @@
+{
+  "intro": "Intensity is set once per property and follows the register. The theme keeps its identity at every level; only the volume changes.",
+  "levels": [
+    {
+      "id": "full",
+      "name": "Full",
+      "register": "Creative or community",
+      "stays": "Everything on the card: glitch, chroma split, stutter, flicker, stepped frames, cursor effects.",
+      "goes": "Nothing beyond the hard gates.",
+      "timing": "The card's own timing."
+    },
+    {
+      "id": "tempered",
+      "name": "Tempered",
+      "register": "Editorial or civic",
+      "stays": "Palette, type trio, transition grammar, the S1 signature, the ambient layer.",
+      "goes": "Glitch, chroma and stutter cut to accents of 150 ms or less, at most one per section. Saturation down 20%. No cursor effects.",
+      "timing": "Card timing x 1.25."
+    },
+    {
+      "id": "boardroom",
+      "name": "Boardroom",
+      "register": "B2B intelligence (the BHIL default)",
+      "stays": "Palette (darkened or neutralized), type trio, one transition grammar, the S1 at low contrast.",
+      "goes": "All glitch, flicker, stutter, chroma split and stepped-frame motion; particles above 30; any WebGL fluid.",
+      "timing": "600 to 1200 ms, power3.out or expo.out."
+    }
+  ],
+  "rules": [
+    "Every card ends with a Boardroom translation. A theme marked 'never pitched for B2B' is never pitched for B2B work.",
+    "One chapter may step up one level for a deliberate beat, such as TX-06's flipped world or TX-10's infrared chapter. Declare it in the manifest.",
+    "The dial never loosens a hard gate. A Full build still keeps reduced-motion guards, pause controls and the flash limits."
+  ],
+  "b2b_fit": {
+    "native": "Runs at Boardroom as is",
+    "board": "Has a Boardroom translation",
+    "news": "Boardroom is news-desk only",
+    "temp": "Tempered is the ceiling",
+    "avoid": "Never pitched for B2B"
+  },
+  "engine": {
+    "note": "How the reel engine applies the dial. Values are multipliers on each pass; OFF means the pass is skipped.",
+    "rows": [
+      [
+        "Bloom",
+        "1.0",
+        ".80",
+        ".45"
+      ],
+      [
+        "Light rays",
+        "1.0",
+        ".80",
+        ".40"
+      ],
+      [
+        "Halo",
+        "1.0",
+        ".80",
+        ".50"
+      ],
+      [
+        "Chromatic aberration",
+        "1.0",
+        ".60",
+        "OFF"
+      ],
+      [
+        "Lens dirt",
+        "1.0",
+        ".70",
+        "OFF"
+      ],
+      [
+        "Grain",
+        "1.0",
+        "1.0",
+        ".50"
+      ],
+      [
+        "Persistence",
+        "1.0",
+        ".60",
+        "OFF"
+      ],
+      [
+        "Channel and VHS cuts",
+        "ON",
+        "FADE",
+        "OFF"
+      ]
+    ]
+  }
+}
