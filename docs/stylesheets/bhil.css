@@ -1,0 +1,21 @@
+/* BHIL Brand Guidelines v1.0 for the docs site: Terminal Navy ground, one blue doing the work. */
+:root, [data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0D1B2E;
+  --md-primary-fg-color--light: #1E3A5F;
+  --md-primary-fg-color--dark: #0A0A0A;
+  --md-accent-fg-color: #6CC0E8;
+  --md-default-bg-color: #0D1B2E;
+  --md-default-fg-color--light: #C9D3DC;
+  --md-typeset-a-color: #6CC0E8;
+  --md-code-bg-color: #0A0A0A;
+}
+.md-header, .md-tabs { background: #0A0A0A; border-bottom: 1px solid #1E3A5F; }
+.md-typeset h1, .md-typeset h2 { font-family: "Newsreader", Georgia, serif; font-weight: 400; letter-spacing: 0; }
+.md-typeset h1 { color: #FFFFFF; }
+.md-typeset h2 { border-top: 1px solid #1E3A5F; padding-top: .6em; }
+.md-typeset table:not([class]) { border: 1px solid #1E3A5F; border-radius: 0; font-size: .74rem; }
+.md-typeset table:not([class]) th { background: #0A0A0A; color: #4FA3D1; font-family: "IBM Plex Mono", monospace; letter-spacing: .06em; text-transform: uppercase; font-size: .66rem; }
+.md-typeset table:not([class]) td { border-top: 1px solid #1E3A5F; }
+.md-typeset img { border: 1px solid #1E3A5F; }
+.tx-swatches { display: flex; gap: 0; margin: .4rem 0 1.2rem; border: 1px solid #1E3A5F; width: max-content; }
+.tx-sw { display: inline-block; width: 64px; height: 40px; }

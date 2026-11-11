@@ -1,0 +1,103 @@
+site_name: Stagehand Theme Codex
+site_description: Twenty motion themes for page, reel and deck agents, with a self-contained reel that demonstrates every theme at three intensity levels.
+site_author: Barry Hurd · Barry Hurd Intelligence Lab
+site_url: https://polymathwizard.github.io/BHIL-Stagehand-Theme-Reel/
+repo_url: https://github.com/PolymathWizard/BHIL-Stagehand-Theme-Reel
+repo_name: PolymathWizard/BHIL-Stagehand-Theme-Reel
+edit_uri: ""
+copyright: Code MIT · Content CC BY 4.0 · Barry Hurd Intelligence Lab
+docs_dir: docs
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+extra_css:
+  - stylesheets/bhil.css
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Codex:
+      - How agents use the codex: codex/how-agents-use.md
+      - The Homage Rule: codex/homage-rule.md
+      - The intensity dial: codex/intensity-dial.md
+      - Card anatomy and tokens: codex/card-anatomy.md
+      - Web slots and tiers: codex/web-slots.md
+      - Video kit: codex/video-kit.md
+      - Safety and accessibility: codex/safety.md
+  - Themes:
+      - Roster: themes/index.md
+      - "TX-01 VECTOR GRID": themes/tx-01-vector-grid.md
+      - "TX-02 PHOSPHOR RAIN": themes/tx-02-phosphor-rain.md
+      - "TX-03 GLASS HUD": themes/tx-03-glass-hud.md
+      - "TX-04 RAINLIGHT NOIR": themes/tx-04-rainlight-noir.md
+      - "TX-05 STUTTER BROADCAST": themes/tx-05-stutter-broadcast.md
+      - "TX-06 OTHERSIDE '83": themes/tx-06-otherside-83.md
+      - "TX-07 NIGHT DRIVE": themes/tx-07-night-drive.md
+      - "TX-08 COLD STORAGE": themes/tx-08-cold-storage.md
+      - "TX-09 SPACE OPERA": themes/tx-09-space-opera.md
+      - "TX-10 SANDSCALE": themes/tx-10-sandscale.md
+      - "TX-11 WASTELAND CHROME": themes/tx-11-wasteland-chrome.md
+      - "TX-12 SLIT-SCAN COSMOS": themes/tx-12-slit-scan-cosmos.md
+      - "TX-13 CLOCKWORK REALM": themes/tx-13-clockwork-realm.md
+      - "TX-14 RED-LINE EXPEDITION": themes/tx-14-red-line-expedition.md
+      - "TX-15 PAINTED WIND": themes/tx-15-painted-wind.md
+      - "TX-16 PAPER CUT TITLES": themes/tx-16-paper-cut-titles.md
+      - "TX-17 SILHOUETTE & SMOKE": themes/tx-17-silhouette-smoke.md
+      - "TX-18 HALFTONE MULTIVERSE": themes/tx-18-halftone-multiverse.md
+      - "TX-19 SYMMETRY DIORAMA": themes/tx-19-symmetry-diorama.md
+      - "TX-20 LIMINAL OFFICE": themes/tx-20-liminal-office.md
+  - Reel:
+      - The reel: reel/index.md
+      - Beats: reel/beats.md
+      - The data beat: reel/data-beat.md
+      - Engine: reel/engine.md
+      - Building the reel: reel/building.md
+  - Worked example: worked-example.md
+  - Agents and prompts: agents.md
+  - Figures: figures.md
+  - Reference:
+      - Tokens: reference/tokens.md
+      - Contrast: reference/contrast.md
+      - Fonts and licenses: reference/fonts.md
+      - Claims and evidence: reference/claims.md
+      - Glossary: reference/glossary.md
+  - Decisions:
+      - ADR index: adr/index.md
+      - ADR-001 Canonical source: adr/adr-001-canonical-source.md
+      - ADR-002 Public edition: adr/adr-002-public-edition.md
+      - ADR-003 Public guardrails: adr/adr-003-public-guardrails.md
+      - ADR-004 Self-contained reel: adr/adr-004-self-contained-reel.md
+      - ADR-005 BHIL frame: adr/adr-005-bhil-frame.md
+      - ADR-006 Figure kit: adr/adr-006-figure-kit.md
+      - ADR-007 Reel autoplay: adr/adr-007-reel-autoplay.md
+      - ADR-008 Contrast floor: adr/adr-008-contrast-floor.md
+      - ADR-009 Agent team: adr/adr-009-agent-team.md
+      - ADR-010 Evidence tiers: adr/adr-010-evidence-tiers.md
+  - Changelog: changelog.md
