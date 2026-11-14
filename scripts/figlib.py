@@ -151,7 +151,7 @@ class Fig:
         top.append(f'<line x1="0" y1="56.5" x2="1600" y2="56.5" stroke="{BLUE3}" stroke-width="1"/>')
         self.parts, body = [], self.parts
         self.T(72, 34, 'BARRY HURD INTELLIGENCE LAB · STAGEHAND', 'mono5', 13, BRIGHT, ls=.14)
-        self.T(1528, 34, f'REF STC V1.0 / REEL V5 · FIG {self.id}', 'mono', 13, P3, ls=.14, anchor='end', op=.72)
+        self.T(1528, 34, f'REF STC V1.0 / REEL V6 · FIG {self.id}', 'mono', 13, P3, ls=.14, anchor='end', op=.72)
         self.chevron(72, 107, 11, BLUE)
         self.T(92, 112, self.eyebrow, 'mono5', 15, BLUE, ls=.16)
         self.T(72, 176, self.title, 'serif', 52, PAPER)

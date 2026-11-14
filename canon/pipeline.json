@@ -2,8 +2,8 @@
   "passes": [
     [
       "Scene draw",
-      "Inside the camera transform; one function per theme",
-      ""
+      "Inside the directed camera: it pushes toward the focus keys of the beat and settles after each cut",
+      "Camera travel x.70 Tempered, x.40 Boardroom"
     ],
     [
       "FX and sheen",
@@ -14,6 +14,16 @@
       "Persistence",
       "Previous frame blended with lighten for light trails",
       "x.60 Tempered, off at Boardroom"
+    ],
+    [
+      "Foreground parallax",
+      "Per-theme particles drift past the lens and move further than the scene when the camera moves",
+      "Fewer and fainter at Tempered and Boardroom; thinned on data beats"
+    ],
+    [
+      "Depth of field",
+      "A blurred quarter-size copy is cut away around the subject, so focus racks between the focus keys of the beat",
+      "x.65 Tempered, x.30 Boardroom; off on data beats and below render scale .75"
     ],
     [
       "Focus pull",

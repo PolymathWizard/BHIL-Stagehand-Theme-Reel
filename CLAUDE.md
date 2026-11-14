@@ -1,6 +1,6 @@
 # CLAUDE.md · working in BHIL-Stagehand-Theme-Reel
 
-You are working in the public edition of the Stagehand Theme Codex (STC v1.0) and its reel (v5). Read this before changing anything.
+You are working in the public edition of the Stagehand Theme Codex (STC v1.0) and its reel (v6). Read this before changing anything.
 
 ## Non-negotiables
 

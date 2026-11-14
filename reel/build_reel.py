@@ -15,7 +15,7 @@ ROOT = REEL.parent
 SRC = REEL / 'src'
 FONTDIR = Path(os.environ.get('STC_FONTS', REEL / 'node_modules' / '@fontsource'))
 OUT = REEL / 'dist' / 'stagehand-theme-reel.html'
-ORDER = ('data.js', 'helpers.js', 'dataviz.js', 'scenes-a.js', 'scenes-b.js', 'scenes-c.js', 'scenes-d.js', 'fx.js', 'cine.js', 'engine.js')
+ORDER = ('data.js', 'helpers.js', 'dataviz.js', 'scenes-a.js', 'scenes-b.js', 'scenes-c.js', 'scenes-d.js', 'fx.js', 'cine.js', 'stage.js', 'engine.js')
 INPUTS = [SRC / f for f in ORDER] + [SRC / 'shell.html', ROOT / 'canon' / 'themes.json', ROOT / 'canon' / 'families.json', ROOT / 'canon' / 'stagehand.json', REEL / 'build_reel.py']
 
 THEMES = json.loads((ROOT / 'canon' / 'themes.json').read_text(encoding='utf-8'))['themes']

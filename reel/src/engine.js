@@ -32,7 +32,16 @@
     if (C.shake && L === 0) { const tt = s.t; x += (Math.sin(tt * 13.1) + Math.sin(tt * 7.3)) * C.shake; y += (Math.cos(tt * 11.7) + Math.sin(tt * 5.9)) * C.shake; }
     if (C.weave && L < 2) y += ((hash3(Math.floor(s.t * 24), 5, 5) % 100) / 100 - .5) * C.weave;
     if (C.beat && L < 2) { const bp = (s.t % C.beat) / C.beat; z *= 1 + .014 * k * Math.pow(1 - bp, 3); }
-    const o = s.st.cam;
+    const o = s.st.cam, f = !o && typeof stageFocus === 'function' ? stageFocus(s, B) : null;
+    s.focus = f;
+    if (f) {
+      const m = stageCamera(f, B, k, L); x = m.x; y = m.y; z = m.z; r = 0;
+      if (C.shake && L === 0) { const tt = s.t; x += (Math.sin(tt * 13.1) + Math.sin(tt * 7.3)) * C.shake; y += (Math.cos(tt * 11.7) + Math.sin(tt * 5.9)) * C.shake; }
+      if (C.weave && L < 2) y += ((hash3(Math.floor(s.t * 24), 5, 5) % 100) / 100 - .5) * C.weave;
+      if (C.beat && L < 2) { const bp = (s.t % C.beat) / C.beat; z *= 1 + .014 * k * Math.pow(1 - bp, 3); }
+      z = Math.max(z, 1 + Math.abs(x) / 478, 1 + Math.abs(y) / 268);
+      return { x, y, z, r };
+    }
     if (o) { z *= o.z; x += -(o.cx - 480) * o.z; y += -(o.cy - 270) * o.z; return { x, y, z, r }; }
     z = Math.max(z, 1 + Math.abs(x) / 470 + Math.abs(y) / 265 + Math.abs(r) * 1.3);
     return { x, y, z, r };
@@ -121,6 +130,24 @@
   function focusPull(s, p) { const c = s.c, cv = s.cv, sm = off(s, 'fz', Math.max(2, Math.round(cv.width / 8)), Math.max(2, Math.round(cv.height / 8))), g = sm.getContext('2d');
     g.imageSmoothingQuality = 'high'; g.globalCompositeOperation = 'copy'; g.drawImage(cv, 0, 0, sm.width, sm.height);
     c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.imageSmoothingQuality = 'high'; c.globalAlpha = (1 - eio(p)) * .92; c.drawImage(sm, 0, 0, cv.width, cv.height); c.restore(); }
+  /* v6 depth of field: a blurred copy of the frame, cut away around the subject, laid back over the sharp frame */
+  function dof(s, f, cam, amt) {
+    const c = s.c, cv = s.cv, w = cv.width, h = cv.height, q = FILTER_OK ? 4 : 8, bw = Math.max(2, Math.round(w / q)), bh = Math.max(2, Math.round(h / q));
+    const a = off(s, 'dfA', bw, bh), g = a.getContext('2d'), kx = bw / 960, ky = bh / 540;
+    const fx = (480 + cam.x + (f.x - 480) * cam.z) * kx, fy = (270 + cam.y + (f.y - 270) * cam.z) * ky, fr = f.r * cam.z * kx;
+    g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.globalCompositeOperation = 'copy';
+    if (FILTER_OK) g.filter = `blur(${(bw / 240 * 1.7).toFixed(2)}px)`;
+    g.drawImage(cv, 0, 0, bw, bh); if (FILTER_OK) g.filter = 'none';
+    g.globalCompositeOperation = 'destination-out';
+    let m;
+    if (f.band) { m = g.createLinearGradient(0, fy - fr * 2, 0, fy + fr * 2); m.addColorStop(0, 'rgba(0,0,0,0)'); m.addColorStop(.25, 'rgba(0,0,0,1)'); m.addColorStop(.75, 'rgba(0,0,0,1)'); m.addColorStop(1, 'rgba(0,0,0,0)'); }
+    else { m = g.createRadialGradient(fx, fy, fr * .6, fx, fy, fr * 1.7); m.addColorStop(0, 'rgba(0,0,0,1)'); m.addColorStop(1, 'rgba(0,0,0,0)'); }
+    g.fillStyle = m; g.fillRect(0, 0, bw, bh);
+    if (f.keep) { const K = f.keep, px = v => (480 + cam.x + (v - 480) * cam.z) * kx, py = v => (270 + cam.y + (v - 270) * cam.z) * ky;
+      g.fillStyle = '#000'; g.shadowColor = '#000'; g.shadowBlur = 10 * kx * q; g.fillRect(px(K[0]), py(K[1]), K[2] * cam.z * kx, K[3] * cam.z * ky); g.shadowBlur = 0; g.shadowColor = 'transparent'; }
+    g.globalCompositeOperation = 'source-over';
+    c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.globalCompositeOperation = 'source-over'; c.globalAlpha = Math.min(1, amt); c.imageSmoothingEnabled = true; c.drawImage(a, 0, 0, w, h); c.restore();
+  }
   function render(s, dt) {
     const c = s.c, B = beatOf(s), P = s.P || (s.P = Object.assign({}, (typeof POST !== 'undefined' && POST[s.th.id]) || {}, (typeof CINE !== 'undefined' && CINE[s.th.id]) || {})), L = s.lvl, cv = s.cv, w = cv.width, h = cv.height;
     let style = P.trans || 'fade'; if (L === 2 && !CALM[style]) style = 'fade'; if (L === 1 && (style === 'channel' || style === 'vhs')) style = 'fade';
@@ -140,7 +167,10 @@
       if (s.prevOk) { c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.globalCompositeOperation = 'lighten'; c.globalAlpha = P.persist * (L === 1 ? .6 : 1); c.drawImage(pv, 0, 0); c.restore(); }
       pc.globalCompositeOperation = 'copy'; pc.drawImage(cv, 0, 0); s.prevOk = true;
     } else if (dt > 0) s.prevOk = false;
-    const hq = (s.q || 1) >= .75;
+    const hq = (s.q || 1) >= .75, SG = typeof STAGE !== 'undefined' && STAGE[s.th.id];
+    if (SG && SG.fg.length) { c.save(); c.setTransform(s.k, 0, 0, s.k, 0, 0); c.globalAlpha = 1; c.setLineDash([]);
+      try { SG.fg.forEach(F => fgLayer(s, F, cam, L, !s.focus)); } catch (e) { console.error(s.th.id, 'fg', e); } c.restore(); }
+    if (s.focus && s.focus.amt > 0 && s.focus.r > 0 && hq) dof(s, s.focus, cam, s.focus.amt * [1, .65, .3][L]);
     if (P.focus && B.t < P.focus) focusPull(s, B.t / P.focus);
     if (P.bloom) { bloom(s, P.bloom * [1, .8, .45][L], P.th);
       if (P.halo) halo(s, P.halo[0], P.halo[1] * [1, .8, .5][L]);

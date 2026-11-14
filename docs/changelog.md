@@ -3,6 +3,17 @@
 
 All notable changes to this repository. Versions follow semantic versioning; commits follow conventional commits scoped to `stagehand`.
 
+## 1.3.0 · 2026-11-13
+
+Reel v6, the staging layer: every theme gains a directed camera, and most gain rack focus and a foreground.
+
+- **Directed camera.** Each non-data beat carries focus keys (where the subject is, and when). The camera pushes toward the subject, follows it as it moves, and settles after each cut. It replaces the generic drift on those beats and never shows past the frame edge.
+- **Depth of field.** A new pass softens everything outside the subject, so focus racks from the title to the gauge, down a list, or along a route. TX-19 uses a horizontal band, the miniature look. The flat graphic themes (TX-05, TX-16, TX-18) stay fully sharp.
+- **Foreground parallax.** Fourteen themes get particles between the lens and the scene: rain and neon bokeh, ash, sand and embers, petals, paper flecks, data bits, dust. They move further than the scene when the camera moves.
+- **Data beats stay clean.** S4 keeps no depth of field and a thinned foreground, so charts read as before.
+- **The dial still rules.** Camera travel, blur and particle count step down at Tempered and again at Boardroom.
+- The pipeline is now eighteen passes (`canon/pipeline.json`, STC-06, the engine page). Staging lives in `reel/src/stage.js`. Measured cost: about 4 to 7 percent of frame time in software rendering.
+
 ## 1.2.0 · 2026-11-11
 
 The reel page now wears the BHIL frame (Brand Guidelines v1.0) around the theme stages, as ADR-005 intended.

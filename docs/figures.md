@@ -38,9 +38,9 @@ Ten short sessions, one figure each.
 
 **Teaches:** Full, Tempered and Boardroom, and what each one keeps or removes. **Exercise:** Take one theme and write its Tempered and Boardroom versions in a line each. **Use it in:** Intensity dial, Boardroom translations. PNG: [`stc-05-intensity-dial.png`](assets/figures/png/stc-05-intensity-dial.png)
 
-### STC-06 · Sixteen passes make one frame.
+### STC-06 · Eighteen passes make one frame.
 
-![STC-06 · Sixteen passes make one frame.](assets/figures/svg/stc-06-film-pipeline.svg)
+![STC-06 · Eighteen passes make one frame.](assets/figures/svg/stc-06-film-pipeline.svg)
 
 **Teaches:** The render pipeline, the scene API and the quality governor. **Exercise:** Add a pass on paper: where does it go, and what does each level do to it? **Use it in:** Reel engine, contributing guide. PNG: [`stc-06-film-pipeline.png`](assets/figures/png/stc-06-film-pipeline.png)
 

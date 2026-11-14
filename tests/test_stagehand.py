@@ -136,6 +136,25 @@ class DerivedTests(unittest.TestCase):
         s = bd.generate()['README.md'].split('<!-- BEGIN:roster -->')[1].split('<details>')[0]
         self.assertNotRegex(s, r'&(?!amp;|lt;|gt;|quot;|#x27;)')
 
+    def test_staging_matches_the_beats(self):
+        """Bug: a staging entry out of step with a scene's beats would rack focus across a data beat and blur its chart."""
+        import subprocess, pathlib
+        src = (ROOT / 'reel' / 'src' / 'helpers.js').read_text() + (ROOT / 'reel' / 'src' / 'stage.js').read_text() + ';JSON.stringify(STAGE)'
+        out = subprocess.run(['node', '-e', "const vm=require('vm');let s='';process.stdin.on('data',d=>s+=d).on('end',()=>console.log(vm.runInNewContext(s,{Math,JSON})))"], input=src, capture_output=True, text=True, check=True).stdout
+        stage = json.loads(out); beats = bd.beats_from_scenes(pathlib.Path(ROOT))
+        self.assertEqual(set(stage), set(beats))
+        for tid, S in stage.items():
+            self.assertEqual(len(S['beats']), len(beats[tid]), tid)
+            for b, beat in zip(S['beats'], beats[tid]):
+                if beat[0] == 'S4':
+                    self.assertIsNone(b, f'{tid} stages a data beat')
+                if b:
+                    ps = [k[0] for k in b['k']]
+                    self.assertEqual(ps, sorted(ps), tid); self.assertEqual(ps[0], 0, tid)
+                    for _, x, y, r in b['k']:
+                        self.assertTrue(0 <= x <= 960 and 0 <= y <= 540 and r >= 0, tid)
+                    self.assertLessEqual((b.get('z') or [1, 1.045])[1], 1.15, tid)
+
     def test_manifest_lists_every_derived_file(self):
         """Bug: a new generator output was written but never hashed, so its drift went unseen."""
         out = bd.generate(); man = out['MANIFEST.sha256']
