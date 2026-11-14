@@ -44,7 +44,7 @@
     [
       "STC-06",
       "stc-06-film-pipeline",
-      "Eighteen passes make one frame.",
+      "Twenty passes make one frame.",
       "Reel engine, contributing guide",
       "The render pipeline, the scene API and the quality governor.",
       "Add a pass on paper: where does it go, and what does each level do to it?"

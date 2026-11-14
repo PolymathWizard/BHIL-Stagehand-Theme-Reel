@@ -36,7 +36,7 @@ Every loop is a short film in beats. Each beat names a web slot (S1 hero, S2 tra
 
 ## How a frame is drawn
 
-The scene draws inside a directed camera, then eighteen passes turn a flat canvas into something that reads as film: persistence, foreground parallax, depth of field, focus pull, bloom, halo, light rays, lens dirt, grade, chromatic aberration, grain, tilt-shift, crisp overlays, the beat transition and an optional letterbox. The dial scales or removes the louder passes. See [the engine](engine.md).
+The scene draws inside a choreographed shot, then twenty passes turn a flat canvas into something that reads as film: persistence, foreground parallax, depth of field, key light, lens, focus pull, bloom, halo, light rays, lens dirt, grade, chromatic aberration, grain, tilt-shift, crisp overlays, the beat transition and an optional letterbox. The dial scales or removes the louder passes. See [the engine](engine.md).
 
 ## Honest limits
 

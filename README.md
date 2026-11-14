@@ -23,7 +23,7 @@ A Stagehand theme is a costume layer: palette, type trio, motion grammar, transi
 </tr>
 <tr>
 <td align="center" valign="top" width="33%"><a href="docs/agents.md"><img src="docs/assets/figures/thumb/stc-10-brief-to-manifest.jpg" width="250" alt="Agents and prompts"></a><br><b><a href="docs/agents.md">Agents and prompts</a></b><br><sub>Seven agents and eleven prompts that run a brief to one manifest line.</sub></td>
-<td align="center" valign="top" width="33%"><a href="docs/reel/index.md"><img src="docs/assets/figures/thumb/stc-06-film-pipeline.jpg" width="250" alt="Reel engine"></a><br><b><a href="docs/reel/index.md">Reel engine</a></b><br><sub>The eighteen-pass film pipeline, the beat grammar and how to add a scene.</sub></td>
+<td align="center" valign="top" width="33%"><a href="docs/reel/index.md"><img src="docs/assets/figures/thumb/stc-06-film-pipeline.jpg" width="250" alt="Reel engine"></a><br><b><a href="docs/reel/index.md">Reel engine</a></b><br><sub>The twenty-pass film pipeline, the beat grammar and how to add a scene.</sub></td>
 <td align="center" valign="top" width="33%"><a href="docs/figures.md"><img src="docs/assets/screens/figure-mosaic.jpg" width="250" alt="Figures"></a><br><b><a href="docs/figures.md">Figures</a></b><br><sub>Ten teaching figures as animated SVG and PNG, with exercises.</sub></td>
 </tr>
 </table>
@@ -176,7 +176,7 @@ Ten teaching figures, each as an animated SVG and a 1600 x 900 PNG. Select a thu
 </tr>
 <tr>
 <td align="center" valign="top" width="50%"><a href="docs/assets/figures/png/stc-05-intensity-dial.png"><img src="docs/assets/figures/thumb/stc-05-intensity-dial.jpg" width="400" alt="STC-05 · One theme. Three volumes."></a><br><b><a href="docs/assets/figures/png/stc-05-intensity-dial.png">STC-05 · One theme. Three volumes.</a></b><br><sub>Use it in: Intensity dial, Boardroom translations</sub></td>
-<td align="center" valign="top" width="50%"><a href="docs/assets/figures/png/stc-06-film-pipeline.png"><img src="docs/assets/figures/thumb/stc-06-film-pipeline.jpg" width="400" alt="STC-06 · Eighteen passes make one frame."></a><br><b><a href="docs/assets/figures/png/stc-06-film-pipeline.png">STC-06 · Eighteen passes make one frame.</a></b><br><sub>Use it in: Reel engine, contributing guide</sub></td>
+<td align="center" valign="top" width="50%"><a href="docs/assets/figures/png/stc-06-film-pipeline.png"><img src="docs/assets/figures/thumb/stc-06-film-pipeline.jpg" width="400" alt="STC-06 · Twenty passes make one frame."></a><br><b><a href="docs/assets/figures/png/stc-06-film-pipeline.png">STC-06 · Twenty passes make one frame.</a></b><br><sub>Use it in: Reel engine, contributing guide</sub></td>
 </tr>
 <tr>
 <td align="center" valign="top" width="50%"><a href="docs/assets/figures/png/stc-07-data-story.png"><img src="docs/assets/figures/thumb/stc-07-data-story.jpg" width="400" alt="STC-07 · Build. Insight. Re-sort. Rank."></a><br><b><a href="docs/assets/figures/png/stc-07-data-story.png">STC-07 · Build. Insight. Re-sort. Rank.</a></b><br><sub>Use it in: Data skin, chart guidelines</sub></td>

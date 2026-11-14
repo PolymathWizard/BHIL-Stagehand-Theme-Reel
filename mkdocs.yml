@@ -102,4 +102,5 @@ nav:
       - ADR-010 Evidence tiers: adr/adr-010-evidence-tiers.md
       - ADR-011 Reel stills: adr/adr-011-screens.md
       - ADR-012 Staging layer: adr/adr-012-staging-layer.md
+      - ADR-013 Cinematography layer: adr/adr-013-cinematography-layer.md
   - Changelog: changelog.md

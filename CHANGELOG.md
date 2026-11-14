@@ -2,6 +2,19 @@
 
 All notable changes to this repository. Versions follow semantic versioning; commits follow conventional commits scoped to `stagehand`.
 
+## 1.4.0 · 2026-11-13
+
+Reel v7, the cinematography layer. It replaces the gentle camera of 1.3.0 with real shots and adds a lens and a light.
+
+- **Shots.** Every staged beat is now a shot built from its focus keys. A reveal opens tight on the first subject (up to 1.3x) and pulls back to the wide. A tour stays tight and travels from subject to subject, then pulls back: the route in TX-14, the panels in TX-18, the towers in TX-13. A push holds the wide, then moves in on the last subject. The frame edge never shows.
+- **Key light.** A pool of light follows the subject: the frame falls into shadow away from it, and it moves when focus racks. Off on light-ground themes.
+- **Lens per theme.** The finished frame is redrawn through a model of the glass. Tube curvature for TX-01, TX-02, TX-05 and TX-08. Heat shimmer for TX-07, TX-10 and TX-11. Liquid ripple for TX-06, TX-12 and TX-17. Hand-made boil for TX-16 and TX-18. Rain on the glass for TX-04, where each drop shows the scene behind it inverted.
+- **Kept from 1.3.0:** focus keys, depth of field with keep rectangles for titles (TX-19 gains one), foreground parallax.
+- **Data beats** take no shot, no light and no blur; the lens runs at 40 percent there.
+- **The dial.** Tight zoom, light and lens step down at Tempered. Boardroom has no lens and 35 percent of the zoom.
+- The pipeline is twenty passes. Measured cost against the unstaged reel: 12 to 24 percent more frame time in software rendering, on four themes.
+- The engine reads `data-plain` on a plate and draws it without this layer, which is how the before-and-after page is built.
+
 ## 1.3.0 · 2026-11-13
 
 Reel v6, the staging layer: every theme gains a directed camera, and most gain rack focus and a foreground.

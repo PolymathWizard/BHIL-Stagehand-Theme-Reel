@@ -14,5 +14,6 @@
 | [ADR-010](adr-010-evidence-tiers.md) | Evidence tiers on every factual claim; gates never issue a clean verdict on a build | Accepted |
 | [ADR-011](adr-011-screens.md) | Reel stills for README and docs navigation, rendered from the built reel and freshness-gated | Accepted |
 | [ADR-012](adr-012-staging-layer.md) | Staging layer for the reel: focus keys per beat drive a directed camera, depth of field and foreground parallax | Accepted |
+| [ADR-013](adr-013-cinematography-layer.md) | Cinematography layer: beats become shots, a key light follows the subject, each theme gets a lens model | Accepted |
 
-Files: `adr-001-canonical-source.md`, `adr-002-public-edition.md`, `adr-003-public-guardrails.md`, `adr-004-self-contained-reel.md`, `adr-005-bhil-frame.md`, `adr-006-figure-kit.md`, `adr-007-reel-autoplay.md`, `adr-008-contrast-floor.md`, `adr-009-agent-team.md`, `adr-010-evidence-tiers.md`, `adr-011-screens.md`, `adr-012-staging-layer.md`.
+Files: `adr-001-canonical-source.md`, `adr-002-public-edition.md`, `adr-003-public-guardrails.md`, `adr-004-self-contained-reel.md`, `adr-005-bhil-frame.md`, `adr-006-figure-kit.md`, `adr-007-reel-autoplay.md`, `adr-008-contrast-floor.md`, `adr-009-agent-team.md`, `adr-010-evidence-tiers.md`, `adr-011-screens.md`, `adr-012-staging-layer.md`, `adr-013-cinematography-layer.md`.

@@ -2,8 +2,8 @@
   "passes": [
     [
       "Scene draw",
-      "Inside the directed camera: it pushes toward the focus keys of the beat and settles after each cut",
-      "Camera travel x.70 Tempered, x.40 Boardroom"
+      "Inside the shot: a tight opening that pulls back, a tour through the subjects, or a push-in, built from the focus keys of the beat",
+      "Tight zoom x.70 Tempered, x.35 Boardroom"
     ],
     [
       "FX and sheen",
@@ -24,6 +24,16 @@
       "Depth of field",
       "A blurred quarter-size copy is cut away around the subject, so focus racks between the focus keys of the beat",
       "x.65 Tempered, x.30 Boardroom; off on data beats and below render scale .75"
+    ],
+    [
+      "Key light",
+      "The frame falls into shadow away from the subject and the subject takes a little glow; the pool moves when focus racks",
+      "x.70 Tempered, x.40 Boardroom; off on data beats and on light-ground themes"
+    ],
+    [
+      "Lens",
+      "The frame is redrawn through a model of the glass: tube curvature, heat shimmer, liquid ripple, hand-made boil, or rain drops that refract the scene",
+      "x.60 Tempered, off at Boardroom; x.40 on data beats"
     ],
     [
       "Focus pull",

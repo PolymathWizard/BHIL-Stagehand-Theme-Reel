@@ -153,7 +153,9 @@ class DerivedTests(unittest.TestCase):
                     self.assertEqual(ps, sorted(ps), tid); self.assertEqual(ps[0], 0, tid)
                     for _, x, y, r in b['k']:
                         self.assertTrue(0 <= x <= 960 and 0 <= y <= 540 and r >= 0, tid)
-                    self.assertLessEqual((b.get('z') or [1, 1.045])[1], 1.15, tid)
+                    self.assertLessEqual(b.get('zt', 1.3), 1.35, tid)
+            self.assertIn((S.get('lens') or {'type': 'barrel'})['type'], ('barrel', 'shimmer', 'ripple', 'boil', 'drops'), tid)
+            self.assertIn(S.get('s1', 'reveal'), ('reveal', 'tour', 'push'), tid)
 
     def test_manifest_lists_every_derived_file(self):
         """Bug: a new generator output was written but never hashed, so its drift went unseen."""

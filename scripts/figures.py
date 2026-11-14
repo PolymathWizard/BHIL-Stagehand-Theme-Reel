@@ -349,22 +349,22 @@ def fig05():
 
 # ── STC-06 ───────────────────────────────────────────────────────────────
 def fig06():
-    f = Fig(6, 'film-pipeline', '06 · THE REEL ENGINE', 'Eighteen passes make one frame.',
+    f = Fig(6, 'film-pipeline', '06 · THE REEL ENGINE', 'Twenty passes make one frame.',
             "The reel's film pipeline in render order, with what each intensity level turns down.",
-            'The Stagehand reel render pipeline in order: scene draw, fx and sheen, persistence, foreground parallax, depth of field, focus pull, bloom, halo, light rays, lens dirt, grade, chroma, grain, tilt-shift, overlays, transition, letterbox and beat chips, with the level gates on each pass. Below: the scene API, the quality governor and the zero-request build.')
+            'The Stagehand reel render pipeline in order: scene draw, fx and sheen, persistence, foreground parallax, depth of field, key light, lens, focus pull, bloom, halo, light rays, lens dirt, grade, chroma, grain, tilt-shift, overlays, transition, letterbox and beat chips, with the level gates on each pass. Below: the scene API, the quality governor and the zero-request build.')
     f.R(72, 252, 1456, 322, INK, BLUE3)
     f.T(96, 282, 'RENDER ORDER · ONE FRAME · T = FULL, B = BOARDROOM', 'mono5', 12, BLUE, ls=.14)
-    steps = [('SCENE.DRAW', 'INSIDE THE CAMERA', 0), ('FX + SHEEN', 'PER THEME', 0), ('PERSISTENCE', 'OFF AT BOARDROOM', 1), ('FOREGROUND', 'PARALLAX DRIFT', 0), ('DEPTH OF FIELD', '×.65 T · ×.30 B', 0), ('FOCUS PULL', 'ON EACH CUT', 0),
+    steps = [('SCENE.DRAW', 'INSIDE THE CAMERA', 0), ('FX + SHEEN', 'PER THEME', 0), ('PERSISTENCE', 'OFF AT BOARDROOM', 1), ('FOREGROUND', 'PARALLAX DRIFT', 0), ('DEPTH OF FIELD', '×.65 T · ×.30 B', 0), ('KEY LIGHT', 'FOLLOWS FOCUS', 0), ('LENS', 'OFF AT BOARDROOM', 1), ('FOCUS PULL', 'ON EACH CUT', 0),
              ('BLOOM', '×.80 T · ×.45 B', 0), ('HALO', '×.80 T · ×.50 B', 0), ('LIGHT RAYS', '×.80 T · ×.40 B', 0), ('LENS DIRT', 'OFF AT BOARDROOM', 1),
              ('GRADE', 'FILTER AT Q .75+', 0), ('CHROMA', 'OFF AT BOARDROOM', 1), ('GRAIN', '24 FPS · ×.50 B', 0), ('TILT-SHIFT', 'PER THEME', 0),
              ('OVERLAYS', 'CRISP TEXT ON TOP', 0), ('TRANSITION', 'CALM ONLY AT B', 0), ('LETTERBOX', '2.39:1 TOGGLE', 0), ('BEAT CHIPS', 'DOM, TRACKS THE BEAT', 0)]
-    steps[0] = ('SCENE.DRAW', 'DIRECTED CAMERA', 0)
-    bw, g = 144, (1408 - 9 * 144) / 8
+    steps[0] = ('SCENE.DRAW', 'INSIDE THE SHOT', 0)
+    bw, g = 130, (1408 - 10 * 130) / 9
     pos = []
-    for i in range(18):
-        row = i // 9; c = i % 9 if row == 0 else 8 - i % 9
+    for i in range(20):
+        row = i // 10; c = i % 10 if row == 0 else 9 - i % 10
         pos.append((96 + c * (bw + g), 302 if row == 0 else 452))
-    for i in range(17):
+    for i in range(19):
         (x1, y1), (x2, y2) = pos[i], pos[i + 1]
         if y1 == y2:
             a, b = (x1 + bw, x2) if x2 > x1 else (x1, x2 + bw)
@@ -375,7 +375,7 @@ def fig06():
             xm = x1 + bw / 2
             f.L(xm, y1 + 72, xm, y2 - 9, BLUE, 1.5)
             f.P(f'M{fmt(xm - 5)} {y2 - 9}L{fmt(xm)} {y2 - 3}L{fmt(xm + 5)} {y2 - 9}Z', BLUE)
-    st = f.stepper(18, 19.8)
+    st = f.stepper(20, 22)
     for i, (nm, note, warn) in enumerate(steps):
         x, y = pos[i]
         f.R(x, y, bw, 72, NAVY, BLUE3)
@@ -383,7 +383,7 @@ def fig06():
         fit_text(f, x + 12, y + 44, nm, 'mono5', 13.5, bw - 20, PAPER, ls=.04)
         fit_text(f, x + 12, y + 62, note, 'mono', 10.5, bw - 20, COPPER if warn else BRIGHT, ls=.04, op=None if warn else .85)
         f.R(x - 3, y - 3, bw + 6, 78, 'none', BRIGHT, 2, cls='am', extra=st(i))
-    f.T(96, 556, 'PASSES 01 AND 02 RUN IN CAMERA SPACE · 15 TO 18 STAY CRISP ABOVE THE FILM LOOK', 'mono', 11, P3, ls=.1, op=.6)
+    f.T(96, 556, 'PASSES 01 AND 02 RUN IN CAMERA SPACE · 17 TO 20 STAY CRISP ABOVE THE FILM LOOK', 'mono', 11, P3, ls=.1, op=.6)
     cw = (1456 - 2 * 40) / 3
     xs = [72 + k * (cw + 40) for k in range(3)]
     f.T(xs[0], 618, 'THE SCENE API', 'mono5', 12, BLUE, ls=.14)

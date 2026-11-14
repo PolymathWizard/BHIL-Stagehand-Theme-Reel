@@ -8,24 +8,26 @@ The reel is one HTML file: twenty canvases, one shared engine, and a film pipeli
 
 | # | Pass | What it does | Dial |
 | --- | --- | --- | --- |
-| 1 | Scene draw | Inside the directed camera: it pushes toward the focus keys of the beat and settles after each cut | Camera travel x.70 Tempered, x.40 Boardroom |
+| 1 | Scene draw | Inside the shot: a tight opening that pulls back, a tour through the subjects, or a push-in, built from the focus keys of the beat | Tight zoom x.70 Tempered, x.35 Boardroom |
 | 2 | FX and sheen | Per-theme effects and specular text sweeps, still in camera space | All levels |
 | 3 | Persistence | Previous frame blended with lighten for light trails | x.60 Tempered, off at Boardroom |
 | 4 | Foreground parallax | Per-theme particles drift past the lens and move further than the scene when the camera moves | Fewer and fainter at Tempered and Boardroom; thinned on data beats |
 | 5 | Depth of field | A blurred quarter-size copy is cut away around the subject, so focus racks between the focus keys of the beat | x.65 Tempered, x.30 Boardroom; off on data beats and below render scale .75 |
-| 6 | Focus pull | Blur resolves at each cut | All levels |
-| 7 | Bloom | Bright-pass at quarter and twelfth resolution, added back | x.80 Tempered, x.45 Boardroom |
-| 8 | Halo | Tinted halation around highlights | x.80 Tempered, x.50 Boardroom |
-| 9 | Light rays | Radial zoom from the bloom buffer | x.80 Tempered, x.40 Boardroom |
-| 10 | Lens dirt | Bloom multiplied by a dirt texture | x.70 Tempered, off at Boardroom |
-| 11 | Grade | Filter grade, soft-light tint and screen lift | Filter runs at render scale .75 or better |
-| 12 | Chromatic aberration | Red channel scaled outward | x.60 Tempered, off at Boardroom |
-| 13 | Grain | 24 fps overlay grain | x.50 Boardroom |
-| 14 | Tilt-shift | Per-theme post pass | All levels |
-| 15 | Overlays | Crisp text drawn above the film look | All levels |
-| 16 | Transition | Snapshot of the last beat played out with the theme's transition | Calm styles only at Boardroom |
-| 17 | Letterbox | Optional 2.39:1 bars | All levels |
-| 18 | Beat chips | DOM chips track the beat and jump on click | All levels |
+| 6 | Key light | The frame falls into shadow away from the subject and the subject takes a little glow; the pool moves when focus racks | x.70 Tempered, x.40 Boardroom; off on data beats and on light-ground themes |
+| 7 | Lens | The frame is redrawn through a model of the glass: tube curvature, heat shimmer, liquid ripple, hand-made boil, or rain drops that refract the scene | x.60 Tempered, off at Boardroom; x.40 on data beats |
+| 8 | Focus pull | Blur resolves at each cut | All levels |
+| 9 | Bloom | Bright-pass at quarter and twelfth resolution, added back | x.80 Tempered, x.45 Boardroom |
+| 10 | Halo | Tinted halation around highlights | x.80 Tempered, x.50 Boardroom |
+| 11 | Light rays | Radial zoom from the bloom buffer | x.80 Tempered, x.40 Boardroom |
+| 12 | Lens dirt | Bloom multiplied by a dirt texture | x.70 Tempered, off at Boardroom |
+| 13 | Grade | Filter grade, soft-light tint and screen lift | Filter runs at render scale .75 or better |
+| 14 | Chromatic aberration | Red channel scaled outward | x.60 Tempered, off at Boardroom |
+| 15 | Grain | 24 fps overlay grain | x.50 Boardroom |
+| 16 | Tilt-shift | Per-theme post pass | All levels |
+| 17 | Overlays | Crisp text drawn above the film look | All levels |
+| 18 | Transition | Snapshot of the last beat played out with the theme's transition | Calm styles only at Boardroom |
+| 19 | Letterbox | Optional 2.39:1 bars | All levels |
+| 20 | Beat chips | DOM chips track the beat and jump on click | All levels |
 
 ## Quality governor
 

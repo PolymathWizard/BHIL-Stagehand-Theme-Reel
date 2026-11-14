@@ -32,10 +32,10 @@
     if (C.shake && L === 0) { const tt = s.t; x += (Math.sin(tt * 13.1) + Math.sin(tt * 7.3)) * C.shake; y += (Math.cos(tt * 11.7) + Math.sin(tt * 5.9)) * C.shake; }
     if (C.weave && L < 2) y += ((hash3(Math.floor(s.t * 24), 5, 5) % 100) / 100 - .5) * C.weave;
     if (C.beat && L < 2) { const bp = (s.t % C.beat) / C.beat; z *= 1 + .014 * k * Math.pow(1 - bp, 3); }
-    const o = s.st.cam, f = !o && typeof stageFocus === 'function' ? stageFocus(s, B) : null;
+    const o = s.st.cam, f = !o && !s.plain && typeof stageFocus === 'function' ? stageFocus(s, B) : null;
     s.focus = f;
     if (f) {
-      const m = stageCamera(f, B, k, L); x = m.x; y = m.y; z = m.z; r = 0;
+      const m = stageCamera(s, f, B, k, L); x = m.x; y = m.y; z = m.z; r = 0;
       if (C.shake && L === 0) { const tt = s.t; x += (Math.sin(tt * 13.1) + Math.sin(tt * 7.3)) * C.shake; y += (Math.cos(tt * 11.7) + Math.sin(tt * 5.9)) * C.shake; }
       if (C.weave && L < 2) y += ((hash3(Math.floor(s.t * 24), 5, 5) % 100) / 100 - .5) * C.weave;
       if (C.beat && L < 2) { const bp = (s.t % C.beat) / C.beat; z *= 1 + .014 * k * Math.pow(1 - bp, 3); }
@@ -148,6 +148,44 @@
     g.globalCompositeOperation = 'source-over';
     c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.globalCompositeOperation = 'source-over'; c.globalAlpha = Math.min(1, amt); c.imageSmoothingEnabled = true; c.drawImage(a, 0, 0, w, h); c.restore();
   }
+  /* v7 key light: the frame falls off into shadow away from the subject, and the subject takes a little glow */
+  function keyLight(s, f, cam, A) {
+    const c = s.c, w = s.cv.width, h = s.cv.height, K = s.k, fx = (480 + cam.x + (f.x - 480) * cam.z) * K, fy = (270 + cam.y + (f.y - 270) * cam.z) * K, R = (f.r || 260) * cam.z * K;
+    c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.globalCompositeOperation = 'source-over';
+    let g = c.createRadialGradient(fx, fy, R * .9, fx, fy, R * 3.2); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${A.toFixed(3)})`); c.fillStyle = g; c.fillRect(0, 0, w, h);
+    c.globalCompositeOperation = 'lighter'; g = c.createRadialGradient(fx, fy, 0, fx, fy, R * 1.3); g.addColorStop(0, rgba(s.th.tok.a1, A * .2)); g.addColorStop(1, rgba(s.th.tok.a1, 0)); c.fillStyle = g; c.fillRect(0, 0, w, h);
+    c.restore();
+  }
+  /* v7 lens: the finished frame is copied, then drawn back through a model of the glass in front of it */
+  function lens(s, Z, amt) {
+    const c = s.c, cv = s.cv, w = cv.width, h = cv.height, K = s.k, t = s.t, b = off(s, 'lensB', w, h), g = b.getContext('2d');
+    g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.globalCompositeOperation = 'copy'; g.drawImage(cv, 0, 0);
+    c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.globalCompositeOperation = 'source-over'; c.imageSmoothingEnabled = true;
+    if (Z.type === 'barrel') {           /* picture tube: rows narrow toward the top and bottom, corners fall to black */
+      const sh = Math.max(2, Math.ceil(h / 45)), a = .05 * Z.k * amt; c.fillStyle = '#000'; c.fillRect(0, 0, w, h);
+      for (let y = 0; y < h; y += sh) { const v = (y + sh / 2) / h * 2 - 1, dw = w * (1 - a * v * v); c.drawImage(b, 0, y, w, sh, (w - dw) / 2, y, dw, sh + .6); }
+    } else if (Z.type === 'shimmer') {   /* heat haze in a horizontal band */
+      const y0 = Math.round(Z.y0 * K), y1 = Math.round(Z.y1 * K), st = Math.max(2, Math.round(2.5 * K)), A = Z.amp * K * amt;
+      for (let y = y0; y < y1; y += st) { const e = Math.sin(Math.PI * (y - y0) / (y1 - y0)), dx = (Math.sin(y / K * .23 + t * 6.5) + .6 * Math.sin(y / K * .09 - t * 2.7)) * A * e; c.drawImage(b, 0, y, w, st, dx - 3 * K, y, w + 6 * K, st); }
+    } else if (Z.type === 'ripple') {    /* slow liquid sway of the whole frame */
+      const st = Math.max(3, Math.round(5 * K)), A = Z.amp * K * amt;
+      for (let y = 0; y < h; y += st) { const dx = (Math.sin(y / K * .018 + t * 1.1) + .5 * Math.sin(y / K * .041 - t * .7)) * A; c.drawImage(b, 0, y, w, st, dx - 4 * K, y, w + 8 * K, st); }
+    } else if (Z.type === 'boil') {      /* hand-made animation: the whole frame re-registers twelve times a second */
+      const fr = Math.floor(t * 12), j = n => ((hash3(fr, n, 9) % 100) / 100 - .5) * Z.k * amt;
+      c.translate(w / 2 + j(1) * 1.6 * K, h / 2 + j(2) * 1.6 * K); c.rotate(j(3) * .004); c.scale(1.008, 1.008); c.drawImage(b, -w / 2, -h / 2);
+    } else if (Z.type === 'drops') {     /* rain on the glass: each drop shows the scene behind it inverted */
+      const n = Math.round(Z.n * amt);
+      for (let i = 0; i < n; i++) {
+        const h1 = (hash3(i, 3, 41) % 1000) / 1000, h2 = (hash3(i, 5, 41) % 1000) / 1000, h3 = (hash3(i, 7, 41) % 1000) / 1000, T = 7 + 5 * h1, ph = ((t + h2 * T) / T) % 1;
+        const r = (9 + 26 * h3 * h3) * K, x = (.05 + .9 * h2) * w + Math.sin(ph * 9 + i) * 4 * K, y = h * (-.1 + 1.2 * (ph + .05 * Math.sin(ph * TAU * 3))), al = Math.min(1, ph * 8, (1 - ph) * 8);
+        c.save(); c.globalAlpha = .07 * al; const tr = c.createLinearGradient(0, y - r * 5, 0, y); tr.addColorStop(0, 'rgba(255,255,255,0)'); tr.addColorStop(1, 'rgba(255,255,255,1)'); c.fillStyle = tr; c.fillRect(x - r * .3, y - r * 5, r * .6, r * 5); c.restore();
+        c.save(); c.beginPath(); c.ellipse(x, y, r * .92, r * 1.08, 0, 0, TAU); c.clip(); c.globalAlpha = al; c.translate(x, y); c.scale(-1, -1); c.drawImage(b, x - r * 2.4, y - r * 2.4, r * 4.8, r * 4.8, -r * 1.1, -r * 1.1, r * 2.2, r * 2.2); c.restore();
+        c.save(); c.globalAlpha = al; const rim = c.createRadialGradient(x, y, r * .55, x, y, r * 1.08); rim.addColorStop(0, 'rgba(0,0,0,0)'); rim.addColorStop(1, 'rgba(0,0,0,.5)'); c.fillStyle = rim; c.beginPath(); c.ellipse(x, y, r * .92, r * 1.08, 0, 0, TAU); c.fill();
+        c.fillStyle = 'rgba(255,255,255,.55)'; c.beginPath(); c.ellipse(x - r * .32, y - r * .42, r * .16, r * .1, -.6, 0, TAU); c.fill(); c.restore();
+      }
+    }
+    c.restore();
+  }
   function render(s, dt) {
     const c = s.c, B = beatOf(s), P = s.P || (s.P = Object.assign({}, (typeof POST !== 'undefined' && POST[s.th.id]) || {}, (typeof CINE !== 'undefined' && CINE[s.th.id]) || {})), L = s.lvl, cv = s.cv, w = cv.width, h = cv.height;
     let style = P.trans || 'fade'; if (L === 2 && !CALM[style]) style = 'fade'; if (L === 1 && (style === 'channel' || style === 'vhs')) style = 'fade';
@@ -167,10 +205,12 @@
       if (s.prevOk) { c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.globalCompositeOperation = 'lighten'; c.globalAlpha = P.persist * (L === 1 ? .6 : 1); c.drawImage(pv, 0, 0); c.restore(); }
       pc.globalCompositeOperation = 'copy'; pc.drawImage(cv, 0, 0); s.prevOk = true;
     } else if (dt > 0) s.prevOk = false;
-    const hq = (s.q || 1) >= .75, SG = typeof STAGE !== 'undefined' && STAGE[s.th.id];
+    const hq = (s.q || 1) >= .75, SG = typeof STAGE !== 'undefined' && !s.plain && STAGE[s.th.id];
     if (SG && SG.fg.length) { c.save(); c.setTransform(s.k, 0, 0, s.k, 0, 0); c.globalAlpha = 1; c.setLineDash([]);
       try { SG.fg.forEach(F => fgLayer(s, F, cam, L, !s.focus)); } catch (e) { console.error(s.th.id, 'fg', e); } c.restore(); }
     if (s.focus && s.focus.amt > 0 && s.focus.r > 0 && hq) dof(s, s.focus, cam, s.focus.amt * [1, .65, .3][L]);
+    if (s.focus && s.focus.light > 0 && !s.focus.band) keyLight(s, s.focus, cam, s.focus.light * [1, .7, .4][L]);
+    if (SG && SG.lens && hq && L < 2) { try { lens(s, SG.lens, [1, .6][L] * (s.focus ? 1 : .4)); } catch (e) { console.error(s.th.id, 'lens', e); } }
     if (P.focus && B.t < P.focus) focusPull(s, B.t / P.focus);
     if (P.bloom) { bloom(s, P.bloom * [1, .8, .45][L], P.th);
       if (P.halo) halo(s, P.halo[0], P.halo[1] * [1, .8, .5][L]);
@@ -201,7 +241,7 @@
     const th = byId[el.dataset.id], scene = SCENES[th && th.id], cv = el.querySelector('canvas');
     if (!th || !scene || !cv) return;
     const s = { th, scene, el, cv, c: cv.getContext('2d'), W: 960, H: 540, R: rng(parseInt(th.id.slice(3), 10) * 977 + 13),
-      st: {}, t: 0, lvl: eff(th), visible: false, pointer: null, flag: el.querySelector('.lvl-flag'), active: -1, drawn: false,
+      plain: el.dataset.plain === '1', st: {}, t: 0, lvl: eff(th), visible: false, pointer: null, flag: el.querySelector('.lvl-flag'), active: -1, drawn: false,
       total: scene.beats.reduce((a, b) => a + b[2], 0) };
     try { scene.init && scene.init(s); } catch (e) { console.error(th.id, 'init', e); }
     const bar = el.querySelector('.beats');
